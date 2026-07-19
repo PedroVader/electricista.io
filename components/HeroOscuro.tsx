@@ -14,17 +14,19 @@ export function HeroOscuro({
   eyebrow,
   h1,
   sub,
+  imagen = "/img/hero-equipo.jpg",
 }: {
   eyebrow: string;
   h1: string;
   sub: string;
+  imagen?: string;
 }) {
   const { telefono, badges, email } = config;
   return (
     <>
       <section className="relative bg-ink text-white">
         <Image
-          src="/img/hero-equipo.jpg"
+          src={imagen}
           alt=""
           fill
           priority

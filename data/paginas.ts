@@ -8,6 +8,30 @@ export const home = {
     "Electricistas autorizados en Barcelona, Sabadell, Badalona, Mataró y Granollers. Urgencias 24h, boletines (CIE) y averías. Precio cerrado.",
   serviciosIntro:
     "Del enchufe que chispea al cuadro completo de una nave. Elige lo que te pasa y te contamos cómo lo resolvemos, o llámanos directamente y nos lo cuentas tú.",
+  bandaUrgencias: {
+    texto: "Hay un electricista de guardia ahora mismo.",
+    subtexto: "Sin luz, cortocircuito o olor a quemado: te decimos precio cerrado por teléfono y salimos ya.",
+  },
+  boletinDestacado: {
+    h2: "¿Te han pedido el boletín eléctrico?",
+    parrafos: [
+      "Es el trámite que más resolvemos. Si tu comercializadora te pide un CIE para dar de alta la luz, subir potencia o después de una reforma, lo tienes en 24-48 horas: revisamos la instalación, emitimos el certificado y lo tramitamos ante Indústria. Tú solo lo adjuntas a tu gestión.",
+    ],
+    bullets: [
+      "Boletín azul (reconocimiento) y blanco (CIE), según lo que te pidan",
+      "Firmado por instalador habilitado con número de registro",
+      "Tramitación ante Indústria incluida",
+      "Listo en 24-48 horas en la mayoría de casos",
+    ],
+    ctaTexto: "Todo sobre el boletín eléctrico",
+    ctaHref: "/boletin-electrico",
+  },
+  consejos: {
+    h2: "Guías rápidas de nuestros electricistas",
+    intro:
+      "Las dudas que nos preguntáis cada semana, respondidas sin rodeos: qué puedes comprobar tú y cuándo toca llamar.",
+    ctaTexto: "Ver todos los consejos",
+  },
   textoSeo: {
     h2: "Electricistas de confianza en Barcelona y su área metropolitana",
     parrafos: [

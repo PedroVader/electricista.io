@@ -14,10 +14,12 @@ export const servicios: Servicio[] = [
       linea: "Sin luz, cortocircuito o salta el diferencial: vamos hoy.",
       icono: "reloj",
       destacada: true,
+      animada: true,
     },
     h1: "Electricistas urgentes 24 horas",
     heroSub:
       "Te has quedado sin luz, huele a quemado o el diferencial no para de saltar. Llámanos: te decimos precio cerrado por teléfono y salimos ya.",
+    heroImage: "/img/hero-urgencias-24h.jpg",
     metaTitle: "Electricistas urgentes 24 horas | electricista.io",
     metaDescription:
       "Electricistas 24 horas en Barcelona y área metropolitana. Urgencias eléctricas atendidas hoy, precio cerrado antes de empezar.",
@@ -103,6 +105,7 @@ export const servicios: Servicio[] = [
     h1: "Electricista urgente en Barcelona",
     heroSub:
       "Electricista de guardia en Barcelona ciudad. Llegamos a cualquier distrito en menos de una hora, con precio cerrado por teléfono.",
+    heroImage: "/img/hero-urgente-barcelona.jpg",
     metaTitle: "Electricista urgente en Barcelona | 24h | electricista.io",
     metaDescription:
       "Electricista urgente en Barcelona. Llegada en menos de 1h a cualquier distrito, 24 horas. Precio cerrado por teléfono antes de salir.",
@@ -174,6 +177,7 @@ export const servicios: Servicio[] = [
     h1: "Boletín eléctrico (CIE) en Barcelona en 24-48 horas",
     heroSub:
       "¿Te pide la comercializadora un boletín para dar de alta la luz o subir potencia? Lo emitimos y lo tramitamos nosotros. Precio cerrado por adelantado.",
+    heroImage: "/img/hero-boletin.jpg",
     metaTitle: "Boletín eléctrico Barcelona (CIE) en 24-48h | electricista.io",
     metaDescription:
       "Boletín eléctrico (CIE) en Barcelona en 24-48h. Instaladores habilitados: revisión, emisión y tramitación. Precio cerrado antes de empezar.",
@@ -284,6 +288,7 @@ export const servicios: Servicio[] = [
     h1: "Averías eléctricas: las encontramos y las reparamos",
     heroSub:
       "Se va la luz, salta el diferencial, hay enchufes que no funcionan. Localizamos la causa, te damos precio cerrado y lo reparamos.",
+    heroImage: "/img/hero-averias.jpg",
     metaTitle: "Averías eléctricas y cortocircuitos | electricista.io",
     metaDescription:
       "Reparación de averías eléctricas en Barcelona y área metropolitana: diferencial que salta, cortocircuitos, enchufes sin corriente. Precio cerrado.",
@@ -364,6 +369,7 @@ export const servicios: Servicio[] = [
     h1: "Cambio de cuadro eléctrico: seguridad al día en una mañana",
     heroSub:
       "Si tu cuadro tiene fusibles, no tiene diferencial o salta sin motivo, toca cambiarlo. Lo sustituimos en una visita y con boletín si lo necesitas.",
+    heroImage: "/img/hero-cuadro.jpg",
     metaTitle: "Cambio de cuadro eléctrico Barcelona | electricista.io",
     metaDescription:
       "Cambio y actualización de cuadros eléctricos en Barcelona y área metropolitana. Instalación en una mañana, con boletín (CIE) incluido si lo necesitas.",
@@ -518,6 +524,7 @@ export const servicios: Servicio[] = [
     h1: "Subir la potencia de la luz sin líos",
     heroSub:
       "Si la luz salta cuando enciendes dos aparatos a la vez, necesitas más potencia. Revisamos tu instalación, emitimos el boletín si hace falta y te acompañamos en el trámite.",
+    heroImage: "/img/hero-potencia.jpg",
     metaTitle: "Subir potencia de luz Barcelona | Boletín incluido",
     metaDescription:
       "Subida de potencia contratada en Barcelona y área metropolitana. Revisión de instalación, boletín (CIE) y acompañamiento en el trámite con tu comercializadora.",
@@ -590,6 +597,7 @@ export const servicios: Servicio[] = [
     h1: "Electricistas para empresas y comunidades",
     heroSub:
       "Mantenimiento eléctrico, averías y reformas para comunidades de vecinos, oficinas, locales y hostelería. Un mismo equipo, respuesta rápida y factura con IVA desglosado.",
+    heroImage: "/img/hero-empresas.jpg",
     metaTitle: "Electricistas para empresas y comunidades | electricista.io",
     metaDescription:
       "Servicio eléctrico para empresas y comunidades en Barcelona y área metropolitana: mantenimientos periódicos, urgencias y reformas. Visita técnica y propuesta por escrito.",

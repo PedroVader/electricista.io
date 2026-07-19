@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import { config } from "@/data/config";
 import { ciudades } from "@/data/ciudades";
 import { servicios, cardsExtra } from "@/data/servicios";
@@ -27,6 +28,7 @@ export function FormPresupuesto({
   const [estado, setEstado] = useState<"idle" | "enviando" | "ok" | "error">(
     "idle",
   );
+  const pathname = usePathname();
 
   const opcionesServicio = [
     ...servicios.map((s) => s.card.titulo),
@@ -91,6 +93,8 @@ export function FormPresupuesto({
       className="scroll-mt-24 space-y-4"
     >
       <input type="hidden" name="form-name" value={config.formulario.nombre} />
+      {/* Atribución: página desde la que llegó el lead */}
+      <input type="hidden" name="pagina" value={pathname} />
       {/* Honeypot antispam */}
       <p className="hidden">
         <label>

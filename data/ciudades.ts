@@ -39,6 +39,7 @@ export const ciudades: Ciudad[] = [
       items: [
         {
           nombre: "Eixample",
+          href: "/electricista-eixample",
           texto:
             "Fincas regias de principios del siglo XX con instalaciones crecidas a parches: cableado antiguo, cuadros en la entrada y boletines caducados. Renovaciones completas, CIE para altas de luz y subidas de potencia.",
         },
@@ -49,21 +50,25 @@ export const ciudades: Ciudad[] = [
         },
         {
           nombre: "Gràcia",
+          href: "/electricista-gracia",
           texto:
             "Fincas estrechas y pisos reformados a medias donde la potencia se queda corta al electrificar la cocina. Subidas de potencia, cuadros nuevos y reformas de instalación.",
         },
         {
           nombre: "Sants-Montjuïc",
+          href: "/electricista-sants",
           texto:
             "Bloques de los años 50 a 70 en Sants, Hostafrancs y la Bordeta, muchos todavía con fusibles. Cambios de cuadro y adecuaciones para pasar el boletín.",
         },
         {
           nombre: "Sant Martí",
+          href: "/electricista-sant-marti",
           texto:
             "Del Poblenou y el 22@ con oficinas y lofts a los barrios del Besòs. Mantenimiento de oficinas, cuadros de locales y líneas dedicadas para climatización.",
         },
         {
           nombre: "Sant Andreu",
+          href: "/electricista-sant-andreu",
           texto:
             "Casas de pueblo del casco antiguo y bloques de La Sagrera y el Bon Pastor. Instalaciones vistas sobre regletas que piden renovación completa con boletín incluido.",
         },
@@ -74,16 +79,19 @@ export const ciudades: Ciudad[] = [
         },
         {
           nombre: "Horta-Guinardó",
+          href: "/electricista-horta",
           texto:
             "Calles con desnivel, casas con jardín y fincas pequeñas. Iluminación exterior, automatismos de puertas y renovación de instalaciones antiguas.",
         },
         {
           nombre: "Les Corts",
+          href: "/electricista-les-corts",
           texto:
             "Vivienda de los 70 y 80 y muchas oficinas. Adecuación de cuadros, iluminación de despachos y revisiones para seguros y licencias de actividad.",
         },
         {
           nombre: "Sarrià-Sant Gervasi",
+          href: "/electricista-sarria-sant-gervasi",
           texto:
             "Casas grandes y áticos con clima, aerotermia y coche eléctrico. Puntos de carga, ampliaciones de potencia y domótica con instalación legalizada.",
         },

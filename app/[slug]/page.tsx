@@ -1,12 +1,15 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { config } from "@/data/config";
 import { home } from "@/data/paginas";
 import { ciudades, getCiudad } from "@/data/ciudades";
+import { distritos, getDistrito } from "@/data/distritos";
 import { servicios, getServicio } from "@/data/servicios";
 import type { Ciudad, Servicio } from "@/data/tipos";
 import { HeroOscuro } from "@/components/HeroOscuro";
+import { FranjaFirma } from "@/components/FranjaFirma";
 import { ServiciosGrid } from "@/components/ServiciosGrid";
 import { PorQue } from "@/components/PorQue";
 import { ComoFunciona } from "@/components/ComoFunciona";
@@ -26,6 +29,7 @@ type Props = { params: Promise<{ slug: string }> };
 export function generateStaticParams() {
   return [
     ...ciudades.map((c) => ({ slug: c.slug })),
+    ...distritos.map((d) => ({ slug: d.slug })),
     ...servicios.map((s) => ({ slug: s.slug })),
   ];
 }
@@ -34,7 +38,7 @@ export const dynamicParams = false;
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const pagina = getCiudad(slug) ?? getServicio(slug);
+  const pagina = getCiudad(slug) ?? getDistrito(slug) ?? getServicio(slug);
   if (!pagina) return {};
   return {
     title: { absolute: `${pagina.metaTitle} | ${config.marca.nombre}` },
@@ -47,12 +51,29 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 function PaginaCiudad({ ciudad }: { ciudad: Ciudad }) {
   return (
-    <div className="pb-14 md:pb-0">
+    // bg-ink: el padding móvil de la barra de urgencias funde con CTA y footer
+    <div className="bg-ink pb-14 md:pb-0">
       <HeroOscuro
         eyebrow={`Instaladores autorizados en ${ciudad.nombre} (${ciudad.comarca})`}
         h1={ciudad.h1}
         sub={config.hero.sub}
+        imagen={ciudad.heroImage ?? "/img/hero-ciudades.jpg"}
       />
+
+      {/* Distritos: enlace de vuelta a la ciudad madre */}
+      {ciudad.padre && (
+        <div className="bg-paper">
+          <div className="mx-auto max-w-6xl px-4 pt-6">
+            <Link
+              href={`/${ciudad.padre.slug}`}
+              className="text-sm font-semibold text-slate hover:text-amber-dark"
+            >
+              ‹ Ver todo nuestro servicio de electricista en{" "}
+              {ciudad.padre.nombre}
+            </Link>
+          </div>
+        </div>
+      )}
 
       {/* Barcelona: enlace destacado a la landing de urgencias */}
       {ciudad.enlaceUrgente && (
@@ -98,6 +119,15 @@ function PaginaCiudad({ ciudad }: { ciudad: Ciudad }) {
                     {zona.nombre}
                   </h3>
                   <p className="mt-2 text-sm text-slate">{zona.texto}</p>
+                  {zona.href && (
+                    <Link
+                      href={zona.href}
+                      className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-ink hover:text-amber-dark"
+                    >
+                      Electricista en {zona.nombre}
+                      <Icono nombre="flecha" className="h-4 w-4" />
+                    </Link>
+                  )}
                 </div>
               </Reveal>
             ))}
@@ -155,14 +185,42 @@ function PaginaCiudad({ ciudad }: { ciudad: Ciudad }) {
 function PaginaServicio({ servicio }: { servicio: Servicio }) {
   const ctaPrincipal = servicio.ctaLabel ?? "Pedir presupuesto gratis";
   return (
-    <div className={servicio.urgencias ? "pb-14 md:pb-0" : ""}>
-      {/* Hero corto claro */}
-      <section className="bg-paper-warm">
-        <div className="mx-auto max-w-6xl px-4 pb-12 pt-14 sm:pt-20">
-          <h1 className="max-w-3xl font-display text-[clamp(2.2rem,5vw,3.5rem)] font-extrabold leading-[1.1] text-ink">
+    <div className={servicio.urgencias ? "bg-ink pb-14 md:pb-0" : ""}>
+      {/* Hero de servicio: oscuro con foto propia, claro sin ella */}
+      <section
+        className={
+          servicio.heroImage
+            ? "relative bg-ink text-white"
+            : "bg-paper-warm text-ink"
+        }
+      >
+        {servicio.heroImage && (
+          <>
+            <Image
+              src={servicio.heroImage}
+              alt=""
+              fill
+              priority
+              sizes="100vw"
+              className="object-cover object-[70%_30%] opacity-80"
+            />
+            <div
+              className="absolute inset-0 bg-gradient-to-r from-ink via-ink/70 to-ink/25"
+              aria-hidden="true"
+            />
+          </>
+        )}
+        <div className="relative mx-auto max-w-6xl px-4 pb-12 pt-14 sm:pb-16 sm:pt-20">
+          <h1 className="max-w-3xl font-display text-[clamp(2.2rem,5vw,3.5rem)] font-extrabold leading-[1.1]">
             {servicio.h1}
           </h1>
-          <p className="mt-5 max-w-2xl text-lg text-slate">{servicio.heroSub}</p>
+          <p
+            className={`mt-5 max-w-2xl text-lg ${
+              servicio.heroImage ? "text-white/85" : "text-slate"
+            }`}
+          >
+            {servicio.heroSub}
+          </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <a
               href={`tel:${config.telefono.numero}`}
@@ -175,13 +233,18 @@ function PaginaServicio({ servicio }: { servicio: Servicio }) {
             <a
               href="#form-presupuesto"
               data-event="form_hero"
-              className="rounded-md border-2 border-ink px-7 py-3.5 text-center text-lg font-bold text-ink hover:border-amber-dark hover:text-amber-dark"
+              className={`rounded-md border-2 px-7 py-3.5 text-center text-lg font-bold ${
+                servicio.heroImage
+                  ? "border-white/60 text-white hover:border-amber hover:text-amber"
+                  : "border-ink text-ink hover:border-amber-dark hover:text-amber-dark"
+              }`}
             >
               {ctaPrincipal}
             </a>
           </div>
         </div>
       </section>
+      {servicio.heroImage && <FranjaFirma />}
 
       {/* Bloque de disponibilidad en páginas de urgencias */}
       {servicio.urgencias && (
@@ -306,7 +369,7 @@ function PaginaServicio({ servicio }: { servicio: Servicio }) {
 
 export default async function Pagina({ params }: Props) {
   const { slug } = await params;
-  const ciudad = getCiudad(slug);
+  const ciudad = getCiudad(slug) ?? getDistrito(slug);
   const servicio = getServicio(slug);
   if (!ciudad && !servicio) notFound();
 
@@ -317,6 +380,14 @@ export default async function Pagina({ params }: Props) {
       <JsonLd
         data={schemaBreadcrumb([
           { nombre: "Inicio", url: "/" },
+          ...(ciudad?.padre
+            ? [
+                {
+                  nombre: `Electricista en ${ciudad.padre.nombre}`,
+                  url: `/${ciudad.padre.slug}`,
+                },
+              ]
+            : []),
           { nombre, url: `/${slug}` },
         ])}
       />

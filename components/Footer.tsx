@@ -98,6 +98,11 @@ export function Footer() {
               </Link>
             </li>
             <li>
+              <Link href="/blog" className="text-white/80 hover:text-amber">
+                Consejos
+              </Link>
+            </li>
+            <li>
               <Link href="/contacto" className="text-white/80 hover:text-amber">
                 Contacto
               </Link>

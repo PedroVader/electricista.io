@@ -20,8 +20,9 @@ export function ServiciosGrid({
       icono: s.card.icono,
       href: `/${s.slug}`,
       destacada: s.card.destacada,
+      animada: s.card.animada,
     })),
-    ...cardsExtra.map((c) => ({ ...c, destacada: false })),
+    ...cardsExtra.map((c) => ({ ...c, destacada: false, animada: false })),
   ];
 
   return (
@@ -39,7 +40,12 @@ export function ServiciosGrid({
                 className="group flex h-full flex-col overflow-hidden rounded-lg border border-slate/15 bg-paper shadow-sm transition-shadow hover:shadow-md"
               >
                 {card.destacada && (
-                  <div className="franja-firma-fina" aria-hidden="true" />
+                  <div
+                    className={`franja-firma-fina ${
+                      card.animada ? "franja-animada" : ""
+                    }`}
+                    aria-hidden="true"
+                  />
                 )}
                 <div className="flex flex-1 flex-col p-5">
                   <span className="text-amber-dark">
