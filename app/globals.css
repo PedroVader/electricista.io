@@ -1,26 +1,140 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --ink: #17181c;
+  --amber: #ffb400;
+  --amber-dark: #e09e00;
+  --paper: #ffffff;
+  --paper-warm: #f7f5f0;
+  --slate: #5a5e66;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-ink: var(--ink);
+  --color-amber: var(--amber);
+  --color-amber-dark: var(--amber-dark);
+  --color-paper: var(--paper);
+  --color-paper-warm: var(--paper-warm);
+  --color-slate: var(--slate);
+  --font-display: var(--font-archivo);
+  --font-sans: var(--font-inter);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+
+/* Tipografía display: Archivo, condensada e industrial */
+.font-display {
+  font-family: var(--font-archivo), system-ui, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+/* Elemento firma: franja diagonal de obra (cinta de señalización 45°) */
+.franja-firma {
+  height: 8px;
+  background: repeating-linear-gradient(
+    45deg,
+    var(--amber) 0,
+    var(--amber) 14px,
+    var(--ink) 14px,
+    var(--ink) 28px
+  );
+}
+
+/* Subrayado del wordmark (logo): dashes diagonales ámbar */
+.franja-logo {
+  height: 4px;
+  background: repeating-linear-gradient(
+    45deg,
+    var(--amber) 0,
+    var(--amber) 6px,
+    transparent 6px,
+    transparent 11px
+  );
+}
+
+.franja-firma-fina {
+  height: 6px;
+  background: repeating-linear-gradient(
+    45deg,
+    var(--amber) 0,
+    var(--amber) 10px,
+    var(--ink) 10px,
+    var(--ink) 20px
+  );
+}
+
+/* Foco visible AA en todo el sitio */
+:focus-visible {
+  outline: 3px solid var(--amber-dark);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Halo pulsante del botón flotante de urgencias */
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes pulso-urgencia {
+    0%,
+    100% {
+      box-shadow: 0 0 0 0 rgba(255, 180, 0, 0.55);
+    }
+    70% {
+      box-shadow: 0 0 0 16px rgba(255, 180, 0, 0);
+    }
+  }
+  .boton-urgencia {
+    animation: pulso-urgencia 2.2s ease-out infinite;
+  }
+}
+
+/* Animación mínima: fade-up sutil en cards, respetando reduced motion */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal {
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Acordeón FAQ nativo sin marcador por defecto */
+details.faq-item > summary {
+  list-style: none;
+  cursor: pointer;
+}
+details.faq-item > summary::-webkit-details-marker {
+  display: none;
+}
+details.faq-item[open] .faq-chevron {
+  transform: rotate(180deg);
+}
+.faq-chevron {
+  transition: transform 0.2s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .faq-chevron {
+    transition: none;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
 }

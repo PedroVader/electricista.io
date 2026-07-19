@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Formularios Netlify — electricista.io</title>
+  </head>
+  <body>
+    <!--
+      Definición estática del formulario para que Netlify Forms lo detecte
+      en build (el App Router no lo expone en el HTML generado).
+      El envío real se hace por fetch a esta ruta desde FormPresupuesto.tsx.
+      Debe mantenerse sincronizado con los campos del componente.
+    -->
+    <form
+      name="presupuesto"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      method="POST"
+      hidden
+    >
+      <input type="hidden" name="form-name" value="presupuesto" />
+      <input type="text" name="bot-field" />
+      <input type="text" name="nombre" />
+      <input type="tel" name="telefono" />
+      <select name="servicio"></select>
+      <select name="ciudad"></select>
+      <textarea name="mensaje"></textarea>
+    </form>
+  </body>
+</html>
