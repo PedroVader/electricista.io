@@ -7,6 +7,7 @@ import { home } from "@/data/paginas";
 import { ciudades, getCiudad } from "@/data/ciudades";
 import { distritos, getDistrito } from "@/data/distritos";
 import { servicios, getServicio } from "@/data/servicios";
+import { posts } from "@/data/posts";
 import type { Ciudad, Servicio } from "@/data/tipos";
 import { HeroOscuro } from "@/components/HeroOscuro";
 import { FranjaFirma } from "@/components/FranjaFirma";
@@ -41,7 +42,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const pagina = getCiudad(slug) ?? getDistrito(slug) ?? getServicio(slug);
   if (!pagina) return {};
   return {
-    title: { absolute: `${pagina.metaTitle} | ${config.marca.nombre}` },
+    // Sin sufijo de marca: estos titles ya son completos y el sufijo solo
+    // empujaba las keywords fuera del ancho que Google muestra en SERP.
+    title: { absolute: pagina.metaTitle },
     description: `${pagina.metaDescription} ☎ ${config.telefono.display}`,
     alternates: { canonical: `/${slug}` },
   };
@@ -58,6 +61,7 @@ function PaginaCiudad({ ciudad }: { ciudad: Ciudad }) {
         h1={ciudad.h1}
         sub={config.hero.sub}
         imagen={ciudad.heroImage ?? "/img/hero-ciudades.jpg"}
+        alt={`Electricista de ${config.marca.nombre} trabajando en ${ciudad.nombre}`}
       />
 
       {/* Distritos: enlace de vuelta a la ciudad madre */}
@@ -135,6 +139,40 @@ function PaginaCiudad({ ciudad }: { ciudad: Ciudad }) {
         </div>
       </section>
 
+      {/* Contenido largo propio de la zona */}
+      {ciudad.secciones?.map((seccion, i) => (
+        <section
+          key={seccion.h2}
+          className={i % 2 === 0 ? "bg-paper-warm" : "bg-paper"}
+        >
+          <div className="mx-auto max-w-3xl px-4 py-14">
+            <h2 className="font-display text-3xl font-bold text-ink">
+              {seccion.h2}
+            </h2>
+            {seccion.parrafos.map((p) => (
+              <p key={p.slice(0, 40)} className="mt-4 text-slate">
+                {p}
+              </p>
+            ))}
+            {seccion.bullets && (
+              <ul className="mt-5 space-y-3">
+                {seccion.bullets.map((b) => (
+                  <li
+                    key={b}
+                    className="flex items-start gap-3 font-medium text-ink"
+                  >
+                    <span className="mt-0.5 shrink-0 text-amber-dark">
+                      <Icono nombre="check" className="h-5 w-5" />
+                    </span>
+                    {b}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+        </section>
+      ))}
+
       <ComoFunciona />
       <StatsBar />
 
@@ -182,6 +220,11 @@ function PaginaCiudad({ ciudad }: { ciudad: Ciudad }) {
 
 /* ---------- Plantilla de servicio (§6.3) ---------- */
 
+/** Guías del blog que declaran este servicio en `relacionados`. */
+function postsDeServicio(slug: string) {
+  return posts.filter((p) => p.relacionados.includes(slug));
+}
+
 function PaginaServicio({ servicio }: { servicio: Servicio }) {
   const ctaPrincipal = servicio.ctaLabel ?? "Pedir presupuesto gratis";
   return (
@@ -198,7 +241,7 @@ function PaginaServicio({ servicio }: { servicio: Servicio }) {
           <>
             <Image
               src={servicio.heroImage}
-              alt=""
+              alt={`${servicio.h1}: electricistas de ${config.marca.nombre} en plena intervención`}
               fill
               priority
               sizes="100vw"
@@ -338,9 +381,35 @@ function PaginaServicio({ servicio }: { servicio: Servicio }) {
       {/* Interlinking: zonas donde ofrecemos el servicio */}
       <ZonasSection servicioNombre={servicio.nombre.toLowerCase()} />
 
+      {/* Interlinking recíproco: las guías ya enlazan al servicio, no al revés */}
+      {postsDeServicio(servicio.slug).length > 0 && (
+        <section className="bg-paper-warm">
+          <div className="mx-auto max-w-6xl px-4 pt-14">
+            <h2 className="font-display text-3xl font-bold text-ink">
+              Guías relacionadas
+            </h2>
+            <ul className="mt-6 grid gap-4 sm:grid-cols-2">
+              {postsDeServicio(servicio.slug).map((post) => (
+                <li key={post.slug}>
+                  <Link
+                    href={`/blog/${post.slug}`}
+                    className="block h-full rounded-lg border border-slate/15 bg-paper p-5 hover:border-amber"
+                  >
+                    <p className="font-display text-lg font-bold text-ink">
+                      {post.titulo}
+                    </p>
+                    <p className="mt-2 text-sm text-slate">{post.descripcion}</p>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
+
       {/* Enlace SEO a /presupuesto desde todas las páginas de servicio */}
       <div className="bg-paper-warm">
-        <div className="mx-auto max-w-6xl px-4 pb-10">
+        <div className="mx-auto max-w-6xl px-4 py-10">
           <Link
             href="/presupuesto"
             className="font-semibold text-ink underline decoration-amber decoration-2 underline-offset-4 hover:text-amber-dark"

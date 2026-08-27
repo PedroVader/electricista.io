@@ -2,6 +2,7 @@ import Link from "next/link";
 import { config } from "@/data/config";
 import { servicios } from "@/data/servicios";
 import { ciudades } from "@/data/ciudades";
+import { distritos } from "@/data/distritos";
 
 export function Footer() {
   const { marca, empresa, telefono, email, footer } = config;
@@ -75,6 +76,20 @@ export function Footer() {
               </li>
             ))}
           </ul>
+
+          {/* Distritos: sin esto solo recibían un enlace interno en toda la web */}
+          <p className="mt-6 text-sm font-semibold uppercase tracking-wide text-white/50">
+            Barrios de Barcelona
+          </p>
+          <ul className="mt-4 space-y-2 text-sm">
+            {distritos.map((d) => (
+              <li key={d.slug}>
+                <Link href={`/${d.slug}`} className="text-white/80 hover:text-amber">
+                  Electricista en {d.nombre}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </nav>
 
         <nav aria-label="Legal">
@@ -112,9 +127,10 @@ export function Footer() {
       </div>
 
       <div className="border-t border-white/10">
-        <p className="mx-auto max-w-6xl px-4 py-6 text-center text-sm text-white/70">
-          {footer.lineaFinal}
-        </p>
+        <div className="mx-auto max-w-6xl px-4 py-6 text-center text-sm text-white/70">
+          <p>{footer.lineaFinal}</p>
+          <p className="mt-2 text-xs text-white/50">{footer.disclaimerImagenes}</p>
+        </div>
       </div>
     </footer>
   );

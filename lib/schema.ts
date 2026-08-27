@@ -12,9 +12,16 @@ export function schemaNegocio() {
   return {
     "@context": "https://schema.org",
     "@type": TIPO_NEGOCIO,
+    // @id estable: el bloque se inyecta en todas las páginas desde el layout.
+    // Sin él Google ve 40 negocios distintos en vez de una sola entidad.
+    "@id": `${dominio}/#negocio`,
     name: marca.nombre,
     legalName: empresa.razonSocial,
     url: dominio,
+    // Google exige image en LocalBusiness para los resultados enriquecidos
+    image: `${dominio}/img/hero-equipo.jpg`,
+    logo: `${dominio}/apple-icon.png`,
+    priceRange: "€€",
     telephone: telefono.numero,
     email,
     address: {
@@ -45,6 +52,9 @@ export function schemaNegocio() {
       opens: "00:00",
       closes: "23:59",
     },
+    // [PLACEHOLDER] Al publicar el Perfil de Empresa de Google, añadir aquí su
+    // URL (y las redes sociales) para consolidar la entidad:
+    // sameAs: ["https://www.google.com/maps/place/..."],
   };
 }
 

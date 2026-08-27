@@ -9,7 +9,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { schemaBreadcrumb } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: { absolute: `${presupuesto.metaTitle} | ${config.marca.nombre}` },
+  title: { absolute: presupuesto.metaTitle },
   description: `${presupuesto.metaDescription} ☎ ${config.telefono.display}`,
   alternates: { canonical: "/presupuesto" },
 };

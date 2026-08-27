@@ -87,6 +87,12 @@ export type Ciudad = {
   };
   /** Distritos: ciudad de la que cuelgan (breadcrumb y enlace de vuelta) */
   padre?: { nombre: string; slug: string };
+  /**
+   * Contenido largo exclusivo de esta zona. Es lo que diferencia la landing
+   * de sus hermanas: sin esto, las páginas de distrito comparten demasiado
+   * texto de plantilla y compiten entre ellas. Prohibido clonar entre zonas.
+   */
+  secciones?: Seccion[];
   faqsLocales: FAQ[];
   /** Barcelona enlaza de forma destacada a /electricista-urgente-barcelona */
   enlaceUrgente?: { href: string; texto: string };

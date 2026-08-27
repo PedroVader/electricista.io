@@ -15,11 +15,14 @@ export function HeroOscuro({
   h1,
   sub,
   imagen = "/img/hero-equipo.jpg",
+  alt,
 }: {
   eyebrow: string;
   h1: string;
   sub: string;
   imagen?: string;
+  /** Alt de la foto de hero: es la imagen LCP y la principal de la página */
+  alt?: string;
 }) {
   const { telefono, badges, email } = config;
   return (
@@ -27,7 +30,7 @@ export function HeroOscuro({
       <section className="relative bg-ink text-white">
         <Image
           src={imagen}
-          alt=""
+          alt={alt ?? `${config.marca.profesion} de ${config.marca.nombre} trabajando en una instalación eléctrica`}
           fill
           priority
           sizes="100vw"

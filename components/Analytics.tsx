@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { config } from "@/data/config";
 
 declare global {
@@ -40,7 +41,8 @@ export function Analytics() {
     if (!ga4Id) return;
     const eleccion = localStorage.getItem(CLAVE_CONSENT);
     if (eleccion === "accepted") cargarGA(ga4Id);
-    else if (!eleccion) setMostrarBanner(true);
+    // En microtarea: evita el render en cascada síncrono dentro del efecto
+    else if (!eleccion) queueMicrotask(() => setMostrarBanner(true));
   }, [ga4Id]);
 
   // Tracking de clics en elementos con data-event (tel:, CTAs, formulario)
@@ -76,9 +78,9 @@ export function Analytics() {
       <p className="text-sm text-ink">
         Usamos cookies de analítica (Google Analytics) para entender cómo se
         usa la web. Puedes aceptarlas o rechazarlas; la web funciona igual.{" "}
-        <a href="/cookies" className="underline">
+        <Link href="/cookies" className="underline">
           Más información
-        </a>
+        </Link>
         .
       </p>
       <div className="mt-4 flex gap-3">
