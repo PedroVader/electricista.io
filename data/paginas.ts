@@ -15,11 +15,11 @@ export const home = {
   boletinDestacado: {
     h2: "¿Te han pedido el boletín eléctrico?",
     parrafos: [
-      "Es el trámite que más resolvemos. Si tu comercializadora te pide un CIE para dar de alta la luz, subir potencia o después de una reforma, lo tienes en 24-48 horas: revisamos la instalación, emitimos el certificado y lo tramitamos ante Indústria. Tú solo lo adjuntas a tu gestión.",
+      "Es el trámite que más resolvemos. Si tu comercializadora te pide un CIE para dar de alta la luz, subir potencia o después de una reforma, lo tienes en 24-48 horas: revisamos la instalación, un instalador habilitado firma el certificado y nosotros lo tramitamos ante Indústria. Tú solo lo adjuntas a tu gestión.",
     ],
     bullets: [
       "Boletín azul (reconocimiento) y blanco (CIE), según lo que te pidan",
-      "Firmado por instalador habilitado con número de registro",
+      "Firmado por un instalador habilitado, con su número de registro",
       "Tramitación ante Indústria incluida",
       "Listo en 24-48 horas en la mayoría de casos",
     ],
@@ -35,7 +35,7 @@ export const home = {
   textoSeo: {
     h2: "Electricistas de confianza en Barcelona y su área metropolitana",
     parrafos: [
-      "Somos una empresa instaladora con base en Sabadell y equipo propio de electricistas habilitados. Eso tiene una consecuencia práctica para ti: podemos firmar y tramitar boletines eléctricos (CIE) con plena validez ante Indústria y ante tu comercializadora, algo que ningún “manitas” puede ofrecerte. Trabajamos cada día en Barcelona, Sabadell, Badalona, Mataró y Granollers, y en los municipios de sus comarcas.",
+      "Somos una empresa de servicios eléctricos con base en Sabadell que trabaja con instaladores habilitados inscritos en el registro. Eso tiene una consecuencia práctica para ti: tu boletín eléctrico (CIE) lo firma quien legalmente puede hacerlo, con plena validez ante Indústria y ante tu comercializadora, algo que ningún “manitas” puede ofrecerte. Trabajamos cada día en Barcelona, Sabadell, Badalona, Mataró y Granollers, y en los municipios de sus comarcas.",
       "¿Qué tipo de trabajos hacemos? De todo lo que cuelga de un cuadro eléctrico: urgencias que no pueden esperar, averías que llevan semanas dando la lata, boletines para dar de alta la luz o subir potencia, cuadros antiguos con fusibles que toca jubilar, puntos de carga para el coche eléctrico, iluminación y ampliaciones para reformas, y mantenimiento para comunidades de vecinos, oficinas, comercios y hostelería.",
       "Nuestra forma de trabajar es simple y no cambia nunca: nos cuentas qué necesitas, te damos un precio cerrado por escrito en menos de 2 horas y, si te encaja, vamos cuando te venga bien. El precio que aceptas es el que pagas. Si durante el trabajo aparece algo imprevisto, se para, se te explica y se presupuesta aparte. Todos los trabajos quedan probados, recogidos y con garantía por escrito.",
       "Si es tu primera vez con nosotros, empieza por donde empieza casi todo el mundo: una llamada de dos minutos o el formulario de arriba. Sin compromiso, sin visitas comerciales y sin sorpresas en la factura.",
@@ -44,7 +44,7 @@ export const home = {
   porQue: {
     h2: "Por qué vecinos y empresas nos llaman a nosotros",
     parrafos: [
-      "Porque hacemos lo que casi nadie hace en este oficio: decirte el precio antes, por escrito, y cumplirlo. Cuando llamas a un electricista sueles jugártela dos veces: no sabes quién va a venir ni cuánto te va a costar al final. Aquí las dos cosas están resueltas. Quien viene a tu casa o a tu negocio es un instalador habilitado de nuestro equipo, no un intermediario ni “un chico que conozco”, y tiene capacidad legal para firmar tu boletín si lo necesitas. Y el precio que aceptas es el precio que pagas: cerrado por escrito antes de empezar, sin sorpresas al acabar. Así trabajamos en cada avería, cada cuadro y cada instalación, sea un piso en Gràcia o una nave en Granollers.",
+      "Porque hacemos lo que casi nadie hace en este oficio: decirte el precio antes, por escrito, y cumplirlo. Cuando llamas a un electricista sueles jugártela dos veces: no sabes quién va a venir ni cuánto te va a costar al final. Aquí las dos cosas están resueltas. Quien viene a tu casa o a tu negocio es un instalador habilitado con su número de registro, no “un chico que conozco”, y tiene capacidad legal para firmar tu boletín si lo necesitas. Y el precio que aceptas es el precio que pagas: cerrado por escrito antes de empezar, sin sorpresas al acabar. Así trabajamos en cada avería, cada cuadro y cada instalación, sea un piso en Gràcia o una nave en Granollers.",
     ],
     bullets: [
       "Precio cerrado por escrito antes de empezar",
@@ -92,7 +92,7 @@ export const home = {
     {
       pregunta: "¿Qué es el boletín eléctrico y cuándo lo necesito?",
       respuesta:
-        "Es el certificado (CIE) que acredita que tu instalación cumple el reglamento, y solo puede firmarlo un instalador habilitado. Lo necesitas para dar de alta la luz, subir potencia, tras una reforma o si tu instalación es antigua. Lo emitimos en 24-48h.",
+        "Es el certificado (CIE) que acredita que tu instalación cumple el reglamento, y solo puede firmarlo un instalador habilitado. Lo necesitas para dar de alta la luz, subir potencia, tras una reforma o si tu instalación es antigua. Te lo gestionamos en 24-48h.",
     },
     {
       pregunta: "¿Venís hoy mismo?",
@@ -110,9 +110,9 @@ export const home = {
         "Sí, por escrito, sobre la mano de obra y los materiales que instalamos. Si algo de lo nuestro falla, volvemos y lo resolvemos sin coste.",
     },
     {
-      pregunta: "¿Sois instaladores autorizados?",
+      pregunta: "¿Quién hace el trabajo y quién firma el boletín?",
       respuesta:
-        "Sí. Somos empresa instaladora con electricistas habilitados, inscritos en el registro correspondiente. Por eso podemos emitir y firmar boletines (CIE) con plena validez.",
+        "El trabajo lo ejecuta un instalador eléctrico habilitado, inscrito en el registro oficial, y es él quien firma tu boletín (CIE) con su número. Nosotros coordinamos el servicio, te damos el precio cerrado y tramitamos la documentación ante Indústria. Puedes pedirnos el número de registro del instalador que va a firmar el tuyo.",
     },
   ] as FAQ[],
   ctaFinal: {

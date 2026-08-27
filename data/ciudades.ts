@@ -106,7 +106,7 @@ export const ciudades: Ciudad[] = [
       {
         pregunta: "¿Trabajáis en fincas antiguas del Eixample o Ciutat Vella?",
         respuesta:
-          "Constantemente. Instalaciones antiguas, cuadros sin diferencial y boletines caducados son nuestro pan de cada día. Revisamos, actualizamos y emitimos el CIE.",
+          "Constantemente. Instalaciones antiguas, cuadros sin diferencial y boletines caducados son nuestro pan de cada día. Revisamos, actualizamos y te gestionamos el CIE con un instalador habilitado.",
       },
       {
         pregunta: "¿Cobráis el desplazamiento dentro de Barcelona?",
@@ -116,7 +116,7 @@ export const ciudades: Ciudad[] = [
       {
         pregunta: "¿Hacéis boletines para pisos de alquiler o turísticos en Barcelona?",
         respuesta:
-          "Sí. Si el piso lleva tiempo sin suministro o la comercializadora rechaza el boletín antiguo, lo revisamos, adaptamos lo necesario y emitimos el CIE en 24-48h para que puedas dar el alta.",
+          "Sí. Si el piso lleva tiempo sin suministro o la comercializadora rechaza el boletín antiguo, lo revisamos, adaptamos lo necesario y te gestionamos el CIE en 24-48h para que puedas dar el alta.",
       },
       {
         pregunta: "¿Trabajáis de noche y en festivos en Barcelona?",
@@ -203,7 +203,7 @@ export const ciudades: Ciudad[] = [
       {
         pregunta: "¿Hacéis boletines en Sabadell?",
         respuesta:
-          "Sí. Somos instaladores habilitados: revisamos la instalación, emitimos el CIE o el boletín de reconocimiento y lo tramitamos ante Indústria en 24-48h.",
+          "Sí. Trabajamos con instaladores habilitados: revisamos la instalación, se firma el CIE o el boletín de reconocimiento y lo tramitamos ante Indústria en 24-48h.",
       },
       {
         pregunta: "¿Trabajáis con administradores de fincas de Sabadell?",
@@ -309,7 +309,7 @@ export const ciudades: Ciudad[] = [
       "Electricistas autorizados en Mataró. Urgencias 24h, boletines (CIE), averías y cuadros. Precio cerrado antes de empezar.",
     porQue: [
       "Mataró combina un casco antiguo con edificios centenarios, ensanches de posguerra como Cerdanyola, el barrio más poblado del Maresme, y zonas nuevas junto a la Via Europa. Cada zona falla a su manera: en el Centre y l'Havana vemos instalaciones antiguas que necesitan renovación completa y boletín; en Cerdanyola, cuadros cortos de potencia para la vida actual; y en las zonas nuevas, sobre todo ampliaciones, domótica y puntos de carga.",
-      "Al ser capital del Maresme, también nos llaman muchas segundas residencias de la comarca: casas que pasan meses cerradas y aparecen con derivaciones por humedad o instalaciones que no arrancan. Las ponemos a punto y, si hace falta boletín para reactivar el suministro, lo emitimos en 24-48h.",
+      "Al ser capital del Maresme, también nos llaman muchas segundas residencias de la comarca: casas que pasan meses cerradas y aparecen con derivaciones por humedad o instalaciones que no arrancan. Las ponemos a punto y, si hace falta boletín para reactivar el suministro, te lo gestionamos en 24-48h.",
     ],
     tambienServicio: {
       intro:

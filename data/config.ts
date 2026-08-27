@@ -30,21 +30,20 @@ export const config = {
     },
   },
 
-  // [PLACEHOLDER] Número exclusivo del vertical pendiente — sustituir antes
-  // de publicar. No compartir con limpieza.ai para poder atribuir llamadas.
+  /** Número exclusivo del vertical: no compartir con limpieza.ai para poder
+   *  atribuir las llamadas. Se propaga a tel:, JSON-LD y meta descriptions. */
   telefono: {
-    numero: "+34930000000",
-    display: "930 00 00 00",
+    numero: "+34688323663",
+    display: "688 32 36 63",
   },
 
-  // [PLACEHOLDER] Email de destino de notificaciones y contacto.
+  /** Buzón operativo: destino de notificaciones y de los mailto: del sitio */
   email: "info@electricista.io",
 
-  /** WhatsApp desactivado en v1: activar aquí cuando exista número, sin tocar código */
+  /** WhatsApp sobre el mismo número (es móvil, así que admite WhatsApp) */
   whatsapp: {
     enabled: true,
-    // [PLACEHOLDER] Número de WhatsApp provisional: sustituir por el real
-    number: "+34930000000",
+    number: "+34688323663",
   },
 
   /** GA4 desactivado hasta tener ID. Con ID vacío no se carga nada ni aparece banner de cookies. */
@@ -74,7 +73,7 @@ export const config = {
   badges: [
     { icono: "reloj", texto: "Urgencias 24h" },
     { icono: "check", texto: "Instaladores habilitados" },
-    { icono: "boletin", texto: "Emitimos boletín (CIE)" },
+    { icono: "boletin", texto: "Gestionamos tu boletín (CIE)" },
     { icono: "rapido", texto: "Presupuesto en menos de 2h" },
     { icono: "precio", texto: "Precio cerrado antes de empezar" },
   ],
@@ -88,7 +87,9 @@ export const config = {
 
   footer: {
     lineaFinal:
-      "Instaladores eléctricos habilitados. Emitimos boletín eléctrico (CIE).",
+      "Trabajamos con instaladores eléctricos habilitados. Gestionamos y tramitamos tu boletín eléctrico (CIE).",
+    disclaimerImagenes:
+      "Algunas imágenes de esta web son ilustrativas y pueden haber sido generadas o retocadas con inteligencia artificial.",
   },
 };
 
