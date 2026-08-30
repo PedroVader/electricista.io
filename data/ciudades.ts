@@ -97,6 +97,32 @@ export const ciudades: Ciudad[] = [
         },
       ],
     },
+    secciones: [
+      {
+        h2: "Un parque de vivienda que envejece más rápido que su instalación",
+        parrafos: [
+          "Más de la mitad de los pisos de Barcelona se construyeron antes de 1980, y una parte importante antes de 1960. Eso significa que la instalación eléctrica de la mayoría de hogares de la ciudad se diseñó para un uso doméstico que ya no existe: unas bombillas, una radio y poco más.",
+          "Lo que ha pasado desde entonces es que hemos ido enchufando cosas sin que nadie recalculase nada. Una vivienda media de hoy tiene entre veinte y treinta aparatos conectados de forma permanente, cocina eléctrica en muchos casos, climatización y cada vez más un coche que cargar. La instalación aguanta porque el cobre es paciente, no porque esté dimensionada.",
+          "El resultado se ve en el tipo de avisos que recibimos en la ciudad: diferenciales que saltan sin causa aparente, enchufes que se calientan, magnetotérmicos que no distinguen circuitos porque solo hay dos para toda la casa. Casi ninguno es una avería puntual; casi todos son el mismo problema de fondo asomando por sitios distintos.",
+        ],
+      },
+      {
+        h2: "Trabajar en una ciudad densa: acceso, horarios y comunidades",
+        parrafos: [
+          "Barcelona tiene particularidades logísticas que afectan a cómo se hace el trabajo, y conviene decirlas porque son las que más fricción generan con otros gremios.",
+          "La primera es el aparcamiento. En buena parte de la ciudad no hay dónde parar, y menos con furgoneta. Es problema nuestro: aparcamos donde se pueda y subimos el material a pie, y no lo repercutimos en la factura. Lo que sí pedimos es que nos digas si hay ascensor, porque cambia el tiempo de una instalación con material pesado.",
+          "La segunda son las comunidades. En una ciudad de fincas verticales, muchos trabajos tocan zona común aunque el cliente sea un vecino: pasar una línea por la escalera, intervenir en la centralización de contadores, llevar un cable al garaje. Hablamos nosotros con el administrador y dejamos por escrito qué se va a hacer, que es lo que evita que el trabajo se pare a mitad.",
+          "Y la tercera son los horarios. En fincas con actividad comercial en los bajos o con vecinos que teletrabajan, los cortes de suministro se acuerdan con antelación. Preferimos empezar más tarde y no dejar a nadie tirado sin avisar.",
+        ],
+      },
+      {
+        h2: "Los diez distritos, cada uno con su patrón",
+        parrafos: [
+          "Trabajamos en toda la ciudad, pero no encontramos lo mismo en todas partes. En el Eixample y Ciutat Vella dominan las fincas de principios del siglo pasado, con instalaciones que han crecido a parches y mucho boletín para compraventa. En Gràcia y Sant Andreu, casas bajas de antiguo pueblo con cuadros minúsculos. En Sants, Nou Barris y buena parte de Sant Martí, bloques obreros de los cincuenta a los setenta donde el problema suele estar en los montantes comunitarios. En Les Corts y Sarrià-Sant Gervasi, comunidades bien mantenidas donde el trabajo está en zonas comunes, y casas grandes con instalaciones de otra escala.",
+          "Si quieres el detalle de tu zona, tenemos página propia para los distritos donde más trabajamos, con lo que nos encontramos calle a calle. Y si el tuyo no está, llámanos igual: cubrimos los diez.",
+        ],
+      },
+    ],
     faqsLocales: [
       {
         pregunta: "¿Cuánto tarda un electricista en llegar a Barcelona?",
@@ -189,6 +215,33 @@ export const ciudades: Ciudad[] = [
         },
       ],
     },
+    secciones: [
+      {
+        h2: "Somos de aquí, y eso se nota en el tiempo de llegada",
+        parrafos: [
+          "Tenemos la base en Sabadell, en la Calle Alcarria, y es la única ciudad donde podemos prometer lo que prometemos sin matices: en urgencias solemos estar en tu puerta en menos de media hora, y en trabajos programados podemos ajustar la franja horaria mucho más que en cualquier otro sitio.",
+          "Tiene una segunda consecuencia práctica menos evidente: aquí volvemos. Si dentro de dos años te falla algo de lo que instalamos, el mismo equipo puede pasarse sin que sea una expedición. Para comunidades y comercios eso vale más que cualquier descuento, porque lo que compras no es una reparación, es tener a alguien cerca.",
+          "También conocemos el terreno administrativo local, que ahorra tiempo en licencias de actividad y en gestiones que dependen del ayuntamiento.",
+        ],
+      },
+      {
+        h2: "La herencia industrial y sus instalaciones",
+        parrafos: [
+          "Sabadell fue una capital textil y buena parte de su tejido construido viene de ahí: naves reconvertidas, vapores rehabilitados, bloques levantados para alojar a los trabajadores de las fábricas y polígonos que siguen en activo.",
+          "En los barrios que crecieron alrededor de la industria, como Can Rull, la Concòrdia o Torre-romeu, encontramos el patrón clásico de la vivienda obrera de los sesenta y setenta: superficies ajustadas, potencia mínima heredada, cuadros con un solo diferencial y montantes comunitarios que se quedaron cortos hace décadas. Es donde más cambios de cuadro y más subidas de potencia hacemos de toda la ciudad.",
+          "En los polígonos, Can Roqueta y Gràcia Sud sobre todo, el trabajo es industrial: suministros trifásicos, cuadros de distribución de nave, maquinaria con motores y alumbrado de gran altura. Aquí lo que se valora es el mantenimiento preventivo, porque una parada de producción cuesta mucho más que la revisión que la habría evitado.",
+          "Y en las naves rehabilitadas a vivienda o a espacio de trabajo, un poco de todo: instalaciones industriales que hay que adaptar a un uso que no estaba previsto cuando se construyeron.",
+        ],
+      },
+      {
+        h2: "Comunidades del Vallès: el trabajo que nadie mira",
+        parrafos: [
+          "En Sabadell y su entorno trabajamos con bastantes comunidades, y el patrón se repite tanto que merece la pena contarlo: el piso individual suele estar aceptable, y lo que está desatendido es la parte común, porque no es de nadie hasta que falla.",
+          "Los puntos que más problemas dan son siempre los mismos. El cuadro de servicios comunes, ampliado por acumulación durante décadas hasta que nadie sabe qué es cada cosa. El alumbrado de escalera y garaje con equipos obsoletos y consumos que se comen el presupuesto de la comunidad. La línea del ascensor, muchas veces sin protección diferencial propia. Y las bombas de achique, que solo se descubre que no funcionan el día de la tormenta.",
+          "Lo que ofrecemos al administrador es un informe escrito con presupuesto cerrado y desglosado por partidas, separando lo urgente de lo que puede esperar al ejercicio siguiente. Una junta no aprueba un gasto indefinido; sí aprueba un documento concreto.",
+        ],
+      },
+    ],
     faqsLocales: [
       {
         pregunta: "¿Cuánto tarda un electricista en llegar a Sabadell?",
@@ -271,6 +324,32 @@ export const ciudades: Ciudad[] = [
         },
       ],
     },
+    secciones: [
+      {
+        h2: "El salitre: por qué en primera línea todo dura menos",
+        parrafos: [
+          "Badalona tiene cinco kilómetros de fachada marítima, y eso introduce una variable que en una ciudad de interior no existe: la corrosión salina. No es un detalle menor ni una excusa comercial, es la causa directa de buena parte de las averías que atendemos en el frente marítimo y en Canyadó.",
+          "El salitre ataca los contactos metálicos, y lo hace despacio y por dentro. Un enchufe exterior, una caja de derivación en una terraza o un cuadro en un garaje cerca del mar acumulan una capa de óxido que aumenta la resistencia del contacto. Más resistencia significa más calor, y más calor significa que el mecanismo se degrada más rápido todavía. Es un círculo que termina en un punto caliente y, si nadie lo mira, en un enchufe quemado.",
+          "Lo que cambia en la práctica: en primera línea usamos material estanco con grado de protección alto también en sitios donde tierra adentro no haría falta, cajas con junta en lugar de cajas convencionales, y recomendamos revisar los cuadros exteriores con más frecuencia de la habitual. Cuesta algo más de entrada y evita rehacer la instalación cada pocos años.",
+        ],
+      },
+      {
+        h2: "Llefià, La Salut y Sant Roc: bloques de los sesenta y potencia justa",
+        parrafos: [
+          "La otra mitad del trabajo en Badalona está en los barrios densos de la parte alta, que crecieron muy deprisa entre los años sesenta y setenta para acoger la llegada masiva de población a la ciudad.",
+          "El perfil constructivo es reconocible: bloques altos, pisos de superficie contenida, y una instalación eléctrica dimensionada para lo justo de aquella época. Lo que encontramos habitualmente son cuadros con uno o ningún diferencial, ausencia de toma de tierra en la vivienda, y potencia contratada en el mínimo heredado, que salta en cuanto coinciden la cocina y la lavadora.",
+          "Hay además un factor que complica las subidas de potencia en estos edificios: los montantes comunitarios. De poco sirve contratar más potencia si la línea que llega a tu piso no puede transportarla. Cuando detectamos que el problema es del edificio y no del piso, lo decimos, aunque signifique que el trabajo se convierta en una conversación con la comunidad en lugar de una factura rápida.",
+        ],
+      },
+      {
+        h2: "Comercio de barrio y locales de la Rambla",
+        parrafos: [
+          "Badalona tiene un comercio de proximidad muy vivo, y los locales de barrio comparten un problema: instalaciones que nacieron como el bajo de una vivienda y que han ido asumiendo la carga de una actividad comercial sin que nadie replanteara el conjunto.",
+          "En hostelería es donde más se nota. Una cocina que ha ido incorporando equipos, cámaras frigoríficas colgadas del circuito de enchufes generales, y climatización añadida el último verano. En cuanto coincide todo, salta. Y saltar en hora de servicio, o perder el género de una cámara un fin de semana, cuesta bastante más que haber separado los circuitos a tiempo.",
+          "Trabajamos estos locales fuera de horario de servicio y damos prioridad de respuesta a los que tienen género refrigerado. Si el local necesita legalización para su licencia de actividad, tramitamos la documentación con el ayuntamiento.",
+        ],
+      },
+    ],
     faqsLocales: [
       {
         pregunta: "¿Cuánto tarda un electricista en llegar a Badalona?",
@@ -354,6 +433,34 @@ export const ciudades: Ciudad[] = [
         },
       ],
     },
+    secciones: [
+      {
+        h2: "Segundas residencias: casas que pasan meses cerradas",
+        parrafos: [
+          "Como capital del Maresme, Mataró y su comarca concentran una cantidad importante de vivienda de temporada, y ese uso intermitente genera un tipo de avería que casi no se ve en una vivienda habitual.",
+          "Una casa cerrada durante meses acumula humedad sin que nadie ventile, y la humedad es el principal enemigo del aislamiento eléctrico. El patrón típico es el de la familia que llega en junio, sube el diferencial y no aguanta. O peor: aguanta, pero hay una derivación instalada desde hace meses que nadie ha detectado.",
+          "A eso se suman los efectos del abandono: nidos de insectos y roedores en cajas de derivación y cuadros exteriores, corrosión en los mecanismos de terrazas y porches, bombas de piscina que llevan medio año paradas y arrancan forzando, y sistemas de riego enterrados que han pasado el invierno bajo el agua.",
+          "Nuestra recomendación para quien tiene una casa así es sencilla y ahorra sustos: una revisión antes de la temporada, no el primer fin de semana con la casa llena. Medir el aislamiento de los circuitos y comprobar el disparo del diferencial lleva poco tiempo y evita empezar las vacaciones sin luz.",
+        ],
+      },
+      {
+        h2: "Del casco antiguo a la Via Europa: tres ciudades en una",
+        parrafos: [
+          "Mataró tiene un parque construido especialmente variado para su tamaño, y cada franja tiene su problema característico.",
+          "El Centre y l'Havana son casco antiguo, con edificios que en algunos casos superan el siglo. Aquí el trabajo es de renovación completa: instalaciones que nunca tuvieron toma de tierra, cuadros de fusibles todavía en servicio y mucho boletín asociado a operaciones de compraventa, porque es la zona con más rotación de propiedad.",
+          "Cerdanyola es otra cosa. Es el barrio más poblado del Maresme y responde al modelo de ensanche de posguerra: bloques de los cincuenta a los setenta, potencias cortas y cuadros que se quedaron pequeños en cuanto entraron la lavadora y el aire acondicionado.",
+          "Y la franja de la Via Europa y el Parc Central es vivienda relativamente reciente, con instalación correcta de origen. Ahí no nos llaman por averías, nos llaman por ampliaciones: climatización, aerotermia, iluminación y, cada vez con más frecuencia, puntos de carga en el garaje.",
+        ],
+      },
+      {
+        h2: "Industria y comercio en el Pla d'en Boet",
+        parrafos: [
+          "Mataró conserva actividad industrial y logística en sus polígonos, y ese cliente tiene necesidades distintas de las de la vivienda.",
+          "Trabajamos suministros trifásicos, cuadros de distribución de nave, alumbrado industrial y maquinaria con motores. Los encargos más habituales son la renovación de alumbrado a LED, que en una nave con muchas horas de uso se amortiza rápido, el equilibrado de fases cuando la carga ha crecido de forma desordenada, y el mantenimiento preventivo con termografía del cuadro general.",
+          "Para actividades industriales la legalización tiene requisitos propios según la potencia y el tipo de local. Nos ocupamos de la documentación técnica y decimos desde el principio qué exige tu caso, que no siempre coincide con lo que le pidieron al de al lado.",
+        ],
+      },
+    ],
     faqsLocales: [
       {
         pregunta: "¿Cuánto tarda un electricista en llegar a Mataró?",
@@ -437,6 +544,33 @@ export const ciudades: Ciudad[] = [
         },
       ],
     },
+    secciones: [
+      {
+        h2: "Capital de comarca: mucha empresa por metro cuadrado",
+        parrafos: [
+          "Granollers es la capital del Vallès Oriental y funciona como centro de servicios de toda la comarca. Eso hace que aquí el reparto entre trabajo doméstico y trabajo profesional se incline más hacia el segundo que en cualquier otra de nuestras ciudades.",
+          "La corona de polígonos que rodea la ciudad, con Congost y Font del Ràdium a la cabeza, concentra industria, logística y talleres. Es un cliente exigente en un aspecto concreto: la continuidad. Una nave parada por un fallo eléctrico no pierde el coste de la reparación, pierde el turno entero, y por eso lo que se valora aquí no es el precio de la intervención sino el tiempo de respuesta y el mantenimiento que evita la parada.",
+          "Trabajamos con termografía del cuadro general para detectar puntos calientes antes de que se conviertan en avería, revisiones programadas en las paradas de producción y disponibilidad para urgencias. Facturamos con CIF, IVA desglosado y albarán firmado de cada intervención.",
+        ],
+      },
+      {
+        h2: "El comercio del centro y el mercado del jueves",
+        parrafos: [
+          "El centro de Granollers, alrededor de la Porxada, tiene un comercio tradicional fuerte, y el jueves la ciudad se convierte en el mercado de referencia de la comarca desde hace siglos.",
+          "Para un comercio del centro, un corte de luz en día de mercado no es una molestia: es la mejor jornada de la semana perdida. Damos prioridad de respuesta a los locales del casco urbano y, siempre que se puede, programamos los trabajos que requieren corte para el principio de semana.",
+          "Los problemas habituales del comercio de casco antiguo son los de siempre: instalaciones que empezaron siendo domésticas, cuadros que han crecido por acumulación y falta de separación entre circuitos de sala, cámaras y climatización. Cuando el local necesita adecuación para una licencia de actividad, tramitamos la legalización con la documentación que pide el ayuntamiento.",
+          "Para las paradas del mercado y las instalaciones temporales de la ciudad, montamos cuadros provisionales con protecciones en condiciones, que es donde más chapuzas peligrosas se ven.",
+        ],
+      },
+      {
+        h2: "Vivienda de casco urbano y la corona de Les Franqueses",
+        parrafos: [
+          "En vivienda, Granollers presenta el perfil típico de una ciudad media catalana: casco urbano con edificios antiguos que piden renovación completa, ensanches de los sesenta y setenta con potencias cortas, y una periferia de vivienda más reciente y de menor densidad.",
+          "En Corró y el entorno de Les Franqueses cambia el tipo de encargo: hay más casa unifamiliar, con lo que aparecen las necesidades propias de la vivienda con jardín, garaje propio y a veces piscina. Instalaciones exteriores con material estanco, iluminación de acceso, riego automático y puntos de carga, que en una casa con garaje propio son de las instalaciones más rápidas y sencillas que existen.",
+          "Cubrimos también los municipios de la comarca: Les Franqueses, La Roca, Canovelles, Cardedeu, Llinars y el resto del Vallès Oriental, con el mismo compromiso de precio cerrado antes de empezar.",
+        ],
+      },
+    ],
     faqsLocales: [
       {
         pregunta: "¿Cuánto tarda un electricista en llegar a Granollers?",

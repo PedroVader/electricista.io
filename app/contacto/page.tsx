@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import { config } from "@/data/config";
 import { contacto } from "@/data/paginas";
 import { FormPresupuesto } from "@/components/FormPresupuesto";
+import { FAQSection } from "@/components/FAQSection";
 import { JsonLd } from "@/components/JsonLd";
-import { schemaBreadcrumb } from "@/lib/schema";
+import { schemaBreadcrumb, schemaFAQ } from "@/lib/schema";
 import { Icono } from "@/components/Iconos";
 
 export const metadata: Metadata = {
@@ -73,6 +74,42 @@ export default function PaginaContacto() {
           </div>
         </div>
       </section>
+
+      {contacto.secciones.map((seccion, i) => (
+        <section
+          key={seccion.h2}
+          className={i % 2 === 0 ? "bg-paper" : "bg-paper-warm"}
+        >
+          <div className="mx-auto max-w-3xl px-4 py-14">
+            <h2 className="font-display text-3xl font-bold text-ink">
+              {seccion.h2}
+            </h2>
+            {seccion.parrafos.map((p) => (
+              <p key={p.slice(0, 40)} className="mt-4 text-slate">
+                {p}
+              </p>
+            ))}
+            {seccion.bullets && (
+              <ul className="mt-5 space-y-3">
+                {seccion.bullets.map((b) => (
+                  <li
+                    key={b}
+                    className="flex items-start gap-3 font-medium text-ink"
+                  >
+                    <span className="mt-0.5 shrink-0 text-amber-dark">
+                      <Icono nombre="check" className="h-5 w-5" />
+                    </span>
+                    {b}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+        </section>
+      ))}
+
+      <FAQSection faqs={contacto.faqs} titulo="Dudas antes de escribirnos" />
+      <JsonLd data={schemaFAQ(contacto.faqs)} />
     </>
   );
 }

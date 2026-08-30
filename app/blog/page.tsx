@@ -65,6 +65,42 @@ export default function Blog() {
         </div>
       </section>
 
+      <section className="bg-paper-warm">
+        <div className="mx-auto max-w-3xl px-4 py-14">
+          <h2 className="font-display text-3xl font-bold text-ink">
+            Qué puedes hacer tú y qué no
+          </h2>
+          <p className="mt-4 text-slate">
+            Estas guías están escritas para que entiendas lo que te pasa y
+            puedas acotar el problema antes de que venga nadie. Muchas veces
+            eso ahorra una visita, y cuando no la ahorra, al menos hace que la
+            llamada dure dos minutos en lugar de diez.
+          </p>
+          <p className="mt-4 text-slate">
+            Dicho eso, hay una frontera clara. Comprobar qué circuito hace
+            saltar el diferencial, desenchufar aparatos para descartar cuál
+            falla, mirar qué hay dentro de tu cuadro o revisar tu potencia
+            contratada son cosas que puedes hacer sin riesgo y sin
+            herramientas. Abrir un mecanismo, manipular el cuadro con tensión,
+            empalmar cable o sustituir una protección no lo son: ahí te juegas
+            algo serio y además cualquier modificación de la instalación
+            necesita quedar certificada para ser legal.
+          </p>
+          <p className="mt-4 text-slate">
+            Por eso ninguna de estas guías te va a explicar cómo hacer el
+            trabajo. Te explican qué está pasando, qué puedes comprobar sin
+            peligro y en qué momento conviene parar y llamar. Que es,
+            francamente, la información que nos habría gustado encontrar a
+            nosotros cuando empezamos.
+          </p>
+          <p className="mt-4 text-slate">
+            Si echas en falta alguna duda que no hemos cubierto, dínosla y la
+            escribimos: casi todas estas guías han salido de preguntas que nos
+            hacéis por teléfono.
+          </p>
+        </div>
+      </section>
+
       <CTAFinal
         h2="¿Prefieres que lo miremos nosotros?"
         texto="Cuéntanos qué te pasa y te damos precio cerrado por escrito en menos de 2 horas."

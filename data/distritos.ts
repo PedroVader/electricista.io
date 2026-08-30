@@ -88,6 +88,21 @@ export const distritos: Ciudad[] = [
     ],
     faqsLocales: [
       {
+        pregunta: "¿Podéis pasar cable sin picar las molduras ni el suelo hidráulico?",
+        respuesta:
+          "En la mayoría de casos sí. Aprovechamos los tubos existentes, pasamos por falsos techos de baños y cocina, y usamos canaleta técnica discreta donde no se puede abrir pared. Las rozas se reservan para tramos cortos e imprescindibles. Los suelos hidráulicos y las carpinterías originales no se tocan.",
+      },
+      {
+        pregunta: "Estoy comprando un piso en el Eixample. ¿Cuándo reviso la instalación?",
+        respuesta:
+          "Antes de firmar, no después. Con una visita sabes si la instalación pasa tal cual o qué habría que adaptar, y eso te da margen para negociar quién asume ese coste. Hacerlo después es el mismo gasto sin ninguna capacidad de negociar.",
+      },
+      {
+        pregunta: "El diferencial me salta solo cuando llueve. ¿Es normal en estas fincas?",
+        respuesta:
+          "Es muy frecuente aquí, y casi siempre el origen está en el patio de luces: es húmedo, mal ventilado y por él pasa buena parte de las derivaciones de la finca. Se localiza midiendo el aislamiento circuito por circuito y se resuelve sustituyendo el tramo afectado, no secando y esperando.",
+      },
+      {
         pregunta: "¿Cuánto tarda un electricista en llegar al Eixample?",
         respuesta:
           "En urgencias, entre 30 y 45 minutos a cualquier zona del distrito. En trabajos programados, concertamos franja y la cumplimos.",
@@ -176,6 +191,21 @@ export const distritos: Ciudad[] = [
       },
     ],
     faqsLocales: [
+      {
+        pregunta: "Quiero poner inducción en una casa de la Vila. ¿Qué implica?",
+        respuesta:
+          "Casi siempre tres cosas a la vez: línea nueva con circuito propio para la cocina, cuadro capaz de admitirla y subida de potencia con su boletín. Te lo cerramos todo en un mismo presupuesto por escrito para que no haya sorpresas a mitad.",
+      },
+      {
+        pregunta: "¿Trabajáis durante la Festa Major?",
+        respuesta:
+          "Sí, y damos servicio a comisiones y asociaciones para los montajes de calle: revisión previa de la toma, cuadro provisional con protecciones en condiciones y disponibilidad durante los días de fiesta. También atendemos urgencias con normalidad esos días.",
+      },
+      {
+        pregunta: "Mi finca no tiene ascensor y el cuadro está en un cuarto. ¿Hay recargo?",
+        respuesta:
+          "No. Ni por escaleras, ni por acceso difícil, ni por aparcar lejos. El precio cerrado que te damos por teléfono es el que pagas.",
+      },
       {
         pregunta: "¿Cuánto tarda un electricista en llegar a Gràcia?",
         respuesta:
@@ -266,6 +296,21 @@ export const distritos: Ciudad[] = [
     ],
     faqsLocales: [
       {
+        pregunta: "Mi comunidad tiene caídas de tensión en los pisos altos. ¿Qué es?",
+        respuesta:
+          "Casi siempre son los montantes: la línea que sube por la escalera tiene una sección que se quedó corta para lo que consumen hoy los pisos. Se nota más arriba porque la caída se acumula con la distancia. Es un problema del edificio, no de tu vivienda, y conviene revisarlo antes de que cada vecino gaste por su cuenta en soluciones que no lo resuelven.",
+      },
+      {
+        pregunta: "¿Presupuestáis para llevar a una junta de vecinos?",
+        respuesta:
+          "Sí, y es como preferimos trabajar con comunidades. Visita técnica, informe escrito de qué falla y presupuesto cerrado desglosado por partidas, separando lo urgente de lo que puede esperar. Una junta no aprueba un gasto indefinido; sí aprueba un documento concreto y votable.",
+      },
+      {
+        pregunta: "Tengo un local con suministro trifásico y saltan las protecciones sin motivo.",
+        respuesta:
+          "Es el síntoma clásico de fases mal equilibradas: casi toda la carga cuelga de una de las tres. Se mide y se redistribuye, y suele resolver también consumos más altos de lo que corresponde. Es de los trabajos que más agradece un local y de los que menos se piden.",
+      },
+      {
         pregunta: "¿Cuánto tarda un electricista en llegar a Sants?",
         respuesta:
           "En urgencias, entre 30 y 45 minutos a Sants, Hostafrancs, la Bordeta o Badal.",
@@ -355,6 +400,21 @@ export const distritos: Ciudad[] = [
     ],
     faqsLocales: [
       {
+        pregunta: "Tengo una oficina en el 22@ y no existe el plano de la instalación.",
+        respuesta:
+          "Es lo habitual en naves rehabilitadas que han pasado por varios arrendatarios. Levantamos el esquema real de lo que hay antes de tocar nada y te lo entregamos documentado. Ese plano es lo que evita que la siguiente reforma vuelva a empezar a ciegas.",
+      },
+      {
+        pregunta: "Nuestra comunidad quiere puntos de carga para varios vecinos.",
+        respuesta:
+          "Es la mejor forma de hacerlo. Una canalización común bien dimensionada permite que cada vecino se conecte a su propio contador cuando le toque, sin volver a abrir el garaje cada vez. Sale bastante más barato que tres instalaciones individuales en tres años.",
+      },
+      {
+        pregunta: "¿Atendéis igual de rápido en la Verneda que en el Poblenou?",
+        respuesta:
+          "Sí, el tiempo de respuesta es el mismo en todo el distrito. Y el precio de la salida se dice por teléfono antes de movernos, tanto si la llamada viene de una oficina como de un tercero sin ascensor.",
+      },
+      {
         pregunta: "¿Cuánto tarda un electricista en llegar a Sant Martí?",
         respuesta:
           "En urgencias, entre 30 minutos y una hora según la zona, del Poblenou a la Verneda.",
@@ -442,6 +502,21 @@ export const distritos: Ciudad[] = [
       },
     ],
     faqsLocales: [
+      {
+        pregunta: "Mi casa tiene el cable a la vista sobre regletas. ¿Es peligroso?",
+        respuesta:
+          "Estar a la vista no es en sí el problema; lo preocupante es lo que suele acompañarlo: falta de toma de tierra, secciones cortas y un cuadro con dos fusibles. Lo revisamos y te decimos qué es urgente y qué puede esperar, con presupuesto por fases para que no tengas que hacerlo todo de golpe.",
+      },
+      {
+        pregunta: "Mi promoción tiene preinstalación de recarga. ¿Ya puedo cargar el coche?",
+        respuesta:
+          "Todavía no. La preinstalación significa que la canalización y la previsión de potencia están hechas, que es la parte cara. Falta la línea propia desde tu contador, el equipo y su legalización. Es una buena noticia porque el trabajo es mucho más rápido, pero no es automático ni gratuito.",
+      },
+      {
+        pregunta: "¿Trabajáis en naves y talleres del Bon Pastor?",
+        respuesta:
+          "Sí. Suministros trifásicos, cuadros de nave, alumbrado industrial y maquinaria con motores, además de mantenimiento preventivo. Facturamos con CIF e IVA desglosado y nos ocupamos de la documentación técnica que exija tu actividad.",
+      },
       {
         pregunta: "¿Cuánto tarda un electricista en llegar a Sant Andreu?",
         respuesta:
@@ -533,6 +608,21 @@ export const distritos: Ciudad[] = [
     ],
     faqsLocales: [
       {
+        pregunta: "Alquilo un piso por habitaciones y saltan los automáticos a diario.",
+        respuesta:
+          "Es el patrón de la zona universitaria: una instalación pensada para una familia soportando cinco usuarios con sus equipos y calefactores. Subir potencia sin más no lo arregla; lo que lo resuelve es repartir la carga en circuitos separados y sustituir el cuadro. Ten en cuenta que la instalación es responsabilidad del propietario, no del inquilino.",
+      },
+      {
+        pregunta: "¿Cuánto ahorra cambiar el alumbrado común a LED con detectores?",
+        respuesta:
+          "Depende de las horas de encendido y de los equipos actuales, pero es el trabajo con el retorno más claro que puede aprobar una comunidad: se nota en el primer recibo y elimina el mantenimiento de reponer tubos cada temporada. Te lo presupuestamos desglosado para llevarlo a junta.",
+      },
+      {
+        pregunta: "Tenemos un restaurante y perdimos el género de la cámara.",
+        respuesta:
+          "Pasa cuando la cámara comparte circuito con otra cosa y alguien lo desconecta al cerrar, o cuando salta una protección compartida. La solución es dejar las cámaras en un circuito independiente que no se pueda cortar por error, separado de cocina, climatización y sala.",
+      },
+      {
         pregunta: "¿Cuánto tarda un electricista en llegar a Les Corts?",
         respuesta:
           "En urgencias, entre 30 y 45 minutos a todo el distrito, Pedralbes incluida.",
@@ -623,6 +713,21 @@ export const distritos: Ciudad[] = [
     ],
     faqsLocales: [
       {
+        pregunta: "Tengo piscina. ¿Qué exige exactamente la normativa?",
+        respuesta:
+          "Distancias de seguridad respecto al vaso, protección diferencial de alta sensibilidad y conexiones equipotenciales de todas las partes metálicas. No son recomendaciones interpretables: es de lo poco en este oficio donde no hay margen para el criterio personal. Lo revisamos y lo dejamos conforme, con su certificado.",
+      },
+      {
+        pregunta: "Mi domótica es de hace quince años y ya no la usa nadie.",
+        respuesta:
+          "Es lo más común que nos encontramos en el distrito. Valoramos qué se puede recuperar con protocolos abiertos y qué conviene sustituir, y siempre dejamos el control manual funcionando en paralelo. Si un sistema solo lo puede reparar quien lo instaló, tienes un problema esperando fecha.",
+      },
+      {
+        pregunta: "¿Necesito trifásica en una casa unifamiliar?",
+        respuesta:
+          "Depende de lo que tengas que hacer funcionar a la vez: climatización, cocina completa, bomba de piscina, riego, iluminación exterior y uno o dos coches eléctricos. Lo calculamos con tu consumo real antes de proponerte nada, porque pasarse de potencia es pagar más término fijo los doce meses del año.",
+      },
+      {
         pregunta: "¿Cuánto tarda un electricista en llegar a Sarrià o Sant Gervasi?",
         respuesta:
           "En urgencias, entre 30 y 45 minutos, también en la parte alta del distrito.",
@@ -711,6 +816,21 @@ export const distritos: Ciudad[] = [
       },
     ],
     faqsLocales: [
+      {
+        pregunta: "El diferencial me salta solo en invierno, con las lluvias.",
+        respuesta:
+          "Es el patrón más característico del distrito. Casi siempre hay agua entrando por una canalización exterior o por un muro de contención, y el aislamiento se degrada un poco más cada temporada. Se resuelve sustituyendo el tramo afectado con material estanco y canalización nueva; secar y esperar solo funciona hasta la siguiente tormenta.",
+      },
+      {
+        pregunta: "Vivo en el Carmel y subir la potencia no ha solucionado nada.",
+        respuesta:
+          "Es frecuente aquí. Contratar más potencia no sirve si la instalación de la casa o el montante del edificio no pueden transportarla. Antes de tocar la potencia conviene comprobar la sección de los cables y el estado del cuadro, y decírtelo aunque signifique que el trabajo sea otro.",
+      },
+      {
+        pregunta: "Mi calle es de escaleras y no se puede aparcar. ¿Tarda más?",
+        respuesta:
+          "Algo más que en la parte baja del distrito, sí, y por eso te damos una franja realista al llamar en lugar de la que suena mejor. Lo que no cambia es el precio: el acceso difícil no lleva recargo.",
+      },
       {
         pregunta: "¿Cuánto tarda un electricista en llegar a Horta o el Carmel?",
         respuesta:

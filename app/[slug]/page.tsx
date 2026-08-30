@@ -202,7 +202,9 @@ function PaginaCiudad({ ciudad }: { ciudad: Ciudad }) {
       </section>
 
       <FAQSection
-        faqs={[...ciudad.faqsLocales, ...home.faqs.slice(0, 3)]}
+        // Solo FAQs propias: añadir las genéricas de la home duplicaba
+        // texto y schema FAQPage en las 13 landings de zona.
+        faqs={ciudad.faqsLocales}
         titulo={`Preguntas frecuentes en ${ciudad.nombre}`}
         fondoAlterno
       />
