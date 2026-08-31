@@ -91,7 +91,7 @@ export const servicios: Servicio[] = [
       {
         h2: "Urgencias que no son urgencias (y te ahorran dinero)",
         parrafos: [
-          "Esto no nos conviene contarlo, pero preferimos decirlo: no todo lo que asusta necesita una salida de guardia a las tres de la mañana. Y una salida en horario nocturno o festivo cuesta más que una visita programada al día siguiente.",
+          "Esto no nos conviene contarlo, pero preferimos decirlo. No todo lo que asusta necesita una salida de guardia a las tres de la mañana, y una salida nocturna o en festivo cuesta más que una visita programada al día siguiente.",
           "Pueden esperar a horario normal: un enchufe concreto que ha dejado de funcionar mientras el resto de la casa va bien, una luz o un punto de alumbrado fundido, un magnetotérmico que salta solo al usar un aparato determinado (basta con no usarlo), o el timbre y el portero automático averiados. Nada de eso empeora por esperar unas horas.",
           "No pueden esperar: cualquier olor a quemado, chispazos, un cuadro o un mecanismo caliente al tacto, notar cosquilleo al tocar un electrodoméstico o un grifo, agua sobre la instalación, un local sin suministro con género refrigerado, y un ascensor o una bomba de achique parados en una comunidad.",
           "Cuando llames te lo diremos con la misma franqueza. Si tu caso puede esperar, te lo decimos y te damos cita para el día siguiente, aunque eso signifique facturar menos hoy.",
@@ -146,7 +146,7 @@ export const servicios: Servicio[] = [
       {
         titulo: "Llegada en menos de 1 hora",
         texto:
-          "El electricista de guardia se mueve por la ciudad: en la mayoría de avisos está en tu puerta en 45-60 minutos.",
+          "El electricista de guardia se mueve por la ciudad. En la mayoría de avisos está en tu puerta en 45-60 minutos.",
       },
       {
         titulo: "Precio cerrado por teléfono",
@@ -274,7 +274,7 @@ export const servicios: Servicio[] = [
       {
         h2: "Boletín azul y boletín blanco: cuál te piden",
         parrafos: [
-          "En Cataluña se habla de dos boletines y conviene no confundirlos. El boletín azul es un reconocimiento de una instalación existente: el instalador la revisa y certifica que puede seguir en servicio. Es el que suelen pedir para altas de luz en pisos antiguos que no han hecho obras.",
+          "En Cataluña se habla de dos boletines y se confunden mucho. El boletín azul es un reconocimiento de una instalación que ya existe. El instalador la revisa y certifica que puede seguir en servicio. Es el que piden para altas de luz en pisos antiguos donde no se ha hecho obra.",
           "El boletín blanco es el CIE propiamente dicho: se emite cuando la instalación es nueva o se ha modificado (reforma, ampliación, subida de potencia con cambios). ",
           "Si no sabes cuál te están pidiendo, mándanos el correo de tu comercializadora y te lo decimos en el día, sin compromiso.",
         ],
@@ -290,7 +290,7 @@ export const servicios: Servicio[] = [
         h2: "¿Cuánto cuesta y cuánto tarda?",
         parrafos: [
           "El precio depende de si la instalación pasa la revisión a la primera o necesita adaptaciones, y del tamaño de la vivienda o local. Por eso no publicamos una cifra: te damos precio cerrado por escrito antes de empezar, en menos de 2 horas, y ese es el precio.",
-          "Los plazos sí son estándar: revisión y emisión en 24-48 horas desde tu llamada en la mayoría de casos.",
+          "Los plazos sí son estándar. Revisión y emisión en 24-48 horas desde tu llamada.",
         ],
       },
       {
@@ -493,14 +493,14 @@ export const servicios: Servicio[] = [
       {
         h2: "Cómo lo hacemos",
         parrafos: [
-          "Primero te pedimos una foto del cuadro actual: con eso y un par de preguntas te damos presupuesto cerrado por escrito, casi siempre sin visita previa. El día del cambio, el corte de luz dura unas horas, no días.",
+          "Primero te pedimos una foto del cuadro actual. Con eso y un par de preguntas te damos presupuesto cerrado por escrito, casi siempre sin visita previa. El día del cambio, el corte de luz dura unas horas, no días.",
           "Dejamos cada circuito rotulado (cocina, luces, enchufes, clima…) para que sepas qué es cada cosa, y probamos la instalación completa contigo delante.",
         ],
       },
       {
         h2: "Qué lleva dentro un cuadro nuevo",
         parrafos: [
-          "Cuando pides presupuesto para un cuadro, conviene que sepas qué estás comprando, porque dos presupuestos con el mismo título pueden contener cosas muy distintas. Esto es lo que montamos en una vivienda estándar:",
+          "Cuando pidas presupuesto para un cuadro, mira qué estás comprando. Dos presupuestos con el mismo título pueden contener cosas muy distintas. Nosotros montamos aparamenta Hager y Schneider, y protección contra sobretensiones Toscano. Esto es lo que lleva un cuadro de vivienda estándar:",
         ],
         bullets: [
           "Interruptor general automático, que permite cortar toda la vivienda de golpe",
@@ -607,9 +607,9 @@ export const servicios: Servicio[] = [
         h2: "Tres escenarios, tres instalaciones distintas",
         parrafos: [
           "No cuesta ni tarda lo mismo instalar un punto de carga en una casa que en la plaza treinta y dos de un párking comunitario. Estos son los tres casos que hacemos y qué implica cada uno.",
-          "En vivienda unifamiliar con garaje propio es la instalación más sencilla que existe: el cuadro está a pocos metros, se tira una línea dedicada con sus protecciones y se legaliza. Suele resolverse en una jornada y rara vez hace falta ampliar potencia si se programa la carga nocturna.",
+          "En vivienda unifamiliar con garaje propio es la instalación más sencilla que existe. El cuadro está a pocos metros, se tira una línea dedicada con sus protecciones y se legaliza. Se resuelve en una jornada, y rara vez hay que ampliar potencia si se programa la carga nocturna.",
           "En plaza de párking comunitario el trabajo está en el recorrido. Hay que llevar la línea desde tu contador, normalmente centralizado en planta baja, hasta tu plaza, atravesando zona común. Requiere comunicación previa a la comunidad, que no es lo mismo que pedir permiso, y acordar el trazado con el administrador para que quede ordenado.",
-          "En flota de empresa cambia la escala: varios puntos simultáneos, gestión de carga entre vehículos para no disparar la potencia contratada, identificación de usuario para imputar consumos y, casi siempre, suministro trifásico. Aquí el estudio previo es la mitad del trabajo.",
+          "En flota de empresa cambia la escala. Varios puntos simultáneos, gestión de carga entre vehículos para no disparar la potencia contratada, identificación de usuario para imputar consumos y, casi siempre, suministro trifásico. Aquí el estudio previo es la mitad del trabajo.",
         ],
       },
       {
@@ -696,7 +696,7 @@ export const servicios: Servicio[] = [
       {
         h2: "Ojo: a veces el problema no es la potencia",
         parrafos: [
-          "Antes de pagar más cada mes en el término fijo, conviene comprobarlo: un magnetotérmico envejecido o un cuadro mal dimensionado dan los mismos síntomas que la falta de potencia. En la visita medimos tu consumo real y te decimos con datos si hay que subir potencia, ajustar el cuadro o ambas cosas.",
+          "Antes de pagar más cada mes en el término fijo, compruébalo. Un magnetotérmico envejecido o un cuadro mal repartido dan los mismos síntomas que la falta de potencia. En la visita medimos tu consumo real y te decimos con datos si hay que subir potencia, ajustar el cuadro o las dos cosas.",
         ],
       },
       {
@@ -711,7 +711,7 @@ export const servicios: Servicio[] = [
       {
         h2: "Los casos que más atendemos",
         parrafos: [
-          "Casi todas las subidas de potencia que hacemos en Barcelona y el Vallès responden a uno de estos cuatro escenarios, y cada uno tiene sus particularidades:",
+          "Casi todas las subidas de potencia que hacemos en Barcelona y el Vallès responden a uno de estos cuatro escenarios, y cada uno tiene lo suyo:",
           "La reforma de cocina que pasa de gas a inducción es el más frecuente con diferencia. La inducción tiene una demanda alta y exige circuito propio, así que casi siempre arrastra línea nueva, cuadro y boletín además de la subida.",
           "La instalación de climatización o aerotermia, sobre todo cuando se sustituye una calefacción de gas. Aquí lo importante es dimensionar bien: los equipos modernos arrancan de forma progresiva y consumen menos de lo que la gente teme.",
           "El punto de carga para el coche eléctrico, donde muchas veces la subida se puede evitar con un equilibrador de carga y programando la recarga nocturna. Lo estudiamos antes de proponerte pagar más término fijo cada mes.",

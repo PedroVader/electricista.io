@@ -89,7 +89,7 @@ export const config = {
     lineaFinal:
       "Trabajamos con instaladores eléctricos habilitados. Gestionamos y tramitamos tu boletín eléctrico (CIE).",
     disclaimerImagenes:
-      "Algunas imágenes de esta web son ilustrativas y pueden haber sido generadas o retocadas con inteligencia artificial.",
+      "Las fotos del apartado «Trabajos reales» son de instalaciones hechas por nuestro equipo. El resto de imágenes son ilustrativas y pueden haber sido generadas o retocadas con inteligencia artificial.",
   },
 };
 

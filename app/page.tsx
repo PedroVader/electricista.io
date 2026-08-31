@@ -8,6 +8,8 @@ import { Reveal } from "@/components/Reveal";
 import { HeroOscuro } from "@/components/HeroOscuro";
 import { ServiciosGrid } from "@/components/ServiciosGrid";
 import { PorQue } from "@/components/PorQue";
+import { TrabajosReales } from "@/components/TrabajosReales";
+import { trabajos } from "@/data/trabajos";
 import { ComoFunciona } from "@/components/ComoFunciona";
 import { StatsBar } from "@/components/StatsBar";
 import { ZonasSection } from "@/components/ZonasSection";
@@ -105,6 +107,10 @@ export default function Home() {
       </section>
 
       <ComoFunciona />
+
+      {/* Fotos reales del equipo: la prueba más directa que tenemos */}
+      <TrabajosReales trabajos={trabajos} />
+
       {/* Stats y reseñas: solo con datos reales (flags en /data/config.ts) */}
       <StatsBar />
       <ZonasSection />

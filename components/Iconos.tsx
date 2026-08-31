@@ -1,7 +1,7 @@
 /**
  * Set de iconos handcrafted del sitio, dibujados a mano sobre retícula
  * 24×24 (trazo 1.8, remates redondeados). Sin dependencias externas.
- * Los nombres se referencian desde /data — añadir aquí los que pida
+ * Los nombres se referencian desde /data: añadir aquí los que pida
  * un vertical nuevo.
  */
 

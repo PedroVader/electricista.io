@@ -63,15 +63,21 @@ export default function AvisoLegal() {
             Imágenes del sitio
           </h2>
           <p>
-            Algunas de las fotografías e ilustraciones que aparecen en este
-            sitio web tienen carácter meramente ilustrativo y pueden haber sido
-            generadas o retocadas mediante herramientas de inteligencia
-            artificial. En consecuencia, no reproducen necesariamente personas,
-            instalaciones o trabajos reales de {empresa.razonSocial}, y no deben
-            interpretarse como una representación exacta del servicio prestado.
-            La información sobre servicios, plazos y condiciones recogida en los
-            textos sí es real y vinculante en los términos del presupuesto que
-            se entregue en cada caso.
+            Las fotografías agrupadas bajo el epígrafe «Trabajos reales»
+            corresponden a instalaciones ejecutadas por el equipo de{" "}
+            {empresa.razonSocial} y no han sido generadas artificialmente.
+          </p>
+          <p>
+            El resto de fotografías e ilustraciones del sitio, incluidas las
+            imágenes de cabecera, tienen carácter meramente ilustrativo y pueden
+            haber sido generadas o retocadas mediante herramientas de
+            inteligencia artificial. En consecuencia, no reproducen
+            necesariamente personas, instalaciones o trabajos reales de{" "}
+            {empresa.razonSocial}, y no deben interpretarse como una
+            representación exacta del servicio prestado. La información sobre
+            servicios, plazos y condiciones recogida en los textos sí es real y
+            vinculante en los términos del presupuesto que se entregue en cada
+            caso.
           </p>
           <h2 className="font-display text-2xl font-bold text-ink">
             Responsabilidad

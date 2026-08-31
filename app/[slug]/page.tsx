@@ -8,6 +8,8 @@ import { ciudades, getCiudad } from "@/data/ciudades";
 import { distritos, getDistrito } from "@/data/distritos";
 import { servicios, getServicio } from "@/data/servicios";
 import { posts } from "@/data/posts";
+import { trabajosPorEtiqueta } from "@/data/trabajos";
+import { TrabajosReales } from "@/components/TrabajosReales";
 import type { Ciudad, Servicio } from "@/data/tipos";
 import { HeroOscuro } from "@/components/HeroOscuro";
 import { FranjaFirma } from "@/components/FranjaFirma";
@@ -227,6 +229,18 @@ function postsDeServicio(slug: string) {
   return posts.filter((p) => p.relacionados.includes(slug));
 }
 
+/** Qué fotos reales tienen sentido en cada servicio. */
+const FOTOS_POR_SERVICIO: Record<string, string> = {
+  "electricistas-urgentes-24-horas": "urgencias",
+  "electricista-urgente-barcelona": "urgencias",
+  "boletin-electrico": "boletin",
+  "averias-electricas": "averias",
+  "cambio-cuadro-electrico": "cuadro",
+  "instalacion-punto-de-carga-coche-electrico": "carga",
+  "subir-potencia-luz": "potencia",
+  "electricistas-para-empresas-y-comunidades": "cuadro",
+};
+
 function PaginaServicio({ servicio }: { servicio: Servicio }) {
   const ctaPrincipal = servicio.ctaLabel ?? "Pedir presupuesto gratis";
   return (
@@ -382,6 +396,12 @@ function PaginaServicio({ servicio }: { servicio: Servicio }) {
 
       {/* Interlinking: zonas donde ofrecemos el servicio */}
       <ZonasSection servicioNombre={servicio.nombre.toLowerCase()} />
+
+      {/* Fotos reales del propio servicio */}
+      <TrabajosReales
+        trabajos={trabajosPorEtiqueta(FOTOS_POR_SERVICIO[servicio.slug] ?? "")}
+        h2={`Cómo queda un trabajo de ${servicio.nombre.toLowerCase()}`}
+      />
 
       {/* Interlinking recíproco: las guías ya enlazan al servicio, no al revés */}
       {postsDeServicio(servicio.slug).length > 0 && (

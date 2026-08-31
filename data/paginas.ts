@@ -44,7 +44,7 @@ export const home = {
   porQue: {
     h2: "Por qué vecinos y empresas nos llaman a nosotros",
     parrafos: [
-      "Porque hacemos lo que casi nadie hace en este oficio: decirte el precio antes, por escrito, y cumplirlo. Cuando llamas a un electricista sueles jugártela dos veces: no sabes quién va a venir ni cuánto te va a costar al final. Aquí las dos cosas están resueltas. Quien viene a tu casa o a tu negocio es un instalador habilitado con su número de registro, no “un chico que conozco”, y tiene capacidad legal para firmar tu boletín si lo necesitas. Y el precio que aceptas es el precio que pagas: cerrado por escrito antes de empezar, sin sorpresas al acabar. Así trabajamos en cada avería, cada cuadro y cada instalación, sea un piso en Gràcia o una nave en Granollers.",
+      "Porque hacemos lo que casi nadie hace en este oficio. Decirte el precio antes, por escrito, y cumplirlo. Cuando llamas a un electricista te la juegas dos veces: no sabes quién va a venir ni cuánto vas a acabar pagando. Aquí las dos cosas están resueltas. Quien viene a tu casa o a tu negocio es un instalador habilitado con su número de registro, no “un chico que conozco”, y tiene capacidad legal para firmar tu boletín. Y el precio que aceptas es el precio que pagas, cerrado por escrito antes de empezar. Así trabajamos en cada avería, cada cuadro y cada instalación, sea un piso en Gràcia o una nave en Granollers.",
     ],
     bullets: [
       "Precio cerrado por escrito antes de empezar",
@@ -82,7 +82,7 @@ export const home = {
     {
       pregunta: "¿Cuánto cobra un electricista por hora?",
       respuesta:
-        "Nosotros no trabajamos por horas, y con razón: la hora abierta es la puerta a las sorpresas en la factura. Te damos un precio cerrado por el trabajo completo antes de empezar, por escrito. Pídelo gratis: te lo mandamos en menos de 2 horas.",
+        "No trabajamos por horas, y con razón. La hora abierta es la puerta a las sorpresas en la factura. Te damos un precio cerrado por el trabajo completo antes de empezar, por escrito. Pídelo gratis y lo tienes en menos de 2 horas.",
     },
     {
       pregunta: "¿El desplazamiento se cobra?",
@@ -128,13 +128,13 @@ export const presupuesto = {
     "¿Cuánto cuesta un electricista en Barcelona? Te damos precio cerrado por escrito en menos de 2h, gratis. Sin sorpresas al acabar.",
   h1: "¿Cuánto cuesta un electricista? Precio cerrado, gratis y en menos de 2 horas",
   intro:
-    "Respuesta corta: depende del trabajo, y desconfía de quien te dé una cifra sin saber qué necesitas. Respuesta útil: pídenos presupuesto y en menos de 2 horas tienes un precio cerrado por escrito, sin compromiso. Aquí te contamos de qué depende.",
+    "Respuesta corta: depende del trabajo, y desconfía de quien te suelte una cifra sin saber qué necesitas. Respuesta útil: pídenos presupuesto y en menos de 2 horas tienes un precio cerrado por escrito, sin compromiso. Aquí te contamos de qué depende.",
   secciones: [
     {
       h2: "¿Cuánto cuesta un electricista?",
       parrafos: [
-        "El precio de un trabajo eléctrico depende de cuatro factores: el tipo de trabajo (no es lo mismo cambiar un enchufe que un cuadro completo), la urgencia y el horario (una guardia nocturna no cuesta lo mismo que una visita programada), los materiales necesarios y si el trabajo requiere boletín (CIE) y su tramitación.",
-        "Por eso no publicamos tarifas: una cifra suelta, sin ver tu caso, solo sirve para llevarse sorpresas después. Nuestro sistema es el contrario: nos cuentas qué necesitas, y te damos un precio cerrado por escrito antes de empezar. Ese precio incluye todo y no cambia al acabar.",
+        "El precio de un trabajo eléctrico depende de cuatro cosas. Del tipo de trabajo, porque no es lo mismo cambiar un enchufe que un cuadro completo. De la urgencia y el horario, porque una guardia nocturna no cuesta lo que una visita programada. De los materiales. Y de si el trabajo requiere boletín y su tramitación.",
+        "Por eso no publicamos tarifas. Una cifra suelta, sin ver tu caso, solo sirve para llevarse sorpresas después. Nuestro sistema es el contrario. Nos cuentas qué necesitas y te damos un precio cerrado por escrito antes de empezar. Ese precio incluye todo y no cambia al acabar.",
       ],
     },
     {
@@ -146,7 +146,7 @@ export const presupuesto = {
     {
       h2: "¿Cuánto cuesta un boletín eléctrico?",
       parrafos: [
-        "Depende del tamaño de la instalación y de si pasa la revisión a la primera o necesita adaptaciones para cumplir el reglamento. Te damos el precio cerrado antes de empezar, y los plazos son estándar: emisión en 24-48 horas en la mayoría de casos. Tienes todos los detalles en nuestra página del boletín eléctrico.",
+        "Depende del tamaño de la instalación y de si pasa la revisión a la primera o necesita adaptaciones. Te damos el precio cerrado antes de empezar. Los plazos sí son estándar: emisión en 24-48 horas. Tienes todos los detalles en nuestra página del boletín eléctrico.",
       ],
     },
     {
@@ -158,8 +158,8 @@ export const presupuesto = {
     {
       h2: "Por qué desconfiar de las tarifas publicadas",
       parrafos: [
-        "Cuando buscas cuánto cuesta un electricista, lo primero que encuentras son listas de precios por concepto: tanto por cambiar un enchufe, tanto por punto de luz. Suenan tranquilizadoras y casi nunca se parecen a la factura final.",
-        "El motivo es que esas tarifas describen una operación en el vacío, y el trabajo eléctrico casi nunca ocurre en el vacío. Cambiar un enchufe cuesta lo que cuesta si detrás hay una caja de registro accesible y un circuito en condiciones; si el mecanismo está quemado porque el cable que lo alimenta tiene una sección insuficiente, cambiar el enchufe no arregla nada y el trabajo real es otro. La tarifa publicada no puede saber en cuál de los dos casos estás; nosotros, con una foto y dos preguntas, casi siempre sí.",
+        "Cuando buscas cuánto cuesta un electricista, lo primero que sale son listas de precios por concepto. Tanto por cambiar un enchufe, tanto por punto de luz. Suenan tranquilizadoras y casi nunca se parecen a la factura final.",
+        "El motivo es que esas tarifas describen una operación en el vacío, y el trabajo eléctrico casi nunca ocurre en el vacío. Cambiar un enchufe cuesta lo que cuesta si detrás hay una caja de registro accesible y un circuito en condiciones. Si el mecanismo está quemado porque el cable que lo alimenta tiene poca sección, cambiar el enchufe no arregla nada y el trabajo real es otro. La tarifa publicada no sabe en cuál de los dos casos estás. Nosotros, con una foto y dos preguntas, casi siempre sí.",
         "Hay además una razón menos amable. Una tarifa baja y llamativa sirve para conseguir la visita, y la conversación sobre el precio real ocurre cuando ya tienes al técnico en casa y la instalación abierta. Es la posición con menos capacidad de negociación posible.",
         "Nuestra alternativa no es más cara por definición: es que sabes el número antes, por escrito, y decides con calma y sin nadie delante.",
       ],
@@ -235,7 +235,7 @@ export const presupuesto = {
     {
       pregunta: "¿Puedo pedir presupuesto solo para comparar?",
       respuesta:
-        "Sí, y nos parece razonable que lo hagas. Pedir precio no te compromete a nada y no vas a recibir llamadas insistiendo. Si comparas, fíjate en qué incluye cada presupuesto y no solo en el total: la diferencia suele estar en los materiales, en las pruebas finales y en si la garantía está por escrito.",
+        "Sí, y nos parece razonable que lo hagas. Pedir precio no te compromete a nada y no vas a recibir llamadas insistiendo. Si comparas, mira qué incluye cada presupuesto y no solo el total. La diferencia está casi siempre en los materiales, en las pruebas finales y en si la garantía va por escrito.",
     },
   ] as FAQ[],
 };
@@ -262,7 +262,7 @@ export const contacto = {
     {
       h2: "Horarios: cuándo respondemos y cuándo salimos",
       parrafos: [
-        "Conviene distinguir dos cosas que la gente suele mezclar, porque afectan a lo que puedes esperar de nosotros según la hora a la que nos escribas.",
+        "Hay dos cosas que la gente mezcla, y afectan a lo que puedes esperar de nosotros según la hora a la que escribas.",
         "Las urgencias se atienden 24 horas, todos los días del año, festivos incluidos. Si te has quedado sin luz, huele a quemado o hay chispazos, llama al teléfono a cualquier hora: hay un electricista de guardia y te decimos el precio cerrado de la salida antes de movernos.",
         "Los presupuestos y trabajos programados se gestionan en horario laboral. Si nos escribes un sábado por la tarde, te responderemos el lunes por la mañana. Preferimos decirlo claro a prometer una respuesta inmediata que no vamos a dar.",
         "Para comunidades, empresas y locales con contrato de mantenimiento hay prioridad de respuesta y un interlocutor fijo que ya conoce vuestra instalación.",
@@ -271,7 +271,7 @@ export const contacto = {
     {
       h2: "Qué contarnos para que el presupuesto sea exacto",
       parrafos: [
-        "Cuanto mejor entendamos el caso, más ajustado será el precio y menos posibilidades habrá de sorpresas. Con esto suele bastar:",
+        "Cuanto mejor entendamos el caso, más ajustado será el precio y menos sorpresas habrá. Con esto basta:",
       ],
       bullets: [
         "Qué te pasa o qué necesitas, en lenguaje normal: no hace falta que uses términos técnicos",

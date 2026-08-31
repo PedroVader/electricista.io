@@ -18,12 +18,12 @@ export const ciudades: Ciudad[] = [
     metaDescription:
       "Electricistas autorizados en Barcelona. Urgencias 24h, boletines (CIE), averías y cuadros. Precio cerrado antes de empezar.",
     porQue: [
-      "Barcelona tiene uno de los parques de viviendas más antiguos de España: más de la mitad de los pisos se construyeron antes de 1980. En fincas del Eixample, Gràcia o Ciutat Vella seguimos encontrando instalaciones con cableado de hace cincuenta años, cuadros sin diferencial y boletines que ninguna comercializadora acepta ya. Es justo el tipo de trabajo que hacemos a diario: poner instalaciones viejas al día, emitir el boletín y dejarlo todo registrado.",
+      "Barcelona tiene uno de los parques de vivienda más antiguos de España. Más de la mitad de los pisos se construyeron antes de 1980. En fincas del Eixample, Gràcia o Ciutat Vella seguimos encontrando cableado de hace cincuenta años, cuadros sin diferencial y boletines que ninguna comercializadora acepta ya. Es justo el trabajo que hacemos a diario. Poner instalaciones viejas al día, gestionar el boletín y dejarlo todo registrado.",
       "Nos movemos por los diez distritos con tiempos de llegada de 45-60 minutos en urgencias, también en zonas de difícil aparcamiento como Ciutat Vella o Gràcia. El aparcamiento corre de nuestra cuenta, no de la tuya. Y si tienes un local o administras fincas en la ciudad, tenemos línea preferente para que un corte de luz no te pare el negocio.",
     ],
     tambienServicio: {
       intro:
-        "Además de Barcelona ciudad, cubrimos a diario los municipios que la rodean: L'Hospitalet de Llobregat, Santa Coloma de Gramenet, Sant Adrià de Besòs, Esplugues y Cornellà. Si estás en el área metropolitana y no ves tu municipio, llámanos igualmente: casi seguro que llegamos.",
+        "Además de Barcelona ciudad cubrimos a diario los municipios que la rodean. L'Hospitalet de Llobregat, Santa Coloma de Gramenet, Sant Adrià de Besòs, Esplugues y Cornellà. Si estás en el área metropolitana y no ves tu municipio, llámanos igual. Casi seguro que llegamos.",
       municipios: [
         "L'Hospitalet de Llobregat",
         "Santa Coloma de Gramenet",
@@ -103,7 +103,7 @@ export const ciudades: Ciudad[] = [
         parrafos: [
           "Más de la mitad de los pisos de Barcelona se construyeron antes de 1980, y una parte importante antes de 1960. Eso significa que la instalación eléctrica de la mayoría de hogares de la ciudad se diseñó para un uso doméstico que ya no existe: unas bombillas, una radio y poco más.",
           "Lo que ha pasado desde entonces es que hemos ido enchufando cosas sin que nadie recalculase nada. Una vivienda media de hoy tiene entre veinte y treinta aparatos conectados de forma permanente, cocina eléctrica en muchos casos, climatización y cada vez más un coche que cargar. La instalación aguanta porque el cobre es paciente, no porque esté dimensionada.",
-          "El resultado se ve en el tipo de avisos que recibimos en la ciudad: diferenciales que saltan sin causa aparente, enchufes que se calientan, magnetotérmicos que no distinguen circuitos porque solo hay dos para toda la casa. Casi ninguno es una avería puntual; casi todos son el mismo problema de fondo asomando por sitios distintos.",
+          "El resultado se ve en el tipo de avisos que recibimos. Diferenciales que saltan sin causa aparente, enchufes que se calientan, magnetotérmicos que no distinguen circuitos porque solo hay dos para toda la casa. Casi ninguno es una avería puntual. Son el mismo problema de fondo asomando por sitios distintos.",
         ],
       },
       {
@@ -236,7 +236,7 @@ export const ciudades: Ciudad[] = [
       {
         h2: "Comunidades del Vallès: el trabajo que nadie mira",
         parrafos: [
-          "En Sabadell y su entorno trabajamos con bastantes comunidades, y el patrón se repite tanto que merece la pena contarlo: el piso individual suele estar aceptable, y lo que está desatendido es la parte común, porque no es de nadie hasta que falla.",
+          "En Sabadell y su entorno trabajamos con bastantes comunidades, y el patrón se repite tanto que merece la pena contarlo. El piso individual suele estar aceptable. Lo que está desatendido es la parte común, porque no es de nadie hasta que falla.",
           "Los puntos que más problemas dan son siempre los mismos. El cuadro de servicios comunes, ampliado por acumulación durante décadas hasta que nadie sabe qué es cada cosa. El alumbrado de escalera y garaje con equipos obsoletos y consumos que se comen el presupuesto de la comunidad. La línea del ascensor, muchas veces sin protección diferencial propia. Y las bombas de achique, que solo se descubre que no funcionan el día de la tormenta.",
           "Lo que ofrecemos al administrador es un informe escrito con presupuesto cerrado y desglosado por partidas, separando lo urgente de lo que puede esperar al ejercicio siguiente. Una junta no aprueba un gasto indefinido; sí aprueba un documento concreto.",
         ],
@@ -246,7 +246,7 @@ export const ciudades: Ciudad[] = [
       {
         pregunta: "¿Cuánto tarda un electricista en llegar a Sabadell?",
         respuesta:
-          "Menos que en ningún otro sitio: nuestra base está en Sabadell. En urgencias, normalmente menos de 30 minutos.",
+          "Menos que en ningún otro sitio, porque nuestra base está en Sabadell. En urgencias, menos de 30 minutos.",
       },
       {
         pregunta: "¿Cubrís Castellar, Sant Quirze y alrededores?",
@@ -266,7 +266,7 @@ export const ciudades: Ciudad[] = [
       {
         pregunta: "¿Instaláis puntos de carga en casas de Castellar o Sant Quirze?",
         respuesta:
-          "Constantemente: es la zona donde más cargadores instalamos, casi siempre en garaje propio, con estudio de potencia y legalización incluidos.",
+          "Constantemente. Es la zona donde más cargadores instalamos, casi siempre en garaje propio, con estudio de potencia y legalización incluidos.",
       },
     ],
   },
@@ -279,12 +279,12 @@ export const ciudades: Ciudad[] = [
     metaDescription:
       "Electricistas autorizados en Badalona. Urgencias 24h, boletines (CIE), averías y cuadros. Precio cerrado antes de empezar.",
     porQue: [
-      "En Badalona trabajamos sobre todo en dos frentes. El primero, los barrios densos como Llefià, La Salut o Sant Roc, con muchos bloques de los años 60 y 70: instalaciones justas de potencia, cuadros por renovar y boletines antiguos que frenan cualquier gestión con la comercializadora. El segundo, la primera línea de mar: la humedad y el salitre castigan terminales, enchufes exteriores y cuadros de locales, y generan derivaciones que hacen saltar el diferencial sin motivo aparente.",
+      "En Badalona trabajamos en dos frentes. El primero son los barrios densos como Llefià, La Salut o Sant Roc, con muchos bloques de los años 60 y 70. Instalaciones justas de potencia, cuadros por renovar y boletines antiguos que frenan cualquier gestión con la comercializadora. El segundo es la primera línea de mar, donde la humedad y el salitre castigan terminales, enchufes exteriores y cuadros de local, y generan derivaciones que hacen saltar el diferencial sin motivo aparente.",
       "Llegamos a Badalona en 30-45 minutos en urgencias, y damos servicio tanto a particulares como a los comercios del Centre y del puerto. Si tu local vive del día a día, priorizamos tu avería para que no pierdas ni una jornada.",
     ],
     tambienServicio: {
       intro:
-        "Cubrimos también los municipios que rodean Badalona: Sant Adrià de Besòs y Santa Coloma de Gramenet por el lado del Besòs, y Montgat y Tiana por la costa. En Montgat y Tiana atendemos muchas casas con jardín: iluminación exterior, puntos de carga y ampliaciones de potencia son los encargos más habituales.",
+        "Cubrimos también los municipios que rodean Badalona. Sant Adrià de Besòs y Santa Coloma de Gramenet por el lado del Besòs, y Montgat y Tiana por la costa. En Montgat y Tiana atendemos muchas casas con jardín, donde lo que más nos piden es iluminación exterior, puntos de carga y ampliaciones de potencia.",
       municipios: [
         "Sant Adrià de Besòs",
         "Santa Coloma de Gramenet",
@@ -337,7 +337,7 @@ export const ciudades: Ciudad[] = [
         h2: "Llefià, La Salut y Sant Roc: bloques de los sesenta y potencia justa",
         parrafos: [
           "La otra mitad del trabajo en Badalona está en los barrios densos de la parte alta, que crecieron muy deprisa entre los años sesenta y setenta para acoger la llegada masiva de población a la ciudad.",
-          "El perfil constructivo es reconocible: bloques altos, pisos de superficie contenida, y una instalación eléctrica dimensionada para lo justo de aquella época. Lo que encontramos habitualmente son cuadros con uno o ningún diferencial, ausencia de toma de tierra en la vivienda, y potencia contratada en el mínimo heredado, que salta en cuanto coinciden la cocina y la lavadora.",
+          "El perfil constructivo es reconocible. Bloques altos, pisos de superficie contenida y una instalación dimensionada para lo justo de aquella época. Lo que encontramos son cuadros con uno o ningún diferencial, ninguna toma de tierra en la vivienda y potencia contratada en el mínimo heredado, que salta en cuanto coinciden la cocina y la lavadora.",
           "Hay además un factor que complica las subidas de potencia en estos edificios: los montantes comunitarios. De poco sirve contratar más potencia si la línea que llega a tu piso no puede transportarla. Cuando detectamos que el problema es del edificio y no del piso, lo decimos, aunque signifique que el trabajo se convierta en una conversación con la comunidad en lugar de una factura rápida.",
         ],
       },
@@ -503,7 +503,7 @@ export const ciudades: Ciudad[] = [
     ],
     tambienServicio: {
       intro:
-        "Desde Granollers damos servicio a todo el Vallès Oriental cercano: Mollet del Vallès y Parets del Vallès por el sur, Les Franqueses del Vallès al norte, Montornès del Vallès junto a los polígonos del Besòs y Llinars del Vallès hacia el Montseny. En Llinars y Les Franqueses trabajamos en muchas casas unifamiliares: iluminación exterior, ampliaciones y puntos de carga.",
+        "Desde Granollers damos servicio a todo el Vallès Oriental cercano. Mollet y Parets por el sur, Les Franqueses al norte, Montornès junto a los polígonos del Besòs y Llinars hacia el Montseny. En Llinars y Les Franqueses trabajamos en muchas casas unifamiliares, con iluminación exterior, ampliaciones y puntos de carga.",
       municipios: [
         "Mollet del Vallès",
         "Les Franqueses del Vallès",

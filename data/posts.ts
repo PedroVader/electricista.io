@@ -18,7 +18,7 @@ export const posts: Post[] = [
       {
         h2: "Qué es el diferencial y por qué salta",
         parrafos: [
-          "El diferencial es el interruptor del cuadro que te protege a ti, no a la instalación: detecta fugas de corriente y corta el suministro antes de que la fuga pase por una persona. Cuando salta, es que ha detectado una derivación: corriente escapándose por donde no debe.",
+          "El diferencial es el interruptor del cuadro que te protege a ti, no a la instalación. Detecta fugas de corriente y corta el suministro antes de que esa fuga pase por una persona. Si ha saltado, ha visto una derivación. Es decir, corriente escapándose por donde no debe.",
           "Las causas más habituales, por orden de frecuencia:",
         ],
         bullets: [
@@ -31,8 +31,8 @@ export const posts: Post[] = [
       {
         h2: "Diferencial, magnetotérmico e ICP: quién es quién",
         parrafos: [
-          "Antes de buscar la causa conviene saber qué te ha saltado, porque la gente suele decir «me ha saltado la luz» para tres cosas distintas y cada una significa algo diferente.",
-          "El diferencial es el interruptor ancho, normalmente con un botón de prueba marcado con una T. Protege a las personas y salta cuando hay fuga de corriente. El magnetotérmico es cada uno de los interruptores estrechos que hay a su lado: protege el cableado y salta cuando ese circuito consume de más o hay un cortocircuito. El ICP o interruptor de control de potencia limita la potencia total contratada y salta cuando enciendes demasiadas cosas a la vez; en los contadores digitales actuales ya no es una pieza aparte, va integrado en el propio contador.",
+          "Antes de buscar la causa, mira qué te ha saltado exactamente. La gente dice «me ha saltado la luz» para tres cosas distintas, y cada una significa algo diferente.",
+          "El diferencial es el interruptor ancho, con un botón de prueba marcado con una T. Protege a las personas y salta cuando hay fuga. Los magnetotérmicos son los estrechos que tiene al lado. Protegen el cableado y saltan cuando ese circuito va sobrecargado o hay un cortocircuito. El ICP limita la potencia total que tienes contratada. En los contadores digitales ya no es una pieza aparte del cuadro, va dentro del propio contador.",
           "La regla rápida: si salta el ancho, tienes una fuga. Si salta uno estrecho, ese circuito concreto va sobrecargado o tiene un cortocircuito. Si se va toda la casa al encender el horno con la vitro puesta, te falta potencia contratada y esto no es una avería.",
         ],
       },
@@ -49,15 +49,15 @@ export const posts: Post[] = [
         h2: "Salta solo cuando llueve o hay humedad",
         parrafos: [
           "Es uno de los patrones más reconocibles y también uno de los más frecuentes en Barcelona, donde la humedad ambiental es alta buena parte del año. Si tu diferencial salta los días de lluvia, por la mañana temprano o después de ducharte, casi siempre hay agua llegando a un punto de la instalación donde no debería.",
-          "Los sitios donde lo encontramos más a menudo: cajas de derivación en paredes que dan al exterior o a un patio de luces, enchufes de terrazas y balcones sin tapa estanca, focos empotrados en el techo de un baño con mala ventilación, farolas y tomas de jardín, y muy habitualmente el rastro de una gotera antigua que nadie relacionó nunca con la electricidad.",
-          "Aquí hay un matiz importante: la humedad no rompe nada de golpe, va degradando el aislamiento poco a poco. Por eso el síntoma empieza siendo un salto puntual un día de tormenta y con los meses pasa a ser semanal. Si lo coges pronto suele resolverse sustituyendo el tramo o el mecanismo afectado; si lo dejas, acabas rehaciendo el circuito entero.",
+          "Dónde lo encontramos más a menudo. Cajas de derivación en paredes que dan a un patio de luces o al exterior. Enchufes de terraza y balcón sin tapa estanca. Focos empotrados en techos de baño mal ventilados. Farolas y tomas de jardín. Y muchas veces el rastro de una gotera antigua que nadie relacionó nunca con la electricidad.",
+          "La humedad no rompe nada de golpe. Va degradando el aislamiento poco a poco, y por eso el síntoma empieza siendo un salto suelto un día de tormenta y en unos meses ya es semanal. Cogido pronto se arregla cambiando el tramo o el mecanismo afectado. Si lo dejas correr, acabas rehaciendo el circuito entero.",
         ],
       },
       {
         h2: "Salta de madrugada y no había nadie usando nada",
         parrafos: [
           "Que salte con la casa dormida despista mucho, pero tiene explicación. De noche siguen funcionando aparatos que no ves: el termo eléctrico calentando, la nevera y el congelador arrancando el compresor, la caldera, el aire acondicionado en modo espera, el riego programado o una bomba de achique.",
-          "El termo es, con diferencia, el primer sospechoso. Su resistencia está sumergida en agua y cuando el aislamiento se degrada empieza a fugar justo en el momento en que se activa, que suele ser de madrugada. La prueba es sencilla: desconecta el magnetotérmico del termo una noche y comprueba si el diferencial aguanta. Si aguanta, ya tienes al culpable.",
+          "El termo es el primer sospechoso, con diferencia. Su resistencia trabaja sumergida en agua, y cuando el aislamiento se degrada empieza a fugar justo al activarse, que casi siempre es de madrugada. Compruébalo: desconecta el magnetotérmico del termo una noche y mira si el diferencial aguanta.",
           "El segundo sospechoso es el frigorífico, sobre todo si tiene años. El arranque del compresor genera un pico que un diferencial ya desgastado no perdona.",
         ],
       },
@@ -77,7 +77,7 @@ export const posts: Post[] = [
         h2: "Cuándo llamar al electricista",
         parrafos: [
           "Llama si el diferencial salta de forma intermitente sin patrón claro, si salta de noche o con lluvia (huele a humedad en la instalación), si no puedes dejarlo subido ni con todo desconectado, o si al tocar un electrodoméstico notas cosquilleo. Ese último caso es serio: deja de usar el aparato ya.",
-          "Una derivación no se arregla sola: el aislamiento dañado va a más y lo que hoy es una molestia puede acabar en un cable quemado. Localizarla con medición es trabajo de una visita en la mayoría de casos.",
+          "Una derivación no se arregla sola. El aislamiento dañado va a más, y lo que hoy es una molestia acaba en un cable quemado. Localizarla con medición es trabajo de una visita.",
           "Lo que hacemos al llegar es medir, no adivinar. Con un telurómetro y un medidor de aislamiento se comprueba circuito por circuito dónde se está yendo la corriente, y eso da un resultado numérico, no una opinión. En la mayoría de viviendas la localización se resuelve en la misma visita, y salimos de ahí con la causa identificada y el presupuesto cerrado de la reparación.",
         ],
       },
@@ -161,7 +161,7 @@ export const posts: Post[] = [
       {
         h2: "Qué se revisa exactamente antes de firmar",
         parrafos: [
-          "Un boletín no es un papel que se rellena: es el resultado de una inspección con mediciones. Esto es lo que se comprueba en una vivienda estándar, y conviene que lo sepas para distinguir a quien hace el trabajo de quien te vende una firma:",
+          "Un boletín no es un papel que se rellena. Es el resultado de una inspección con mediciones. Esto es lo que se comprueba en una vivienda estándar, y te interesa saberlo para distinguir a quien hace el trabajo de quien te vende una firma:",
         ],
         bullets: [
           "Medición de la resistencia de la toma de tierra, que debe estar dentro de los valores del reglamento",
@@ -177,7 +177,7 @@ export const posts: Post[] = [
         h2: "Los motivos por los que una instalación no pasa",
         parrafos: [
           "Cuando una revisión no sale adelante, casi siempre es por una de estas cuatro razones, y ninguna es rara en el parque de vivienda de Barcelona y el Vallès.",
-          "La primera y más frecuente es la falta de toma de tierra. Muchos pisos anteriores a los años ochenta nunca la tuvieron, y sin ella no hay boletín posible. La segunda es un cuadro obsoleto: fusibles de porcelana, ausencia de diferencial o un único diferencial para toda la vivienda. La tercera son secciones de cable insuficientes para la potencia que se pretende contratar, algo que aparece siempre que alguien quiere pasar de cocina de gas a inducción. Y la cuarta son las modificaciones caseras acumuladas durante años: regletas fijas, empalmes sin caja, circuitos alargados a ojo.",
+          "La primera y más frecuente es la falta de toma de tierra. Muchos pisos anteriores a los ochenta nunca la tuvieron, y sin ella no hay boletín posible. La segunda es un cuadro obsoleto, con fusibles de porcelana o con un único diferencial para toda la vivienda. La tercera son secciones de cable insuficientes para la potencia que se quiere contratar, y aparece siempre que alguien pasa de cocina de gas a inducción. La cuarta son las modificaciones caseras acumuladas durante años. Regletas fijas, empalmes sin caja, circuitos alargados a ojo.",
           "En todos esos casos te decimos qué falla, qué implica corregirlo y cuánto cuesta, por escrito. El diagnóstico no te obliga a hacer la adaptación con nosotros, y el presupuesto de la adaptación va siempre separado del boletín para que veas qué pagas por cada cosa.",
         ],
       },
@@ -216,7 +216,7 @@ export const posts: Post[] = [
       {
         pregunta: "¿Puedo comprar un boletín por internet sin que venga nadie?",
         respuesta:
-          "Puedes encontrar quien te lo venda, pero es un documento falso: firmar un certificado sin haber inspeccionado y medido la instalación es ilegal y la responsabilidad recae sobre quien firma. El riesgo práctico para ti es doble: que Indústria o la comercializadora lo rechacen y hayas tirado el dinero, y que tu seguro se desentienda si algún día hay un incendio de origen eléctrico.",
+          "Encontrarás quien te lo venda, pero lo que te vende es un documento falso. Firmar un certificado sin haber inspeccionado y medido la instalación es ilegal, y la responsabilidad recae sobre quien firma. Para ti el riesgo es doble. Que Indústria o la comercializadora lo rechacen y hayas tirado el dinero, y que tu seguro se desentienda si algún día hay un incendio de origen eléctrico.",
       },
       {
         pregunta: "¿Vale el boletín de la instalación de gas o del agua?",
@@ -226,7 +226,7 @@ export const posts: Post[] = [
       {
         pregunta: "He perdido mi boletín. ¿Puedo pedir una copia?",
         respuesta:
-          "Si el original se tramitó ante Indústria, queda registrado y normalmente se puede recuperar una copia. Si no encuentras rastro o es muy antiguo, en la práctica suele salir más a cuenta emitir uno nuevo, sobre todo porque un boletín de más de veinte años te lo van a rechazar igualmente en cuanto hagas cualquier gestión.",
+          "Si el original se tramitó ante Indústria queda registrado, y normalmente se puede recuperar una copia. Si no hay rastro o es muy antiguo, sale más a cuenta emitir uno nuevo. Un boletín de más de veinte años te lo van a rechazar igualmente en cuanto hagas cualquier gestión.",
       },
       {
         pregunta: "¿Necesito boletín para vender o alquilar un piso?",
@@ -273,7 +273,7 @@ export const posts: Post[] = [
         h2: "Qué te da un cuadro moderno",
         parrafos: [
           "Un cuadro actual separa la vivienda en circuitos con su magnetotérmico cada uno: si falla la lavadora, no se apaga toda la casa. El diferencial protege contra contactos, y si añades protección contra sobretensiones, tus electrodomésticos y equipos quedan cubiertos frente a picos de red, que en verano no son raros.",
-          "El cambio completo se hace en una mañana en la mayoría de viviendas: se corta la luz unas horas, se sustituye el cuadro, se rotula cada circuito y se prueba todo contigo delante. Si aprovechas para subir potencia o el cambio afecta a la instalación, puede requerir boletín, que se firma en el mismo trabajo.",
+          "En una vivienda normal el cambio completo se hace en una mañana. Se corta la luz unas horas, se sustituye el cuadro, se rotula cada circuito y se prueba todo contigo delante. Si aprovechas para subir potencia, o si el cambio afecta a la instalación, hará falta boletín. Se firma en el mismo trabajo.",
         ],
       },
       {
@@ -285,6 +285,7 @@ export const posts: Post[] = [
           "3. Se monta el cuadro nuevo, se identifican y se conectan los circuitos uno a uno y se separan los que iban agrupados de forma incorrecta.",
           "4. Se prueba todo: disparo real del diferencial, aislamiento de cada circuito y continuidad de la toma de tierra. Se rotula cada línea con lo que alimenta, para que dentro de cinco años sepas qué bajar sin ir a ciegas.",
           "5. Repasamos juntos el cuadro terminado, te explicamos qué es cada cosa y te entregamos la garantía por escrito. Si el trabajo requería boletín, lo firma el instalador habilitado y lo tramitamos nosotros.",
+        "Sobre el material: montamos aparamenta Hager y Schneider, y protección contra sobretensiones Toscano. No son las marcas más baratas del catálogo y es una decisión consciente, porque el cuadro es lo último que quieres tener que volver a abrir en veinte años. Si prefieres otra marca concreta, dilo y la presupuestamos.",
           "No hay que picar paredes: el cuadro se sustituye en el mismo hueco y se aprovecha el cableado existente siempre que esté en condiciones. Solo hay obra si hay que llevar una línea nueva a algún sitio, y eso se te dice y se presupuesta antes.",
         ],
       },
@@ -293,7 +294,7 @@ export const posts: Post[] = [
         parrafos: [
           "Los fusibles hacían su trabajo: cuando pasaba demasiada corriente, el hilo se fundía y cortaba el circuito. El problema no es que protejan mal frente a la sobrecarga, es todo lo que no hacen.",
           "Un fusible no protege a las personas. Se funde cuando el cable corre peligro, no cuando la corriente pasa por un cuerpo. Frente a una derivación, que es lo que te electrocuta, un cuadro de plomos no reacciona en absoluto. Ese es el motivo por el que el diferencial se volvió obligatorio y por el que un cuadro de fusibles no es simplemente antiguo, sino inseguro.",
-          "Hay además un problema práctico: el fusible invita a manipularlo. En casi todas las viviendas con plomos que abrimos encontramos alguno reforzado con hilo de cobre o con un fusible de mayor calibre del que corresponde, para que «no salte tanto». Eso convierte la protección en decorativa y deja el cable trabajando por encima de su límite, que es exactamente como empiezan los incendios de origen eléctrico.",
+          "Y hay un problema práctico añadido. El fusible invita a manipularlo. En casi todas las viviendas con plomos que abrimos aparece alguno reforzado con hilo de cobre, o de más calibre del que toca, para que «no salte tanto». Eso convierte la protección en decorativa y deja el cable trabajando por encima de su límite. Así es exactamente como empiezan los incendios de origen eléctrico.",
         ],
       },
     ],
@@ -338,7 +339,7 @@ export const posts: Post[] = [
       "Guía práctica para subir la potencia contratada: cuándo hace falta, qué te pedirá la comercializadora y qué papel juega el boletín.",
     fecha: "2026-07-19",
     resumen:
-      "Salta el ICP cuando enciendes el horno y la vitro a la vez: te falta potencia. Antes de llamar a tu comercializadora, conviene saber qué te van a pedir y en qué orden hacer las cosas.",
+      "Salta el ICP cuando enciendes el horno con la vitro puesta. Te falta potencia. Antes de llamar a tu comercializadora, mira qué te van a pedir y en qué orden hay que hacer las cosas.",
     secciones: [
       {
         h2: "Primero: comprueba que de verdad es la potencia",
@@ -358,7 +359,7 @@ export const posts: Post[] = [
       {
         h2: "Casos típicos en los que hará falta boletín",
         parrafos: [
-          "No toda subida de potencia obliga a emitir un certificado nuevo, pero estas situaciones lo piden casi siempre:",
+          "No toda subida de potencia obliga a emitir un certificado nuevo. Estas situaciones sí:",
         ],
         bullets: [
           "Pisos antiguos con boletín de hace décadas, lo más común en Barcelona",
@@ -372,15 +373,15 @@ export const posts: Post[] = [
         parrafos: [
           "Aquí es donde más dinero se pierde, y en las dos direcciones. Quedarte corto significa convivir con cortes cada vez que coinciden dos aparatos grandes. Pasarte significa pagar de más en el término fijo todos los meses del año, llueva o truene, uses la luz o estés de vacaciones.",
           "La forma honesta de decidirlo es sumar lo que puede coincidir de verdad en el peor momento del día, no todo lo que tienes enchufado. Los grandes consumidores de una vivienda son siempre los mismos: la vitrocerámica o inducción, el horno, el termo eléctrico, la lavadora y la secadora en fase de calor, el aire acondicionado y, si lo tienes, el cargador del coche. El resto (iluminación, televisión, ordenadores, router, pequeño electrodoméstico) suma bastante menos de lo que la gente supone.",
-          "Un caso muy repetido en Barcelona: pisos que llevan décadas con la potencia mínima porque la cocina era de gas, y que al reformar y poner inducción se quedan cortos de golpe. Ahí la subida no es opcional, y casi siempre arrastra boletín nuevo porque la cocina necesita su propio circuito.",
+          "Hay un caso que se repite mucho en Barcelona. Pisos que llevan décadas con la potencia mínima porque la cocina era de gas, y que al reformar y poner inducción se quedan cortos de golpe. Ahí la subida no es opcional, y arrastra boletín nuevo porque la cocina necesita su propio circuito.",
         ],
       },
       {
         h2: "Bajar la potencia también es una opción",
         parrafos: [
           "Nadie lo cuenta, pero es la otra mitad del asunto. Si en tu factura no ves cortes nunca y la potencia contratada viene heredada del anterior propietario o de una época en la que tenías más gente en casa, es muy posible que estés pagando de más cada mes sin ninguna contrapartida.",
-          "Bajar potencia es un trámite más sencillo que subirla y normalmente no requiere boletín nuevo, porque una instalación apta para más siempre lo es para menos. Antes de tocar nada conviene medir un par de semanas de consumo real, que puedes consultar en la web de tu distribuidora hora a hora, y comprobar cuál ha sido tu pico máximo.",
-          "El único freno a tener en cuenta es administrativo: tras una modificación, la normativa impide volver a cambiar la potencia durante doce meses. Así que la decisión conviene tomarla con el dato delante, no por intuición.",
+          "Bajar potencia es un trámite más sencillo que subirla, y no suele requerir boletín nuevo: una instalación apta para más lo es para menos. Antes de tocar nada, mide. Tienes tu consumo real hora a hora en la web de tu distribuidora, y lo que te interesa es cuál ha sido tu pico máximo en las últimas semanas.",
+          "El freno es administrativo. Tras una modificación, la normativa impide volver a cambiar la potencia durante doce meses. Así que esta decisión se toma con el dato delante, no por intuición.",
         ],
       },
       {
@@ -455,15 +456,15 @@ export const posts: Post[] = [
         h2: "Del contador a la plaza: por dónde va el cable",
         parrafos: [
           "Esta es la parte que decide buena parte del trabajo y del presupuesto, y por eso la miramos siempre antes de dar precio.",
-          "En la mayoría de fincas de Barcelona los contadores están centralizados en un cuarto de la planta baja o del vestíbulo, y desde ahí hasta tu plaza hay que tender una línea propia por zonas comunes, normalmente en bandeja o tubo grapado al techo del garaje. El recorrido puede ser de unos metros o de bastantes, según dónde te toque la plaza, y esa distancia es la que más varía de un caso a otro.",
-          "Que el cable pase por zona común no cambia lo dicho antes sobre permisos: la ley contempla expresamente ese paso para instalaciones de recarga de uso privado. Lo que sí conviene, y hacemos siempre, es acordar con el administrador el trazado concreto para que quede ordenado y no estorbe futuras instalaciones de otros vecinos.",
+          "En la mayoría de fincas de Barcelona los contadores están centralizados en la planta baja o en el vestíbulo. Desde ahí hasta tu plaza hay que tender una línea propia por zona común, en bandeja o en tubo grapado al techo del garaje. El recorrido puede ser de unos metros o de bastantes según dónde te toque la plaza, y esa distancia es lo que más varía de un presupuesto a otro.",
+          "Que el cable pase por zona común no cambia lo dicho sobre permisos. La ley contempla expresamente ese paso para instalaciones de recarga de uso privado. Lo que sí hacemos siempre es acordar el trazado con el administrador, para que quede ordenado y no estorbe a los vecinos que vengan después.",
           "Un consejo que ahorra dinero a la comunidad entera: si sabes de más vecinos interesados, planteadlo a la vez. Dejar preinstalada una canalización común para varias plazas cuesta bastante menos que abrir el mismo recorrido tres veces en tres años.",
         ],
       },
       {
         h2: "Qué protecciones exige la normativa",
         parrafos: [
-          "Un punto de carga no es un enchufe reforzado. La ITC-BT-52, que es la instrucción del reglamento dedicada a la recarga de vehículo eléctrico, obliga a una serie de elementos que conviene que reconozcas en tu presupuesto:",
+          "Un punto de carga no es un enchufe reforzado. La ITC-BT-52, que es la instrucción del reglamento dedicada a la recarga de vehículo eléctrico, obliga a una serie de elementos. Deberías reconocerlos en tu presupuesto:",
         ],
         bullets: [
           "Línea dedicada desde tu contador, sin compartir circuito con nada más de la vivienda",
@@ -502,12 +503,12 @@ export const posts: Post[] = [
       {
         pregunta: "¿Y si soy inquilino y la plaza es de alquiler?",
         respuesta:
-          "Puedes instalarlo, pero necesitas el consentimiento del propietario de la plaza, además de la comunicación a la comunidad. Conviene dejar por escrito qué pasa con la instalación al terminar el contrato: si se queda o si se retira y quién asume ese coste.",
+          "Puedes instalarlo, pero necesitas el consentimiento del propietario de la plaza, además de la comunicación a la comunidad. Deja por escrito qué pasa con la instalación cuando termine el contrato. Si se queda, si se retira y quién paga eso.",
       },
       {
         pregunta: "¿Cuánto tarda la instalación?",
         respuesta:
-          "El montaje en sí suele resolverse en una jornada cuando el recorrido es sencillo. Lo que marca los plazos reales es el paso previo: la comunicación a la comunidad y, si hace falta ampliar potencia, el trámite con la comercializadora y la distribuidora.",
+          "Cuando el recorrido es sencillo, el montaje se resuelve en una jornada. Lo que marca los plazos reales es el paso previo: la comunicación a la comunidad y, si hay que ampliar potencia, el trámite con la comercializadora y la distribuidora.",
       },
       {
         pregunta: "¿Hay ayudas públicas para instalarlo?",

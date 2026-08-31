@@ -41,6 +41,16 @@ export type Servicio = {
   ctaLabel?: string;
 };
 
+/** Foto real de un trabajo hecho por el equipo. Nunca ilustrativa. */
+export type Trabajo = {
+  src: string;
+  alt: string;
+  titulo: string;
+  pie: string;
+  /** Servicios en los que tiene sentido mostrarla */
+  etiquetas: string[];
+};
+
 /** Card del grid de la home sin página propia en v1 (enlaza a otra ruta) */
 export type CardExtra = {
   titulo: string;

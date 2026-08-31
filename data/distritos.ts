@@ -19,7 +19,7 @@ export const distritos: Ciudad[] = [
     metaDescription:
       "Electricistas autorizados en el Eixample. Fincas antiguas, boletines (CIE), cuadros y urgencias 24h. Precio cerrado antes de empezar.",
     porQue: [
-      "El Eixample concentra el parque de fincas regias más grande de Barcelona: edificios de 1900 a 1930 con techos altos, instalaciones que han crecido a parches durante un siglo y cuadros junto a la puerta que ya no protegen nada. Es nuestro distrito de trabajo más habitual, y el motivo de buena parte de los boletines que gestionamos: pisos que se venden o se alquilan y cuya instalación no pasa la revisión de la comercializadora.",
+      "El Eixample concentra el parque de fincas regias más grande de Barcelona. Edificios de 1900 a 1930, techos altos, instalaciones que han crecido a parches durante un siglo y cuadros junto a la puerta que ya no protegen nada. Es nuestro distrito de trabajo más habitual, y de aquí sale buena parte de los boletines que gestionamos: pisos que se venden o se alquilan y cuya instalación no pasa la revisión de la comercializadora.",
       "Trabajamos con cuidado en fincas con elementos protegidos: rozas mínimas, molduras respetadas y canaletas donde no se puede abrir pared. En urgencias llegamos en 30-45 minutos a cualquier punto del distrito, del Fort Pienc a la Esquerra, y el aparcamiento es problema nuestro, no tuyo.",
     ],
     tambienServicio: {
@@ -64,16 +64,16 @@ export const distritos: Ciudad[] = [
         h2: "La instalación centenaria de una finca del Eixample",
         parrafos: [
           "Las fincas del Eixample Cerdà se levantaron entre 1900 y 1930, cuando la electricidad era un lujo para dar luz a unas pocas bombillas. Todo lo que hay hoy en esos pisos (cocina, lavadora, aire acondicionado, ordenadores) cuelga de una instalación que nunca se diseñó para eso y que ha ido creciendo a parches durante un siglo.",
-          "El patrón que encontramos casi siempre es el mismo: una columna montante antigua que sube por el patio de luces, derivaciones hechas en distintas décadas y con distintos criterios, cableado de sección corta escondido bajo molduras, y a menudo ausencia total de toma de tierra. En los pisos donde alguien reformó la cocina en los noventa suele aparecer además una línea nueva bien hecha conviviendo con otra de los años cincuenta, sin que nadie separase nunca los circuitos.",
+          "El patrón se repite. Una columna montante antigua que sube por el patio de luces, derivaciones hechas en distintas décadas y con distintos criterios, cableado de sección corta escondido bajo molduras y, muchas veces, ninguna toma de tierra. En los pisos donde alguien reformó la cocina en los noventa aparece además una línea nueva bien hecha conviviendo con otra de los años cincuenta, sin que nadie separase nunca los circuitos.",
           "El patio de luces merece mención aparte porque es el origen de una parte importante de las urgencias del distrito. Es húmedo, mal ventilado y por él pasan tanto las bajantes como buena parte de las derivaciones. Cuando el aislamiento cede ahí, el diferencial empieza a saltar los días de lluvia y nadie relaciona una cosa con la otra.",
-          "Nuestro trabajo habitual en estas fincas no es rehacerlo todo de golpe, que casi nunca hace falta: es separar circuitos, poner un cuadro que proteja de verdad, resolver la toma de tierra y sustituir los tramos que estén comprometidos. Y hacerlo respetando la finca, que es lo que más nos preguntan.",
+          "En estas fincas casi nunca hay que rehacerlo todo de golpe, y no lo proponemos. El trabajo es separar circuitos, poner un cuadro que proteja de verdad, resolver la toma de tierra y sustituir los tramos comprometidos. Respetando la finca, que es lo que más nos preguntan.",
         ],
       },
       {
         h2: "Obra en finca catalogada: cómo trabajamos sin romper",
         parrafos: [
           "Buena parte del Eixample está protegido, y muchos propietarios dan por hecho que renovar la instalación implica levantar molduras, picar paredes de mosaico o sacrificar un techo con artesonado. En la práctica casi nunca es así, pero exige trabajar de otra manera y con más tiempo de planificación.",
-          "Lo que hacemos: aprovechar los tubos y canalizaciones existentes siempre que admitan el nuevo cableado, pasar por falsos techos de zonas ya reformadas (habitualmente baños y cocina), usar canaleta técnica en color y perfil discretos donde no se puede abrir pared, y reservar las rozas para los tramos cortos e imprescindibles. Los suelos hidráulicos y las carpinterías originales no se tocan.",
+          "Aprovechamos los tubos y canalizaciones existentes siempre que admitan el nuevo cableado. Pasamos por falsos techos de las zonas ya reformadas, casi siempre baño y cocina. Donde no se puede abrir pared usamos canaleta técnica de perfil discreto. Y las rozas quedan para los tramos cortos e imprescindibles. Los suelos hidráulicos y las carpinterías originales no se tocan.",
           "Cuando la actuación afecta a elementos comunes de la finca, hablamos nosotros con el administrador y le entregamos por escrito qué se va a hacer y cómo. Es un paso que a los propietarios les ahorra discusiones en la junta y que hacemos sin coste, porque nos evita problemas a todos.",
         ],
       },
@@ -100,7 +100,7 @@ export const distritos: Ciudad[] = [
       {
         pregunta: "El diferencial me salta solo cuando llueve. ¿Es normal en estas fincas?",
         respuesta:
-          "Es muy frecuente aquí, y casi siempre el origen está en el patio de luces: es húmedo, mal ventilado y por él pasa buena parte de las derivaciones de la finca. Se localiza midiendo el aislamiento circuito por circuito y se resuelve sustituyendo el tramo afectado, no secando y esperando.",
+          "Es muy frecuente aquí, y el origen está casi siempre en el patio de luces. Es húmedo, está mal ventilado y por él pasa buena parte de las derivaciones de la finca. Se localiza midiendo el aislamiento circuito por circuito, y se resuelve sustituyendo el tramo afectado. Secar y esperar no sirve.",
       },
       {
         pregunta: "¿Cuánto tarda un electricista en llegar al Eixample?",
@@ -185,7 +185,7 @@ export const distritos: Ciudad[] = [
         h2: "Festa Major y otras instalaciones temporales",
         parrafos: [
           "En agosto Gràcia monta la decoración de calle más ambiciosa de la ciudad, y detrás de cada calle engalanada hay una instalación eléctrica provisional que tiene que aguantar una semana de uso intensivo a la intemperie.",
-          "Las comisiones de fiestas suelen resolverlo con voluntarios y buena voluntad, pero hay una parte que conviene que revise alguien habilitado: de dónde se toma la corriente, qué protección diferencial tiene esa toma, cómo están hechos los empalmes que quedan al alcance de la gente y si el cableado aéreo está a la altura y con la sujeción adecuada.",
+          "Las comisiones lo resuelven con voluntarios y buena voluntad, y funciona. Pero hay una parte que debería revisar alguien habilitado. De dónde se toma la corriente, qué protección diferencial tiene esa toma, cómo están hechos los empalmes que quedan al alcance de la gente, y si el cableado aéreo está a la altura y bien sujeto.",
           "Damos servicio a comisiones, asociaciones de vecinos y comercios para este tipo de montajes temporales: revisión previa, cuadro provisional con protecciones en condiciones y disponibilidad durante los días de fiesta por si algo falla. No es nuestro trabajo más habitual, pero es el que más nos gusta.",
         ],
       },
@@ -194,7 +194,7 @@ export const distritos: Ciudad[] = [
       {
         pregunta: "Quiero poner inducción en una casa de la Vila. ¿Qué implica?",
         respuesta:
-          "Casi siempre tres cosas a la vez: línea nueva con circuito propio para la cocina, cuadro capaz de admitirla y subida de potencia con su boletín. Te lo cerramos todo en un mismo presupuesto por escrito para que no haya sorpresas a mitad.",
+          "Tres cosas a la vez, casi siempre. Línea nueva con circuito propio para la cocina, un cuadro capaz de admitirla y subida de potencia con su boletín. Te lo cerramos todo en un mismo presupuesto por escrito, para que no aparezcan sorpresas a mitad del trabajo.",
       },
       {
         pregunta: "¿Trabajáis durante la Festa Major?",
@@ -214,7 +214,7 @@ export const distritos: Ciudad[] = [
       {
         pregunta: "Quiero electrificar la cocina de un piso antiguo de Gràcia. ¿Qué necesito?",
         respuesta:
-          "Casi siempre: línea nueva de cocina, cuadro a la altura y, según el caso, subida de potencia con boletín. Te lo cerramos todo en un mismo presupuesto por escrito.",
+          "Línea nueva de cocina, cuadro a la altura y, según el caso, subida de potencia con boletín. Te lo cerramos todo en un mismo presupuesto por escrito.",
       },
       {
         pregunta: "¿Trabajáis en los bares y restaurantes de las plazas?",
@@ -289,7 +289,7 @@ export const distritos: Ciudad[] = [
         h2: "El entorno de la estación y la Fira: locales y trifásica",
         parrafos: [
           "La franja que va de Sants Estació a la Fira de Montjuïc concentra un tipo de cliente distinto al del resto del distrito: comercio de paso, hostelería con horarios largos, oficinas pequeñas y almacenes.",
-          "Aquí lo habitual es encontrar suministro trifásico, que es otra liga. Un local trifásico mal equilibrado (con casi toda la carga colgada de una de las tres fases) da problemas que se confunden con una avería: protecciones que saltan sin motivo aparente, motores que rinden mal y consumos más altos de lo que corresponde. Equilibrar fases es de los trabajos que más agradece un local y de los que menos se piden, porque casi nadie sabe que existe.",
+          "Aquí lo normal es el suministro trifásico, que es otra liga. Cuando un local trifásico está mal equilibrado, con casi toda la carga colgando de una de las tres fases, da problemas que parecen una avería. Protecciones que saltan sin motivo aparente, motores que rinden mal, consumos más altos de lo que tocaría. Equilibrar fases es de los trabajos que más agradece un local y de los que menos se piden, porque casi nadie sabe que existe.",
           "También es zona de aperturas y traspasos constantes, con la urgencia típica de quien tiene fecha de inauguración. En esos casos lo que marca la diferencia es la legalización: adecuar la instalación a la actividad real y emitir el certificado que pide el ayuntamiento para la licencia, sin que el papeleo se convierta en el cuello de botella.",
         ],
       },
@@ -298,7 +298,7 @@ export const distritos: Ciudad[] = [
       {
         pregunta: "Mi comunidad tiene caídas de tensión en los pisos altos. ¿Qué es?",
         respuesta:
-          "Casi siempre son los montantes: la línea que sube por la escalera tiene una sección que se quedó corta para lo que consumen hoy los pisos. Se nota más arriba porque la caída se acumula con la distancia. Es un problema del edificio, no de tu vivienda, y conviene revisarlo antes de que cada vecino gaste por su cuenta en soluciones que no lo resuelven.",
+          "Son los montantes. La línea que sube por la escalera tiene una sección que se quedó corta para lo que consumen hoy los pisos, y se nota más arriba porque la caída se acumula con la distancia. Es un problema del edificio, no de tu vivienda. Revísalo antes de que cada vecino gaste por su cuenta en soluciones que no lo arreglan.",
       },
       {
         pregunta: "¿Presupuestáis para llevar a una junta de vecinos?",
@@ -308,7 +308,7 @@ export const distritos: Ciudad[] = [
       {
         pregunta: "Tengo un local con suministro trifásico y saltan las protecciones sin motivo.",
         respuesta:
-          "Es el síntoma clásico de fases mal equilibradas: casi toda la carga cuelga de una de las tres. Se mide y se redistribuye, y suele resolver también consumos más altos de lo que corresponde. Es de los trabajos que más agradece un local y de los que menos se piden.",
+          "Es el síntoma clásico de fases mal equilibradas, con casi toda la carga colgando de una de las tres. Se mide y se redistribuye. Suele arreglar de paso consumos más altos de lo que corresponde. Es de los trabajos que más agradece un local y de los que menos se piden.",
       },
       {
         pregunta: "¿Cuánto tarda un electricista en llegar a Sants?",
@@ -337,7 +337,7 @@ export const distritos: Ciudad[] = [
     metaDescription:
       "Electricistas autorizados en Sant Martí: Poblenou, 22@, Clot y La Verneda. Oficinas, lofts, boletines y urgencias 24h. Precio cerrado.",
     porQue: [
-      "Sant Martí es el distrito más contrastado de Barcelona para un electricista: en el Poblenou y el 22@ trabajamos en oficinas, lofts y antiguas fábricas reconvertidas que heredan instalaciones trifásicas industriales; en el Clot, el Camp de l'Arpa y La Verneda, en bloques residenciales de los 60 y 70 con las averías clásicas de esa época: cuadros cortos, potencias mínimas y enchufes sin tierra.",
+      "Sant Martí es el distrito más contrastado de Barcelona para un electricista. En el Poblenou y el 22@ trabajamos en oficinas, lofts y antiguas fábricas reconvertidas, que heredan instalaciones trifásicas industriales. En el Clot, el Camp de l'Arpa y La Verneda, en bloques residenciales de los 60 y 70 con las averías clásicas de esa época. Cuadros cortos, potencias mínimas y enchufes sin tierra.",
       "Para las empresas del 22@ ofrecemos mantenimiento con interlocutor único y factura con IVA desglosado; para los vecinos, el mismo servicio de siempre: precio cerrado por escrito y urgencias en menos de una hora en todo el distrito.",
     ],
     tambienServicio: {
@@ -393,7 +393,7 @@ export const distritos: Ciudad[] = [
         h2: "El Clot, la Verneda y el Sant Martí de siempre",
         parrafos: [
           "Entre el 22@ y el frente marítimo queda la parte del distrito donde vive la mayoría de la gente, y ahí el trabajo es el de un barrio residencial normal: bloques de los sesenta y setenta en el Clot, Camp de l'Arpa y la Verneda, con cuadros que piden relevo y potencias heredadas de otra época.",
-          "Es la zona del distrito donde más cambios de cuadro y más subidas de potencia hacemos, casi siempre por el mismo motivo: reformas de cocina que pasan de gas a inducción y aparatos de aire acondicionado que se instalan sin que nadie compruebe si la instalación aguanta lo que se le pide.",
+          "Es la zona del distrito donde más cambios de cuadro y más subidas de potencia hacemos, y casi siempre por lo mismo. Reformas de cocina que pasan de gas a inducción, y aparatos de aire acondicionado instalados sin que nadie compruebe si la instalación aguanta lo que se le pide.",
           "Atendemos urgencias en todo el distrito con el mismo tiempo de respuesta, tanto si la llamada viene de una oficina del 22@ como de un tercero sin ascensor de la Verneda. Y el precio de la salida se dice por teléfono antes de movernos, aquí y en cualquier otro sitio.",
         ],
       },
@@ -480,8 +480,8 @@ export const distritos: Ciudad[] = [
         h2: "Casas de pueblo con instalación vista",
         parrafos: [
           "Sant Andreu de Palomar fue municipio propio hasta 1897 y su casco antiguo lo sigue pareciendo: calles estrechas, casas bajas de planta y piso, muchas todavía en manos de la misma familia desde hace generaciones. Es uno de los tejidos con la instalación eléctrica más antigua que encontramos en Barcelona.",
-          "Lo característico de estas casas es la instalación vista: cableado sobre regletas de madera o plástico que recorre las paredes por encima del rodapié o bajo el techo, empalmes hechos a la vista y cajas que nunca se cerraron. No es necesariamente peligroso por estar a la vista, pero suele ir acompañado de todo lo demás: sin toma de tierra, con secciones cortas y con un cuadro que se limita a un par de fusibles.",
-          "La renovación completa de una casa así es un trabajo de varios días y conviene plantearlo bien, porque no siempre interesa hacerlo todo de golpe. Lo que solemos proponer es un orden de prioridades: primero cuadro y toma de tierra, que es lo que te protege; después los circuitos de cocina y baño, que son los que más carga y más riesgo concentran; y el resto cuando toque. Presupuestado por fases, por escrito, y sin que la primera fase te obligue a contratar las siguientes.",
+          "Lo característico de estas casas es la instalación vista. Cableado sobre regletas de madera o plástico que recorre las paredes por encima del rodapié o bajo el techo, empalmes hechos a la vista y cajas que nunca se cerraron. Estar a la vista no es en sí el problema. Lo malo es lo que suele venir con ello: sin toma de tierra, con secciones cortas y con un cuadro reducido a un par de fusibles.",
+          "Renovar una casa así son varios días de trabajo, y casi nunca interesa hacerlo todo de golpe. Lo que proponemos es un orden. Primero cuadro y toma de tierra, que es lo que te protege. Después los circuitos de cocina y baño, donde se concentra la carga y el riesgo. El resto, cuando toque. Presupuestado por fases, por escrito, y sin que la primera te obligue a contratar las siguientes.",
         ],
       },
       {
@@ -505,7 +505,7 @@ export const distritos: Ciudad[] = [
       {
         pregunta: "Mi casa tiene el cable a la vista sobre regletas. ¿Es peligroso?",
         respuesta:
-          "Estar a la vista no es en sí el problema; lo preocupante es lo que suele acompañarlo: falta de toma de tierra, secciones cortas y un cuadro con dos fusibles. Lo revisamos y te decimos qué es urgente y qué puede esperar, con presupuesto por fases para que no tengas que hacerlo todo de golpe.",
+          "Estar a la vista no es en sí el problema. Lo preocupante es lo que suele acompañarlo: falta de toma de tierra, secciones cortas y un cuadro con dos fusibles. Lo revisamos y te decimos qué es urgente y qué puede esperar, con presupuesto por fases para que no tengas que hacerlo todo de golpe.",
       },
       {
         pregunta: "Mi promoción tiene preinstalación de recarga. ¿Ya puedo cargar el coche?",
@@ -583,7 +583,7 @@ export const distritos: Ciudad[] = [
         h2: "Comunidades de los setenta y ochenta: el trabajo está en las zonas comunes",
         parrafos: [
           "Les Corts tiene uno de los parques de vivienda mejor conservados de Barcelona: bloques de los años setenta y ochenta, con buenas superficies, comunidades organizadas y administradores profesionales. Eso cambia el tipo de trabajo que hacemos en el distrito.",
-          "En una finca de Les Corts el piso individual suele estar razonablemente bien. Donde se concentra el trabajo es en la parte común, que es la que nadie mira hasta que falla: cuadros de servicios comunes montados en los ochenta y ampliados sin criterio, alumbrado de escalera y párking con equipos obsoletos y consumos altos, líneas de ascensor sin protección diferencial propia, y grupos de presión y bombas de achique conectados de forma provisional que lleva quince años siendo definitiva.",
+          "En una finca de Les Corts el piso individual suele estar razonablemente bien. El trabajo se concentra en la parte común, que es la que nadie mira hasta que falla. Cuadros de servicios comunes montados en los ochenta y ampliados sin criterio. Alumbrado de escalera y párking con equipos obsoletos y consumos altos. Líneas de ascensor sin protección diferencial propia. Y grupos de presión y bombas de achique conectados de forma provisional que lleva quince años siendo definitiva.",
           "El encargo que más nos piden aquí es la renovación completa del alumbrado común con luminarias LED y detección de presencia. Es el trabajo con el retorno más claro que puede aprobar una comunidad: baja el consumo de forma inmediata, elimina el mantenimiento de sustituir tubos y lámparas cada temporada, y mejora la seguridad en párkings y rellanos. Lo presupuestamos por escrito y desglosado para que se pueda llevar a junta sin discusión.",
         ],
       },
@@ -600,7 +600,7 @@ export const distritos: Ciudad[] = [
         h2: "Oficinas de la Diagonal y locales de Pedralbes",
         parrafos: [
           "La Diagonal a su paso por Les Corts concentra la mayor densidad de oficinas de la ciudad junto con el 22@, y en Pedralbes hay un comercio y una restauración de nivel alto con exigencias propias.",
-          "Para oficinas, el trabajo habitual es la adecuación de plantas cuando cambia el inquilino o la distribución: puestos de trabajo nuevos, líneas de datos, alumbrado y climatización, con la particularidad de que casi siempre hay que hacerlo con el edificio en funcionamiento y en horario restringido.",
+          "En oficinas el trabajo habitual es la adecuación de plantas cuando cambia el inquilino o la distribución. Puestos de trabajo nuevos, líneas de datos, alumbrado y climatización. Con la particularidad de que casi siempre hay que hacerlo con el edificio en funcionamiento y en horario restringido.",
           "En locales de restauración la clave es la potencia y la separación de circuitos: cocina, cámaras frigoríficas, climatización y sala tienen que ir por su lado, y las cámaras deben quedar en un circuito que no se pueda desconectar por error. Es el detalle que evita encontrarte el género perdido un lunes por la mañana.",
           "Mantenimiento con revisiones programadas y prioridad de respuesta para clientes con contrato, porque en hostelería una avería a media tarde es dinero contado.",
         ],
@@ -649,7 +649,7 @@ export const distritos: Ciudad[] = [
     metaDescription:
       "Electricistas autorizados en Sarrià, Sant Gervasi y el Putxet. Domótica, aerotermia, puntos de carga y urgencias 24h. Precio cerrado.",
     porQue: [
-      "Sarrià-Sant Gervasi es el distrito de las casas grandes: torres con jardín en Sarrià y Les Tres Torres, pisos amplios en Galvany y el Putxet, y una demanda creciente de aerotermia, clima por conductos y coche eléctrico. Ese perfil pide instalaciones bien dimensionadas: ampliaciones de potencia, cuadros con protecciones por zonas y líneas dedicadas que instalamos y legalizamos con su CIE.",
+      "Sarrià-Sant Gervasi es el distrito de las casas grandes. Torres con jardín en Sarrià y Les Tres Torres, pisos amplios en Galvany y el Putxet, y una demanda creciente de aerotermia, clima por conductos y coche eléctrico. Ese perfil pide instalaciones bien dimensionadas. Ampliaciones de potencia, cuadros con protecciones por zonas y líneas dedicadas, que instalamos y legalizamos con su CIE.",
       "También conservamos lo antiguo: fincas señoriales de principios del siglo XX en Sant Gervasi con instalación centenaria que renovamos respetando molduras y carpinterías. En urgencias llegamos en 30-45 minutos a todo el distrito, también a la parte alta.",
     ],
     tambienServicio: {
@@ -794,7 +794,7 @@ export const distritos: Ciudad[] = [
         parrafos: [
           "Horta-Guinardó trepa por la falda de Collserola y esa geografía condiciona el trabajo eléctrico más de lo que parece. Casas con jardín en desnivel, pasajes, escaleras públicas, parcelas donde el garaje está veinte metros por debajo de la vivienda y muros de contención por todas partes.",
           "La consecuencia práctica es que aquí hay mucha más instalación a la intemperie que en un distrito llano: líneas que cruzan un jardín en pendiente, iluminación de escaleras y accesos exteriores, tomas en porches y trasteros, y canalizaciones enterradas que llevan décadas soportando filtraciones cada vez que llueve fuerte.",
-          "Es también el distrito donde más averías por humedad atendemos, y con un patrón muy marcado: aparecen en otoño con las primeras lluvias fuertes, desaparecen en verano y vuelven al año siguiente un poco peor. Cuando alguien nos dice que su diferencial salta solo en invierno, casi siempre hay agua entrando por una canalización exterior o por un muro.",
+          "Es también el distrito donde más averías por humedad atendemos, y con un patrón muy marcado. Aparecen en otoño con las primeras lluvias fuertes, desaparecen en verano y vuelven al año siguiente un poco peor. Cuando alguien nos dice que su diferencial salta solo en invierno, hay agua entrando por una canalización exterior o por un muro.",
           "Reparar bien esto pasa por sustituir el tramo afectado con material estanco y canalización nueva, no por secar y esperar. Lo segundo funciona hasta la siguiente tormenta.",
         ],
       },
@@ -802,8 +802,8 @@ export const distritos: Ciudad[] = [
         h2: "El Carmel y la Teixonera: bloques colgados de la montaña",
         parrafos: [
           "La parte alta del distrito se construyó deprisa entre los años cincuenta y setenta para acoger a la inmigración que llegaba a Barcelona, y muchos de aquellos bloques siguen en pie con su instalación original o poco más.",
-          "Lo que encontramos habitualmente: cuadros con fusibles o con un único diferencial, ausencia de toma de tierra en toda la vivienda, secciones de cable insuficientes y montantes comunitarios que se quedaron cortos hace décadas. Es la zona de Barcelona donde más cambios de cuadro completos hacemos y donde más veces tenemos que explicar que subir la potencia contratada no sirve de nada si la instalación de la casa no puede transportarla.",
-          "Hay además una circunstancia local que conviene conocer: muchas de estas fincas tienen dificultades de acceso, con escaleras públicas, calles sin salida y pendientes fuertes. No es un problema para nosotros y no lo repercutimos, pero sí explica que el tiempo de llegada en una urgencia aquí sea algo mayor que en la parte baja del distrito. Cuando llamas, te decimos una franja realista, no la que suena mejor.",
+          "Lo que encontramos aquí. Cuadros con fusibles o con un único diferencial. Ninguna toma de tierra en toda la vivienda. Secciones de cable insuficientes. Y montantes comunitarios que se quedaron cortos hace décadas. Es la zona de Barcelona donde más cuadros completos cambiamos, y donde más veces tenemos que explicar que subir la potencia contratada no sirve de nada si la instalación de la casa no puede transportarla.",
+          "Hay una circunstancia local que te interesa conocer. Muchas de estas fincas tienen el acceso complicado, con escaleras públicas, calles sin salida y pendientes fuertes. No es un problema para nosotros y no lo cobramos aparte, pero explica que en una urgencia tardemos algo más que en la parte baja del distrito. Cuando llamas te damos una franja realista, no la que suena mejor.",
         ],
       },
       {
@@ -811,7 +811,7 @@ export const distritos: Ciudad[] = [
         parrafos: [
           "El distrito combina dos realidades más: la zona de grandes equipamientos alrededor de Vall d'Hebron, con hospitales, instalaciones deportivas y residencias, y los barrios de casas con jardín de la Font d'en Fargues y Sant Genís, de tejido mucho más residencial.",
           "Para el entorno de equipamientos trabajamos sobre todo con empresas de servicios, clínicas privadas y residencias, donde lo que se valora es la disponibilidad y la trazabilidad: revisiones programadas, informe escrito de cada intervención y capacidad de respuesta rápida, porque en un centro con personas dependientes un corte de suministro no es una molestia, es un riesgo.",
-          "En las casas de la Font d'en Fargues el trabajo se parece más al de Sarrià pero a otra escala: instalaciones exteriores, iluminación de jardín, ampliaciones para climatización y, cada vez más, puntos de carga en garajes particulares. Con la ventaja de que en vivienda unifamiliar con garaje propio la instalación de recarga es de las más sencillas y rápidas que existen: línea directa desde tu cuadro y listo.",
+          "En las casas de la Font d'en Fargues el trabajo se parece al de Sarrià, a otra escala. Instalaciones exteriores, iluminación de jardín, ampliaciones para climatización y, cada vez más, puntos de carga en garajes particulares. Estos últimos son de las instalaciones más rápidas que existen cuando la casa tiene garaje propio. Línea directa desde tu cuadro y listo.",
         ],
       },
     ],
