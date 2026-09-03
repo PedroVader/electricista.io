@@ -599,6 +599,214 @@ export const ciudades: Ciudad[] = [
       },
     ],
   },
+  {
+    slug: "electricista-hospitalet",
+    nombre: "L'Hospitalet de Llobregat",
+    comarca: "Barcelonès",
+    h1: "Electricista en L'Hospitalet: urgencias e instaladores autorizados",
+    metaTitle: "Electricista en L'Hospitalet | Urgencias 24h y boletines",
+    metaDescription:
+      "Electricistas en L'Hospitalet de Llobregat. Cambio de cuadros, boletines (CIE), averías y urgencias 24h. Precio cerrado antes de empezar.",
+    porQue: [
+      "L'Hospitalet es la ciudad más densa de España, y eso se nota en su parque de vivienda. Barrios como Collblanc, la Torrassa, Santa Eulàlia o Bellvitge crecieron a toda velocidad entre los años cincuenta y setenta para alojar la llegada masiva de población, con pisos de superficie muy ajustada y una instalación eléctrica pensada para lo mínimo de aquella época.",
+      "El trabajo que más hacemos aquí es exactamente ese: cuadros de fusibles o con un único diferencial que hay que sustituir, viviendas sin toma de tierra y potencias contratadas en el mínimo heredado, que saltan en cuanto la cocina y la lavadora coinciden. Estamos a diez minutos por la Gran Via o la Ronda de Dalt, así que en urgencias los tiempos son los mismos que en Barcelona ciudad.",
+    ],
+    tambienServicio: {
+      intro:
+        "Desde L'Hospitalet cubrimos el resto del Baix Llobregat cercano y saltamos a Barcelona en minutos. Trabajamos a diario en toda esta franja.",
+      municipios: [
+        "Cornellà de Llobregat",
+        "Esplugues de Llobregat",
+        "Sant Joan Despí",
+        "El Prat de Llobregat",
+        "Barcelona",
+      ],
+    },
+    zonas: {
+      h2: "Trabajos habituales por barrio de L'Hospitalet",
+      intro:
+        "La ciudad cambia mucho de un barrio a otro, y el tipo de avería también.",
+      items: [
+        {
+          nombre: "Collblanc i la Torrassa",
+          texto:
+            "La zona más densa y con el parque más antiguo: sustitución de cuadros con fusibles, tomas de tierra que no existen y boletines para altas de luz.",
+        },
+        {
+          nombre: "Santa Eulàlia i Granvia Sud",
+          texto:
+            "Bloques de los sesenta y setenta con potencia corta: subidas de potencia, líneas nuevas de cocina y renovación de cuadro.",
+        },
+        {
+          nombre: "Bellvitge i Gornal",
+          texto:
+            "Grandes bloques con mucha zona común: cuadros de servicios comunes, alumbrado de escalera y párking, y líneas de ascensor.",
+        },
+        {
+          nombre: "Centre i Sant Josep",
+          texto:
+            "Comercio de calle y oficinas: separación de circuitos, adecuación para licencias de actividad y mantenimiento.",
+        },
+        {
+          nombre: "La Marina i polígonos",
+          texto:
+            "Naves, talleres y almacenes: suministros trifásicos, cuadros de distribución y alumbrado industrial a LED.",
+        },
+      ],
+    },
+    secciones: [
+      {
+        h2: "La ciudad más densa de España y su instalación eléctrica",
+        parrafos: [
+          "L'Hospitalet supera los 20.000 habitantes por kilómetro cuadrado. Esa densidad no es un dato de trivial: condiciona directamente cómo son las instalaciones que nos encontramos.",
+          "Significa edificios altos con muchas viviendas por escalera, y por tanto montantes comunitarios que soportan mucha más carga de la que se calculó cuando se construyeron. El síntoma clásico son las caídas de tensión en las plantas superiores y los vecinos que no consiguen subir potencia porque la línea que les da servicio no lo admite.",
+          "Significa también pisos pequeños donde todo está cerca: la cocina, la lavadora y el baño colgando a menudo del mismo circuito, cuando el reglamento actual pide que vayan separados. Es la causa de buena parte de los magnetotérmicos que saltan a diario en la ciudad.",
+          "Cuando nos llaman por un problema recurrente en una finca de L'Hospitalet, lo primero que miramos es si el problema es del piso o del edificio. Decirlo a tiempo evita que cada vecino gaste por su cuenta en una solución que no arregla nada.",
+        ],
+      },
+      {
+        h2: "Sustitución de cuadros: el trabajo estrella en la ciudad",
+        parrafos: [
+          "De todo lo que hacemos en L'Hospitalet, la sustitución de cuadros antiguos es lo más repetido, y tiene una explicación demográfica sencilla. La mayor parte del parque se levantó antes de que el reglamento actual existiera.",
+          "Lo que abrimos habitualmente son cuadros con dos o tres elementos junto a la puerta, a veces todavía con fusibles de porcelana, sin ningún diferencial o con uno solo gobernando toda la vivienda. En ese escenario, una fuga en la lavadora deja sin luz la casa entera y nadie sabe por qué.",
+          "El cambio se resuelve en una mañana, aprovechando el cableado existente cuando está en condiciones. Sales con circuitos separados, un magnetotérmico por circuito, toma de tierra verificada y todo rotulado. Si la gestión que tienes pendiente requiere boletín, se firma en el mismo trabajo.",
+        ],
+      },
+      {
+        h2: "Comunidades de Bellvitge y los grandes bloques",
+        parrafos: [
+          "Bellvitge y Gornal tienen un modelo urbano propio, con bloques de gran altura y mucha superficie común por comunidad. Ahí el trabajo eléctrico se parece más al de un edificio de oficinas que al de una finca de barrio.",
+          "Lo que más nos encargan es la renovación del alumbrado de escalera y párking con luminarias LED y detección de presencia, que en bloques con estas dimensiones se nota en el primer recibo. Después, la puesta al día del cuadro de servicios comunes, que suele haber crecido por acumulación durante décadas, y la revisión de las líneas de ascensor y de las bombas.",
+          "Trabajamos con administradores de fincas de toda la ciudad. Entregamos informe escrito y presupuesto cerrado desglosado por partidas, separando lo urgente de lo que puede esperar, para que la junta tenga algo concreto que votar.",
+        ],
+      },
+    ],
+    faqsLocales: [
+      {
+        pregunta: "¿Cuánto tardáis en llegar a L'Hospitalet?",
+        respuesta:
+          "En urgencias, entre 30 y 45 minutos a cualquier barrio. Estamos conectados por la Gran Via y la Ronda de Dalt, así que los tiempos son prácticamente los de Barcelona ciudad.",
+      },
+      {
+        pregunta: "Mi piso de Collblanc no tiene toma de tierra. ¿Tiene solución?",
+        respuesta:
+          "Sí, y es más habitual de lo que parece en el parque anterior a los ochenta. Se resuelve llevando el conductor de protección desde el cuadro a los circuitos y verificando la puesta a tierra del edificio. Sin ella no hay boletín posible, así que es lo primero que hay que arreglar si tienes una gestión pendiente.",
+      },
+      {
+        pregunta: "¿Trabajáis con comunidades de Bellvitge?",
+        respuesta:
+          "Sí, es de las zonas donde más comunidades llevamos. Alumbrado común, cuadros de servicios, ascensor y bombas, con informe y presupuesto por partidas para llevar a junta.",
+      },
+      {
+        pregunta: "¿Hacéis boletines para altas de luz en L'Hospitalet?",
+        respuesta:
+          "Constantemente, es la ciudad con más rotación de alquiler de nuestra zona. Revisamos, adaptamos lo imprescindible y te gestionamos el CIE en 24-48h con un instalador habilitado.",
+      },
+    ],
+  },
+  {
+    slug: "electricista-terrassa",
+    nombre: "Terrassa",
+    comarca: "Vallès Occidental",
+    h1: "Electricista en Terrassa: urgencias e instaladores autorizados",
+    metaTitle: "Electricista en Terrassa | Urgencias 24h y boletines",
+    metaDescription:
+      "Electricistas en Terrassa. Sustitución de cuadros, boletines (CIE), averías y urgencias 24h. Precio cerrado antes de empezar.",
+    porQue: [
+      "Terrassa es, con Sabadell, la capital del Vallès Occidental, y las dos comparten el mismo origen industrial y el mismo tipo de parque construido. Trabajamos aquí a diario desde nuestra base de Sabadell, a quince minutos por la C-58.",
+      "Lo que nos encontramos en la ciudad tiene dos caras. En los barrios que crecieron con la industria textil, como Ca n'Anglada, Sant Pere Nord o Torre-sana, bloques de los sesenta y setenta con cuadros por renovar y potencias mínimas heredadas. Y en el centro y los vapores rehabilitados, instalaciones industriales adaptadas a usos que no estaban previstos cuando se construyeron.",
+    ],
+    tambienServicio: {
+      intro:
+        "Desde Terrassa cubrimos el Vallès Occidental al completo, y trabajamos a diario en los municipios de su entorno.",
+      municipios: [
+        "Sabadell",
+        "Rubí",
+        "Sant Cugat del Vallès",
+        "Castellar del Vallès",
+        "Matadepera",
+      ],
+    },
+    zonas: {
+      h2: "Trabajos habituales por zona de Terrassa",
+      intro: "Cada parte de la ciudad tiene su encargo característico.",
+      items: [
+        {
+          nombre: "Centre i Vapor Gran",
+          texto:
+            "Edificios antiguos y vapores rehabilitados: renovación completa de instalación, boletines para compraventa y adecuación de locales.",
+        },
+        {
+          nombre: "Ca n'Anglada i Torre-sana",
+          texto:
+            "Bloques de los sesenta y setenta: sustitución de cuadros, tomas de tierra y subidas de potencia para cocinas eléctricas.",
+        },
+        {
+          nombre: "Sant Pere i Sant Pere Nord",
+          texto:
+            "Vivienda densa con mucha comunidad: alumbrado de escalera y párking, cuadros de servicios comunes y líneas de ascensor.",
+        },
+        {
+          nombre: "Les Fonts i Can Parellada",
+          texto:
+            "Casas con jardín y parcela: instalaciones exteriores, iluminación, riego y puntos de carga en garaje propio.",
+        },
+        {
+          nombre: "Polígons Santa Margarida i Can Petit",
+          texto:
+            "Naves y talleres: suministros trifásicos, cuadros de distribución, equilibrado de fases y alumbrado industrial.",
+        },
+      ],
+    },
+    secciones: [
+      {
+        h2: "Los vapores: instalaciones industriales con usos nuevos",
+        parrafos: [
+          "Terrassa conserva uno de los conjuntos de arquitectura industrial más importantes de Cataluña, y buena parte de esos vapores se han ido reconvirtiendo en viviendas, equipamientos, oficinas y espacios de trabajo.",
+          "Esas rehabilitaciones plantean un problema técnico concreto: la instalación de origen era industrial, con suministro trifásico, secciones pensadas para maquinaria y una distribución que no tiene nada que ver con la que pide un uso residencial o de oficinas. Muchas conversiones se hicieron por fases y en años distintos, así que lo que hay hoy es una superposición de criterios.",
+          "Cuando entramos en un edificio de estos, la primera tarea suele ser levantar el esquema real de lo que existe, porque la documentación disponible dejó de ser cierta hace varias reformas. A partir de ahí se decide qué se aprovecha y qué se rehace, y se deja documentado para el siguiente.",
+        ],
+      },
+      {
+        h2: "Industria activa: los polígonos de Terrassa",
+        parrafos: [
+          "Más allá del patrimonio, Terrassa mantiene actividad industrial real en polígonos como Santa Margarida, Can Petit o Els Bellots. Es un cliente con prioridades distintas a las de la vivienda.",
+          "Aquí lo que cuesta dinero no es la reparación, es la parada. Por eso el trabajo que más valor aporta es el preventivo: termografía del cuadro general para localizar puntos calientes antes de que se conviertan en avería, revisiones programadas aprovechando las paradas de producción, y equilibrado de fases cuando la carga ha ido creciendo de forma desordenada.",
+          "También hacemos renovación de alumbrado industrial a LED, que en una nave con muchas horas de encendido se amortiza rápido, y la documentación técnica que exige cada actividad según su potencia y su tipo de local.",
+        ],
+      },
+      {
+        h2: "Quince minutos desde nuestra base",
+        parrafos: [
+          "Nuestra base está en Sabadell, así que Terrassa queda a un cuarto de hora por la C-58. En la práctica eso significa dos cosas.",
+          "En urgencias, tiempos de llegada cortos y reales, no la franja que suena mejor por teléfono. Y en trabajos programados, flexibilidad para ajustar la franja horaria, que es lo que agradecen los comercios y los locales que no pueden parar en hora punta.",
+          "Conocemos además el parque de vivienda del Vallès Occidental porque es donde más trabajamos: las dos ciudades comparten el mismo origen industrial y los mismos problemas heredados en las instalaciones de los barrios que crecieron alrededor de las fábricas.",
+        ],
+      },
+    ],
+    faqsLocales: [
+      {
+        pregunta: "¿Cuánto tardáis en llegar a Terrassa?",
+        respuesta:
+          "En urgencias, entre 30 y 40 minutos desde nuestra base de Sabadell por la C-58. En trabajos programados concertamos día y franja, y la cumplimos.",
+      },
+      {
+        pregunta: "¿Trabajáis en naves y talleres de los polígonos?",
+        respuesta:
+          "Sí. Suministros trifásicos, cuadros de nave, equilibrado de fases, alumbrado industrial y mantenimiento preventivo con termografía. Facturamos con CIF e IVA desglosado y albarán de cada intervención.",
+      },
+      {
+        pregunta: "Vivo en un vapor rehabilitado. ¿Podéis con la instalación?",
+        respuesta:
+          "Es de los trabajos más interesantes que hacemos en Terrassa. Levantamos primero el esquema real de lo que hay, que casi nunca coincide con los planos, y a partir de ahí decidimos qué se aprovecha y qué se rehace.",
+      },
+      {
+        pregunta: "¿Hacéis boletines en Terrassa?",
+        respuesta:
+          "Sí, con los mismos plazos que en el resto de nuestra zona: revisión y CIE en 24-48h, firmado por instalador habilitado y tramitado ante Indústria.",
+      },
+    ],
+  },
 ];
 
 export function getCiudad(slug: string): Ciudad | undefined {

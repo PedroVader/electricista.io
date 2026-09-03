@@ -450,11 +450,11 @@ export const servicios: Servicio[] = [
     },
     h1: "Cambio de cuadro eléctrico en Barcelona: seguridad al día en una mañana",
     heroSub:
-      "Si tu cuadro tiene fusibles, no tiene diferencial o salta sin motivo, toca cambiarlo. Lo sustituimos en una visita y con boletín si lo necesitas.",
+      "Si tu cuadro tiene fusibles, no tiene diferencial o salta sin motivo, toca cambiarlo. Hacemos sustitución de cuadros antiguos y montaje de cuadros nuevos, en una visita y con boletín si lo necesitas.",
     heroImage: "/img/hero-cuadro.jpg",
-    metaTitle: "Cambio de cuadro eléctrico en Barcelona | Precio cerrado",
+    metaTitle: "Cambio y sustitución de cuadros eléctricos en Barcelona",
     metaDescription:
-      "Cambio y actualización de cuadros eléctricos en Barcelona. Instalación en una mañana, con boletín (CIE) incluido si lo necesitas.",
+      "Sustitución de cuadros eléctricos antiguos y montaje de cuadros nuevos en Barcelona. Instalación en una mañana, con boletín (CIE) si lo necesitas.",
     queIncluye: [
       {
         titulo: "Cuadro nuevo normalizado",
@@ -522,6 +522,15 @@ export const servicios: Servicio[] = [
         ],
       },
       {
+        h2: "Sustitución, montaje o ampliación: no es lo mismo",
+        parrafos: [
+          "Nos llegan las tres peticiones y conviene distinguirlas, porque el trabajo y el precio no son el mismo.",
+          "La sustitución de un cuadro antiguo es lo más frecuente con diferencia. Hay una instalación en servicio, con su cuadro de fusibles o con un diferencial único, y se cambia por uno normalizado aprovechando el cableado existente cuando está en condiciones. Es el trabajo de una mañana del que hablamos arriba.",
+          "El montaje de un cuadro nuevo aparece en obra nueva, en una reforma integral o cuando se crea un suministro que antes no existía, como el de un local que se segrega. Aquí no hay nada que aprovechar. Se diseña el reparto de circuitos desde cero en función de lo que va a haber, y lleva boletín porque la instalación es nueva.",
+          "La ampliación es la opción intermedia y la más barata. El cuadro actual está bien, tiene sitio libre en el carril y solo hay que añadir el circuito que falta. Si tu caso es este te lo diremos, aunque nos dé menos trabajo.",
+        ],
+      },
+      {
         h2: "Cuadros de comunidad y de local",
         parrafos: [
           "No todo son viviendas. Una parte importante de los cuadros que renovamos son de servicios comunes y de locales de actividad, y ahí las exigencias cambian.",
@@ -550,6 +559,16 @@ export const servicios: Servicio[] = [
         pregunta: "¿Merece la pena añadir protección contra sobretensiones?",
         respuesta:
           "Si tienes electrodomésticos de gama media-alta, ordenadores o teletrabajas, sí: una sobretensión de red puede quemarlos y el protector cuesta mucho menos que reponerlos.",
+      },
+      {
+        pregunta: "¿Hacéis sustitución de cuadros eléctricos antiguos?",
+        respuesta:
+          "Es el trabajo que más hacemos. Cuadros de fusibles de porcelana, cuadros con un solo diferencial para toda la casa y cuadros llenos que no admiten un circuito más. Se sustituyen por uno normalizado, con un magnetotérmico por circuito, y todo rotulado antes de cerrar.",
+      },
+      {
+        pregunta: "¿Y montaje de cuadros en obra nueva o reforma integral?",
+        respuesta:
+          "También. En obra el reparto de circuitos se diseña desde cero según lo que vaya a haber en la vivienda o el local, y la instalación se legaliza con su certificado. Si eres reformista o constructor, coordinamos directamente con la obra.",
       },
     ],
   },
