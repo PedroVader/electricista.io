@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { config } from "@/data/config";
-import { servicios } from "@/data/servicios";
+import { serviciosGlobales } from "@/data/servicios";
 import { ciudades } from "@/data/ciudades";
 import { Icono } from "./Iconos";
 
@@ -79,7 +79,7 @@ export function Header() {
   const { telefono, marca } = config;
   const cerrar = () => setAbierto(false);
 
-  const itemsServicios: Item[] = servicios.map((s) => ({
+  const itemsServicios: Item[] = serviciosGlobales.map((s) => ({
     href: `/${s.slug}`,
     texto: s.nombre,
     icono: s.card.icono,

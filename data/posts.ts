@@ -129,7 +129,7 @@ export const posts: Post[] = [
     titulo: "Boletín eléctrico (CIE): la guía sin rodeos",
     descripcion:
       "Qué es el boletín eléctrico, cuándo es obligatorio, quién puede firmarlo y cuánto tarda. Guía práctica para altas de luz y subidas de potencia.",
-    fecha: "2026-07-19",
+    fecha: "2026-07-26",
     resumen:
       "Si tu comercializadora te pide un boletín, esto es lo que necesitas saber: qué es exactamente, en qué casos es obligatorio y por qué solo puede firmarlo un instalador habilitado.",
     secciones: [
@@ -144,7 +144,7 @@ export const posts: Post[] = [
         h2: "Cuándo es obligatorio",
         parrafos: ["Los casos que nos llegan cada semana:"],
         bullets: [
-          "Alta de luz en un piso o local que lleva tiempo sin suministro",
+          "Dar de alta la luz en una vivienda o local con el suministro cortado desde hace tiempo",
           "Subida de potencia contratada por encima de lo que admite tu boletín actual",
           "Reforma que modifica la instalación eléctrica",
           "Instalación con boletín de más de 20 años que la comercializadora rechaza",
@@ -246,7 +246,7 @@ export const posts: Post[] = [
     titulo: "5 señales de que tu cuadro eléctrico está anticuado",
     descripcion:
       "Fusibles, un solo diferencial, saltos frecuentes: las señales de que tu cuadro eléctrico necesita renovación y qué implica cambiarlo.",
-    fecha: "2026-07-19",
+    fecha: "2026-08-02",
     resumen:
       "El cuadro es el guardián de tu instalación, y buena parte de los que vemos cada semana en pisos de Barcelona y el Vallès llevan décadas jubilables. Estas son las cinco señales claras.",
     secciones: [
@@ -337,7 +337,7 @@ export const posts: Post[] = [
     titulo: "Cómo subir la potencia de la luz paso a paso",
     descripcion:
       "Guía práctica para subir la potencia contratada: cuándo hace falta, qué te pedirá la comercializadora y qué papel juega el boletín.",
-    fecha: "2026-07-19",
+    fecha: "2026-08-11",
     resumen:
       "Salta el ICP cuando enciendes el horno con la vitro puesta. Te falta potencia. Antes de llamar a tu comercializadora, mira qué te van a pedir y en qué orden hay que hacer las cosas.",
     secciones: [
@@ -424,10 +424,10 @@ export const posts: Post[] = [
   },
   {
     slug: "cargador-coche-electrico-comunidad",
-    titulo: "Cargador de coche eléctrico en una comunidad: pasos y normativa",
+    titulo: "Cargador de coche eléctrico en comunidad: pasos y normativa",
     descripcion:
       "Instalar un punto de carga en tu plaza de garaje comunitaria es más fácil de lo que crees: no necesitas permiso de la junta, solo comunicarlo.",
-    fecha: "2026-07-19",
+    fecha: "2026-08-20",
     resumen:
       "La duda que frena a más gente no es técnica sino de convivencia: ¿me dejará la comunidad? La respuesta corta es que no necesitas que te dejen. Te contamos el proceso completo.",
     secciones: [
@@ -521,7 +521,195 @@ export const posts: Post[] = [
       "subir-potencia-luz",
     ],
   },
+  {
+    slug: "se-ha-ido-la-luz-que-hacer",
+    titulo: "Se ha ido la luz: cómo saber si el problema es tuyo",
+    descripcion:
+      "Antes de llamar a un electricista, comprueba si el corte es de tu casa, de la finca o de la compañía. Te lo explicamos paso a paso y sin riesgo.",
+    fecha: "2026-09-01",
+    resumen:
+      "La mitad de las urgencias que atendemos se resuelven en el cuadro en dos minutos, y otra parte ni siquiera son nuestras: son cortes de la distribuidora. Esta guía te dice en qué caso estás antes de que llames a nadie.",
+    secciones: [
+      {
+        h2: "Primero: ¿es solo tu casa?",
+        parrafos: [
+          "Es la pregunta que decide todo lo demás, y se responde en treinta segundos. Asómate a la escalera y mira si hay luz en el rellano. Mira por la ventana si hay luz en el edificio de enfrente y en las farolas de la calle. Si tienes buena relación con algún vecino, un mensaje basta.",
+          "Si el corte afecta a la calle entera o a toda la finca desde la acometida, es de la distribuidora, que en la mayor parte de Cataluña es e-distribución. Ahí no entra un electricista particular: hay que avisarles a ellos y esperar. Llamar a un instalador en ese caso solo sirve para pagar una visita que no puede arreglar nada.",
+          "Si la luz solo ha desaparecido en tu vivienda, o solo en las zonas comunes de la finca, entonces sí es una instalación privada y sigue leyendo.",
+        ],
+      },
+      {
+        h2: "Segundo: mira qué ha bajado en el cuadro",
+        parrafos: [
+          "Abre el cuadro y fíjate bien en qué interruptor está caído, porque cada uno significa una cosa distinta. Esto no es un detalle menor: es literalmente el diagnóstico.",
+          "El diferencial es el interruptor más ancho y tiene un pequeño botón de prueba, normalmente marcado con una T. Si ha bajado él, hay una fuga de corriente en algún punto de la instalación. Los magnetotérmicos son los estrechos que tiene al lado, uno por circuito. Si ha bajado uno de ellos, ese circuito concreto va sobrecargado o tiene un cortocircuito. Y si lo que se va es todo de golpe al encender un aparato grande, sin que quede nada bajado en el cuadro, lo que ha actuado es el control de potencia que llevan dentro los contadores digitales: no tienes una avería, tienes poca potencia contratada.",
+          "Si no ha bajado nada, el cuadro está entero y aun así no hay luz, revisa que el interruptor general no esté cortado y comprueba si el corte afecta a toda la casa o solo a unas estancias. Cuando falla solo una parte y en el cuadro no hay nada caído, suele haber una conexión suelta o una caja de registro con problema, y eso ya es trabajo de electricista.",
+        ],
+        bullets: [
+          "Interruptor ancho con botón de prueba caído: hay una fuga de corriente",
+          "Interruptor estrecho caído: ese circuito va sobrecargado o tiene un cortocircuito",
+          "Todo se va al encender algo grande y no hay nada caído: falta potencia contratada",
+          "Nada caído y sin luz en toda la casa: mira el general y consulta con la finca",
+          "Nada caído y sin luz solo en una zona: conexión suelta o caja de registro",
+        ],
+      },
+      {
+        h2: "Tercero: localiza el circuito culpable sin riesgo",
+        parrafos: [
+          "Si lo que ha bajado es el diferencial, puedes acotar el problema tú mismo sin tocar ningún cable y sin ningún riesgo. Solo se manipulan los mandos del cuadro.",
+          "Baja todos los magnetotérmicos, los estrechos. Sube el diferencial, que ahora debería quedarse arriba porque no hay nada conectado detrás. Ve subiendo los magnetotérmicos de uno en uno, esperando unos segundos entre cada uno. Cuando al subir uno concreto el diferencial vuelva a caer, ese es tu circuito: déjalo bajado y sube el resto. Tendrás luz en toda la casa menos en esa zona, y podrás esperar a mañana en condiciones dignas en lugar de pasar la noche a oscuras.",
+          "Con el circuito localizado queda la segunda mitad: saber si la fuga viene de un aparato o de la instalación. Desenchufa todo lo que cuelgue de esa zona, sube el magnetotérmico y observa. Si aguanta, ve enchufando aparatos de uno en uno hasta que salte: el último es el averiado y basta con no usarlo. Si salta con todo desenchufado, la fuga está en el cableado, en una caja o en un mecanismo, y ahí sí hace falta medir el aislamiento con instrumental.",
+        ],
+      },
+      {
+        h2: "Cuándo no hay que tocar nada y llamar directamente",
+        parrafos: [
+          "Todo lo anterior vale para un cuadro que ha saltado y punto. Hay situaciones en las que no se comprueba nada, se corta el suministro si se puede hacer con seguridad y se llama.",
+          "Olor a quemado, plástico fundido o marcas negras en el cuadro o en un enchufe. Chispas al conectar algo. Un interruptor o una toma caliente al tacto. Agua que ha entrado en contacto con la instalación, sea una gotera, una inundación o un escape sobre un enchufe. Un calambre al tocar un electrodoméstico o un grifo, que casi siempre significa que la puesta a tierra no está haciendo su trabajo. Y cualquier cable pelado o accesible.",
+          "En todos esos casos, no vuelvas a subir lo que haya saltado. Rearmar un diferencial sobre un cortocircuito o sobre una instalación mojada es exactamente lo que no hay que hacer, porque el interruptor está haciendo su trabajo al negarse a quedarse arriba. Baja el general si tienes acceso seguro, ventila si hay olor y llama.",
+        ],
+      },
+      {
+        h2: "Qué contarle al electricista para acortar la visita",
+        parrafos: [
+          "Cuando llames, esta información hace que el técnico salga con el material adecuado y que el precio cerrado que te damos por teléfono sea más ajustado.",
+          "Di qué ha bajado exactamente, si el ancho o uno de los estrechos. Si has hecho la prueba de subir uno a uno, di cuál es el circuito que hace saltar. Cuenta si el problema aparece siempre, solo con un aparato o solo cuando llueve, porque la humedad apunta a un sitio muy distinto que un electrodoméstico. Menciona la antigüedad aproximada de la instalación y si el cuadro tiene fusibles o interruptores. Y avisa si es vivienda, local o comunidad, porque cambia el material y también quién paga la factura.",
+          "Una foto del cuadro por mensaje vale más que cualquier descripción. En muchos casos con eso ya sabemos qué nos vamos a encontrar antes de salir.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        pregunta: "¿Puedo volver a subir el diferencial si ha saltado?",
+        respuesta:
+          "Sí, salvo que huela a quemado, haya chispas o haya agua en contacto con la instalación. Si vuelve a saltar de inmediato, no insistas: hay una fuga real y rearmarlo una y otra vez no la resuelve.",
+      },
+      {
+        pregunta: "¿Cómo sé si el corte es de la compañía?",
+        respuesta:
+          "Si no hay luz en la escalera, en la calle o en los edificios de al lado, el corte es de la distribuidora y hay que avisarles a ellos. Un electricista particular no puede intervenir en la red de distribución.",
+      },
+      {
+        pregunta: "Se va la luz solo cuando enciendo el horno con la vitro. ¿Es avería?",
+        respuesta:
+          "No, es falta de potencia contratada: lo que actúa es el control de potencia del contador. Se resuelve subiendo potencia, y antes conviene comprobar si la derivación individual de tu vivienda admite más.",
+      },
+      {
+        pregunta: "El diferencial me salta solo cuando llueve. ¿Qué significa?",
+        respuesta:
+          "Que hay humedad entrando en algún punto de la instalación: una caja exterior, un patio de luces, una fachada o un muro. Se localiza midiendo el aislamiento circuito por circuito. Secar y esperar no lo arregla.",
+      },
+      {
+        pregunta: "Noto un calambre al tocar la lavadora. ¿Es urgente?",
+        respuesta:
+          "Sí. Significa que hay una derivación y que la puesta a tierra no está protegiendo como debería. Desenchufa el aparato, no lo uses y llama. Es de los avisos que atendemos con prioridad.",
+      },
+      {
+        pregunta: "¿Cuánto tarda un electricista de urgencia en llegar?",
+        respuesta:
+          "En Barcelona ciudad solemos estar en 45-60 minutos, y en Sabadell en menos de 30 porque tenemos la base allí. En el resto del área metropolitana, entre 30 y 50 minutos según la zona.",
+      },
+    ],
+    relacionados: ["electricista-urgente-barcelona", "electricistas-urgentes-24-horas"],
+  },
+  {
+    slug: "mantenimiento-electrico-comunidad-vecinos",
+    titulo: "Mantenimiento eléctrico de una comunidad: qué revisar",
+    descripcion:
+      "Qué partes de la instalación común hay que revisar, cada cuánto y quién asume el coste. Guía para presidentes y administradores de fincas.",
+    fecha: "2026-09-04",
+    resumen:
+      "En una comunidad, la instalación eléctrica solo se mira cuando falla, y entonces sale cara. Esto es lo que conviene revisar, con qué periodicidad y dónde está la frontera entre lo común y lo privativo.",
+    secciones: [
+      {
+        h2: "Dónde acaba la comunidad y dónde empieza tu casa",
+        parrafos: [
+          "Es el punto que más discusiones genera en las juntas, y en realidad la frontera es bastante clara: el contador.",
+          "Desde el contador hacia el interior de tu vivienda o local, la instalación es privativa. El cuadro de tu casa, tus circuitos, tus enchufes y tus averías las paga el propietario. Desde el contador hacia atrás es instalación común y la paga la comunidad: la caja general de protección, la línea general de alimentación, la centralización de contadores, las derivaciones individuales que suben por los montantes, el cuadro de servicios comunes, el alumbrado de escalera y de párking, el ascensor, las bombas y los porteros automáticos.",
+          "Hay un matiz que sorprende a mucha gente: la derivación individual, el cable que va desde la centralización hasta el cuadro de tu piso, es elemento común aunque solo te dé servicio a ti. Por eso cuando un vecino quiere subir potencia y esa línea no aguanta, la conversación acaba en la junta y no en su casa.",
+        ],
+      },
+      {
+        h2: "Qué revisar y cada cuánto",
+        parrafos: [
+          "No hay que revisarlo todo cada año. Esta es la periodicidad que recomendamos a los administradores con los que trabajamos, ordenada de más a menos frecuente.",
+          "El alumbrado de emergencia conviene probarlo una vez al año, y es de las cosas que más fallan porque nadie las mira: las baterías se agotan en silencio y el equipo parece correcto hasta que hay un corte real. El cuadro de servicios comunes, con sus protecciones y el disparo de los diferenciales, también anual, y es una comprobación de diez minutos. La centralización de contadores y el estado de los montantes, cada dos o tres años como mucho, mirando calentamientos, empalmes y aislamientos degradados. La puesta a tierra del edificio, midiéndola, cada cinco años. Y el alumbrado de párking y garaje, anual, junto con la ventilación forzada si la hay.",
+          "Aparte de esto están las revisiones obligatorias que ya tiene contratada la comunidad y que no hacemos nosotros: la del ascensor por su empresa mantenedora y la inspección periódica de la instalación eléctrica del edificio por un organismo de control, que aplica a garajes de cierto tamaño y a instalaciones de determinada potencia.",
+        ],
+        bullets: [
+          "Alumbrado de emergencia: prueba anual, baterías incluidas",
+          "Cuadro de servicios comunes y disparo de diferenciales: anual",
+          "Centralización de contadores y montantes: cada dos o tres años",
+          "Medición de la puesta a tierra del edificio: cada cinco años",
+          "Alumbrado de escalera, párking y garaje: anual",
+        ],
+      },
+      {
+        h2: "Los tres problemas que más nos encontramos en fincas",
+        parrafos: [
+          "Después de años trabajando para comunidades del área de Barcelona, los avisos se repiten con mucha fidelidad.",
+          "El primero es el ascensor instalado décadas después de construirse el edificio. Necesita línea propia desde la centralización, cuadro preparado y a menudo más potencia contratada para la comunidad. Cuando se hizo deprisa, aparecen los síntomas clásicos: el diferencial general de la finca salta sin patrón, o el alumbrado de escalera se va cada vez que el ascensor arranca porque comparten circuito.",
+          "El segundo es el alumbrado de escalera y párking con instalación original. Portalámparas oxidados, temporizadores mecánicos que se quedan pegados y circuitos sin diferencial propio. Pasarlo a LED con detectores de presencia se amortiza rápido en consumo, pero lo importante es que se aprovecha para separar el circuito y dejarlo protegido.",
+          "El tercero es la humedad en el cuarto de contadores y en los montantes, típica de fincas antiguas con patios interiores. Da derivaciones intermitentes que aparecen los días de lluvia, afectan a varios vecinos a la vez y son las más difíciles de diagnosticar si no se mide circuito por circuito.",
+        ],
+      },
+      {
+        h2: "Puntos de carga en el párking: hacerlo bien la primera vez",
+        parrafos: [
+          "Es la petición que más ha crecido en comunidades, y donde más dinero se tira por hacerlo mal. Un propietario tiene derecho a instalar su punto de carga sin que la junta lo apruebe, basta con comunicarlo por escrito. Eso es lo que dice la ley, y es correcto.",
+          "El problema es lo que pasa después. Si cada vecino tira su línea por su cuenta según va comprando coche, el párking acaba con cinco instalaciones independientes hechas en cinco momentos distintos, sin criterio común y ocupando la capacidad disponible por orden de llegada. El sexto que llega se encuentra con que ya no hay potencia y con que la solución pasa por rehacer buena parte de lo anterior.",
+          "La alternativa sensata es una preinstalación conjunta: una línea desde la centralización con capacidad calculada para todas las plazas, canalización preparada y un sistema de gestión de carga que reparta la potencia disponible entre los que estén cargando en cada momento. Cuesta menos por plaza que las instalaciones sueltas, no obliga a nadie a poner cargador ahora y evita la discusión dentro de tres años. Si en tu comunidad hay ya dos vecinos interesados, es el momento de plantearlo.",
+        ],
+      },
+      {
+        h2: "Cómo trabajamos con administradores de fincas",
+        parrafos: [
+          "Trabajamos con varios administradores del área de Barcelona y del Vallès, y el formato es siempre el mismo porque es lo que necesitan para justificar el gasto ante la junta.",
+          "Empezamos con una visita técnica sin coste en la que revisamos la instalación común completa y dejamos un informe por escrito de qué está bien, qué hay que corregir y con qué prioridad. Lo que hay que hacer se presupuesta con precio cerrado, desglosado por partidas para que la junta pueda aprobar unas y aplazar otras. La factura va a nombre de la comunidad con CIF e IVA desglosado, y de cada intervención queda un parte firmado con lo que se ha hecho.",
+          "En urgencias, para las comunidades con las que trabajamos habitualmente, lo primero que hacemos al llegar es determinar si la avería está en zona común o privativa, y lo dejamos indicado en el parte. Eso evita la discusión posterior sobre quién asume el coste, que es exactamente el tipo de conflicto que un administrador no necesita.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        pregunta: "¿Quién paga una avería en el montante de la finca?",
+        respuesta:
+          "La comunidad. Todo lo que está del contador hacia atrás, montantes y derivaciones individuales incluidos, es instalación común, aunque una derivación concreta solo dé servicio a una vivienda.",
+      },
+      {
+        pregunta: "¿Cada cuánto hay que revisar el alumbrado de emergencia?",
+        respuesta:
+          "Una vez al año como mínimo, comprobando también el estado de las baterías. Es de los elementos que más fallan sin avisar, porque el equipo aparenta estar bien hasta que hay un corte real.",
+      },
+      {
+        pregunta: "Un vecino quiere subir potencia y dicen que la línea no aguanta. ¿Quién lo paga?",
+        respuesta:
+          "La derivación individual es elemento común, así que su renovación corresponde en principio a la comunidad. En la práctica muchas juntas acuerdan que la asuma quien solicita la subida. Conviene tener el criterio acordado por escrito antes de que surja el caso.",
+      },
+      {
+        pregunta: "¿Puede la junta impedirme instalar un punto de carga?",
+        respuesta:
+          "No. Basta con comunicarlo por escrito al presidente o al administrador. Otra cosa es que convenga hacerlo bien: si hay más vecinos interesados, una preinstalación conjunta sale más barata por plaza y evita quedarse sin capacidad disponible.",
+      },
+      {
+        pregunta: "¿Hacéis contratos de mantenimiento para comunidades?",
+        respuesta:
+          "Sí, con revisión periódica de la instalación común, informe escrito de cada visita y prioridad de respuesta en urgencias. Empezamos siempre con una visita técnica sin coste para saber en qué estado está la finca.",
+      },
+      {
+        pregunta: "¿Cómo facturáis a una comunidad?",
+        respuesta:
+          "A nombre de la comunidad, con CIF e IVA desglosado y las partidas detalladas, para que el administrador pueda justificarlo ante la junta. De cada intervención queda un parte firmado con lo ejecutado.",
+      },
+    ],
+    relacionados: ["electricistas-para-empresas-y-comunidades", "instalaciones-electricas"],
+  },
 ];
+
+/** Del más reciente al más antiguo: es el orden del listado del blog. */
+export const postsRecientes = [...posts].sort((a, b) =>
+  b.fecha.localeCompare(a.fecha),
+);
 
 export function getPost(slug: string): Post | undefined {
   return posts.find((p) => p.slug === slug);

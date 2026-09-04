@@ -14,7 +14,9 @@ export function ZonasSection({
   excluirSlug?: string;
 }) {
   const lista = ciudades.filter((c) => c.slug !== excluirSlug);
-  const municipios = ciudades.flatMap((c) => c.tambienServicio.municipios);
+  const municipios = [
+    ...new Set(ciudades.flatMap((c) => c.tambienServicio.municipios)),
+  ].filter((m) => !ciudades.some((c) => c.nombre === m));
 
   return (
     <section className="bg-paper-warm">

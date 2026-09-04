@@ -39,6 +39,15 @@ export type Servicio = {
   ctaFrecuente?: boolean;
   /** Texto del CTA principal si difiere del genérico */
   ctaLabel?: string;
+  /**
+   * Landing de servicio por ciudad (p.ej. boletín en Sabadell). No entra en
+   * nav, footer ni grid: se enlaza desde la ciudad y desde el servicio padre.
+   */
+  local?: {
+    ciudad: string;
+    ciudadSlug: string;
+    servicioPadre: string;
+  };
 };
 
 /** Foto real de un trabajo hecho por el equipo. Nunca ilustrativa. */

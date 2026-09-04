@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { config } from "@/data/config";
-import { servicios } from "@/data/servicios";
+import { serviciosGlobales, serviciosLocales } from "@/data/servicios";
 import { ciudades } from "@/data/ciudades";
 import { distritos } from "@/data/distritos";
 
@@ -48,7 +48,7 @@ export function Footer() {
             Servicios
           </p>
           <ul className="mt-4 space-y-2 text-sm">
-            {servicios.map((s) => (
+            {serviciosGlobales.map((s) => (
               <li key={s.slug}>
                 <Link href={`/${s.slug}`} className="text-white/80 hover:text-amber">
                   {s.nombre}
@@ -60,6 +60,20 @@ export function Footer() {
                 Pedir presupuesto
               </Link>
             </li>
+          </ul>
+
+          {/* Servicio por ciudad: sin esto solo recibían dos enlaces internos */}
+          <p className="mt-6 text-sm font-semibold uppercase tracking-wide text-white/50">
+            Servicios por ciudad
+          </p>
+          <ul className="mt-4 space-y-2 text-sm">
+            {serviciosLocales.map((s) => (
+              <li key={s.slug}>
+                <Link href={`/${s.slug}`} className="text-white/80 hover:text-amber">
+                  {s.nombre}
+                </Link>
+              </li>
+            ))}
           </ul>
         </nav>
 

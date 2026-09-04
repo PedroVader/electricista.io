@@ -47,6 +47,7 @@ export const ciudades: Ciudad[] = [
           nombre: "Ciutat Vella",
           texto:
             "Edificios centenarios en el Gòtic, el Born y el Raval: humedad, secciones de cable insuficientes y mucha rotación de locales. Legalizamos instalaciones de comercios y reparamos averías en pisos con instalación histórica.",
+          href: "/electricista-ciutat-vella",
         },
         {
           nombre: "Gràcia",
@@ -76,6 +77,7 @@ export const ciudades: Ciudad[] = [
           nombre: "Nou Barris",
           texto:
             "Bloques de los 60 y 70 con potencias mínimas contratadas: el ICP salta con dos aparatos. Subidas de potencia con revisión de la derivación individual.",
+          href: "/electricista-nou-barris",
         },
         {
           nombre: "Horta-Guinardó",
@@ -804,6 +806,120 @@ export const ciudades: Ciudad[] = [
         pregunta: "¿Hacéis boletines en Terrassa?",
         respuesta:
           "Sí, con los mismos plazos que en el resto de nuestra zona: revisión y CIE en 24-48h, firmado por instalador habilitado y tramitado ante Indústria.",
+      },
+    ],
+  },
+  {
+    slug: "electricista-sant-cugat",
+    nombre: "Sant Cugat del Vallès",
+    comarca: "Vallès Occidental",
+    h1: "Electricista en Sant Cugat: urgencias e instaladores autorizados",
+    metaTitle: "Electricista en Sant Cugat | Urgencias 24h y Boletines",
+    metaDescription:
+      "Electricistas autorizados en Sant Cugat. Casas, puntos de carga, boletines (CIE) y urgencias 24h. Precio cerrado antes de empezar.",
+    porQue: [
+      "Sant Cugat es la ciudad de nuestra zona con más vivienda unifamiliar, y eso cambia por completo el tipo de trabajo. Aquí no dominan los pisos de sesenta metros con potencia corta, sino casas con jardín, piscina, riego, garaje y varios coches, muchas de ellas en Valldoreix, Mira-sol, la Floresta y les Planes. Instalaciones grandes, con cuadros secundarios repartidos y tomas exteriores que sufren la intemperie.",
+      "Es también donde más puntos de carga instalamos: casas con garaje propio donde el cargador entra sin discusión de junta, y comunidades del centro y de Coll Favà que están preparando el párking para varios vehículos a la vez. A eso se suma el tejido de oficinas y parques empresariales de la zona de Sant Joan y la estación, con mantenimientos y ampliaciones. Llegamos desde Sabadell en 20-30 minutos.",
+    ],
+    tambienServicio: {
+      intro:
+        "Sant Cugat es nuestra puerta al Vallès más residencial. Desde aquí trabajamos a diario en Valldoreix y Mira-sol, subimos a Rubí y a Terrassa por la autopista y bajamos a Cerdanyola y Barberà en cuestión de minutos. Mismo equipo y mismo precio cerrado en todos ellos.",
+      municipios: [
+        "Rubí",
+        "Cerdanyola del Vallès",
+        "Barberà del Vallès",
+        "Sabadell",
+        "Terrassa",
+      ],
+    },
+    zonas: {
+      h2: "Electricista en Sant Cugat, zona a zona",
+      intro:
+        "El municipio es muy extenso y cada núcleo tiene su propio tipo de instalación y de avería.",
+      items: [
+        {
+          nombre: "Centre i Monestir",
+          texto:
+            "Pisos y casas de pueblo en el casco antiguo: instalaciones con décadas encima, cuadros por renovar, boletines para compraventa y locales comerciales del eje peatonal.",
+        },
+        {
+          nombre: "Valldoreix",
+          texto:
+            "Parcelas grandes con jardín y piscina: cuadros secundarios, riego y alumbrado exterior, depuradoras, tomas estancas y puntos de carga en garaje propio.",
+        },
+        {
+          nombre: "Mira-sol i la Floresta",
+          texto:
+            "Casas entre bosque, muchas ampliadas por fases: circuitos añadidos sin criterio, derivaciones por humedad y renovación completa con boletín.",
+        },
+        {
+          nombre: "Coll Favà, Sant Joan i Volpelleres",
+          texto:
+            "Bloques y comunidades recientes: párkings preparados para varios puntos de carga, cuadros de servicios comunes y alumbrado de zonas ajardinadas.",
+        },
+        {
+          nombre: "Parcs empresarials i oficines",
+          texto:
+            "Oficinas y naves del entorno de la estación y Can Sant Joan: mantenimiento, cuadros de distribución, alumbrado LED y ampliaciones de potencia.",
+        },
+      ],
+    },
+    secciones: [
+      {
+        h2: "Casas con jardín: la instalación que nadie mira hasta que falla",
+        parrafos: [
+          "En una casa de Valldoreix o Mira-sol la instalación eléctrica no termina en el cuadro del recibidor. Hay riego automático, alumbrado de jardín, bomba y depuradora de piscina, puerta de garaje motorizada, portero de la valla y a menudo un cuadro secundario en el sótano o en un anexo. Todo eso vive a la intemperie o cerca de ella, y es la parte que envejece primero.",
+          "El patrón que más vemos es el de la casa ampliada por fases. Se cerró un porche, se puso la piscina diez años después y se añadió el aire acondicionado más tarde, y cada intervención colgó de donde había sitio en el cuadro. El resultado es un cuadro sin margen, circuitos que mezclan interior y exterior, y un diferencial general que salta cuando llueve y deja a oscuras la casa entera por culpa de una toma del jardín.",
+          "El trabajo aquí es ordenar. Separar los circuitos de exterior en su propio diferencial para que una humedad en el jardín no te tire la casa, revisar las tomas estancas, comprobar la puesta a tierra, que en parcela suele ser mejorable, y dejar el cuadro con margen para lo siguiente. Se hace en una o dos jornadas y con boletín al terminar si la instalación lo requiere.",
+        ],
+      },
+      {
+        h2: "Puntos de carga: es donde más instalamos",
+        parrafos: [
+          "Sant Cugat concentra una de las mayores densidades de vehículo eléctrico del área de Barcelona, y aquí el punto de carga se resuelve de dos maneras muy distintas según dónde vivas.",
+          "En casa unifamiliar es el escenario sencillo: hay garaje propio, la línea sale del cuadro de la vivienda y la única decisión de fondo es si la potencia contratada aguanta cargar mientras funciona el resto de la casa. Cuando no aguanta, no siempre hay que subir potencia: un sistema de gestión de carga adapta el consumo del cargador a lo que sobra en cada momento, y sale mejor que pagar más término de potencia todo el año.",
+          "En comunidad hay que hacerlo bien desde el principio. La ley permite instalar el punto de carga sin necesidad de que la junta lo apruebe, basta con comunicarlo, pero eso no significa tirar un cable como se pueda. Lo correcto es una preinstalación con línea propia desde la centralización y capacidad para que después vengan otros vecinos sin rehacer nada. En los párkings de Coll Favà y Volpelleres lo hemos hecho ya varias veces, y sale mucho más barato una preinstalación conjunta que cinco instalaciones sueltas.",
+        ],
+      },
+      {
+        h2: "Cuánto tardamos en llegar y cómo trabajamos aquí",
+        parrafos: [
+          "Nuestra base está en Sabadell, a veinte minutos por la C-58 o por la B-30 según la hora. En urgencias eso significa entre 25 y 35 minutos al centro de Sant Cugat, algo más a los núcleos dispersos de la Floresta o les Planes, donde el acceso es más lento. Preferimos darte una franja que se cumple.",
+          "En trabajos programados en casas trabajamos con una particularidad que aquí importa: la mayoría son viviendas ocupadas y con gente teletrabajando. Organizamos los cortes de suministro por circuitos y avisamos con antelación de cuánto va a durar cada uno, para que nadie se quede sin luz en mitad de una reunión. Es un detalle que no cuesta nada y que evita el 90% de los problemas.",
+          "Para las comunidades y las oficinas de los parques empresariales facturamos con CIF e IVA desglosado, y ofrecemos revisión periódica de la instalación con informe por escrito. Es la fórmula que usan la mayoría de administradores con los que trabajamos en el Vallès.",
+        ],
+      },
+    ],
+    faqsLocales: [
+      {
+        pregunta: "¿Cuánto tarda un electricista en llegar a Sant Cugat?",
+        respuesta:
+          "En urgencias, entre 25 y 35 minutos al centro desde nuestra base de Sabadell. A Valldoreix y Mira-sol, similar; a la Floresta y les Planes puede subir algo por el acceso.",
+      },
+      {
+        pregunta: "Tengo casa con piscina y jardín y me salta el diferencial cuando llueve. ¿Qué es?",
+        respuesta:
+          "Casi siempre una toma o una caja del exterior que ha perdido estanqueidad, o la bomba de la piscina. El problema de fondo es que el jardín comparte diferencial con la casa. Se localiza midiendo circuito por circuito y se resuelve separando el exterior en su propio diferencial.",
+      },
+      {
+        pregunta: "¿Podéis instalar un punto de carga en mi casa de Valldoreix?",
+        respuesta:
+          "Sí, es de los trabajos que más hacemos en Sant Cugat. Revisamos el cuadro y la potencia contratada, y si la potencia se queda justa te proponemos un sistema de gestión de carga antes que subirla: suele salir mejor.",
+      },
+      {
+        pregunta: "Vivo en un piso de Coll Favà. ¿Necesito permiso de la comunidad para el cargador?",
+        respuesta:
+          "No necesitas aprobación de la junta, basta con comunicarlo por escrito al presidente o al administrador. Ahora bien, si hay más vecinos interesados conviene plantear una preinstalación conjunta del párking: sale bastante más barato que instalaciones sueltas.",
+      },
+      {
+        pregunta: "Estoy comprando una casa en Mira-sol. ¿Reviso la instalación antes?",
+        respuesta:
+          "Sí, y antes de firmar arras. En casas ampliadas por fases es donde más sorpresas aparecen: cuadros sin margen, circuitos mezclados y puestas a tierra insuficientes. Saberlo antes te da margen para negociar quién asume la adaptación.",
+      },
+      {
+        pregunta: "¿Trabajáis con oficinas y comunidades de Sant Cugat?",
+        respuesta:
+          "Sí: mantenimiento periódico, cuadros de servicios comunes, alumbrado LED y ampliaciones de potencia, con factura con CIF e IVA desglosado e informe escrito de cada revisión.",
       },
     ],
   },

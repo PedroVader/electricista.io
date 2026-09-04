@@ -454,7 +454,7 @@ export const servicios: Servicio[] = [
     heroImage: "/img/hero-cuadro.jpg",
     metaTitle: "Cambio y sustitución de cuadros eléctricos en Barcelona",
     metaDescription:
-      "Sustitución de cuadros eléctricos antiguos y montaje de cuadros nuevos en Barcelona. Instalación en una mañana, con boletín (CIE) si lo necesitas.",
+      "Sustitución de cuadros antiguos y montaje de cuadros nuevos en Barcelona. Instalado en una mañana, con boletín (CIE) si lo necesitas.",
     queIncluye: [
       {
         titulo: "Cuadro nuevo normalizado",
@@ -569,6 +569,116 @@ export const servicios: Servicio[] = [
         pregunta: "¿Y montaje de cuadros en obra nueva o reforma integral?",
         respuesta:
           "También. En obra el reparto de circuitos se diseña desde cero según lo que vaya a haber en la vivienda o el local, y la instalación se legaliza con su certificado. Si eres reformista o constructor, coordinamos directamente con la obra.",
+      },
+    ],
+  },
+  {
+    slug: "instalaciones-electricas",
+    nombre: "Instalaciones eléctricas",
+    card: {
+      titulo: "Instalaciones eléctricas",
+      linea: "Reformas, obra nueva y ampliaciones, con boletín al terminar.",
+      icono: "instalacion",
+    },
+    h1: "Instalaciones eléctricas en Barcelona: reformas, obra nueva y ampliaciones",
+    heroSub:
+      "Renovamos la instalación de un piso entero, montamos la de una vivienda nueva o ampliamos la que tienes. Instalador habilitado, precio cerrado y boletín al acabar.",
+    heroImage: "/img/hero-cuadro.jpg",
+    metaTitle: "Instalaciones eléctricas en Barcelona y Vallès",
+    metaDescription:
+      "Instalación eléctrica en pisos, casas y locales de Barcelona y el Vallès: reformas, obra nueva y ampliaciones, con boletín (CIE).",
+    queIncluye: [
+      {
+        titulo: "Proyecto y cálculo previo",
+        texto:
+          "Calculamos circuitos, secciones y protecciones según lo que vas a conectar de verdad, no según el mínimo del reglamento.",
+      },
+      {
+        titulo: "Instalación completa",
+        texto:
+          "Derivación, cuadro, circuitos, mecanismos, iluminación y puesta a tierra. Todo con material homologado y detallado en el presupuesto.",
+      },
+      {
+        titulo: "Pruebas y documentación",
+        texto:
+          "Disparo del diferencial, medición de aislamiento y continuidad de tierra, con circuitos etiquetados y esquema del cuadro.",
+      },
+      {
+        titulo: "Boletín eléctrico (CIE)",
+        texto:
+          "El certificado lo firma un instalador habilitado y nosotros lo tramitamos ante Indústria. Sin él, una instalación nueva no se puede dar de alta.",
+      },
+    ],
+    secciones: [
+      {
+        h2: "Renovar la instalación de un piso: qué implica de verdad",
+        parrafos: [
+          "Es el trabajo más habitual que nos piden bajo el nombre de instalación eléctrica, y casi siempre llega por una de dos vías: una reforma integral o la constatación de que la instalación actual ya no da más de sí. En pisos anteriores a los años ochenta, que son la mayoría del parque de Barcelona y del Vallès, lo normal es encontrar dos o tres circuitos para toda la vivienda, sin toma de tierra y con un cuadro que no separa nada.",
+          "Una instalación al día de hoy no es la misma casa con cables nuevos. Es separar en circuitos independientes el alumbrado, los enchufes generales, la cocina, el horno, la lavadora, el baño y el aire acondicionado, cada uno con su protección. Es poner una toma de tierra real y comprobar que mide lo que tiene que medir. Y es dejar el cuadro con espacio para lo que venga después, que en los próximos años será casi seguro un punto de carga o una bomba de calor.",
+          "El alcance depende mucho de si la vivienda está vacía o habitada. En obra vacía se hace de una vez, con rozas donde toque, y en un piso normal son entre tres y cinco días. En vivienda habitada trabajamos por fases, dejando siempre la casa con luz y con circuitos operativos al final de cada jornada, y aprovechando canalizaciones existentes para reducir la obra. Se tarda algo más, pero puedes seguir viviendo allí.",
+        ],
+      },
+      {
+        h2: "Obra nueva, casas y locales",
+        parrafos: [
+          "En vivienda de obra nueva o en rehabilitación integral partimos del cálculo: qué se va a conectar en cada estancia, qué potencia hace falta, cuántos circuitos y con qué secciones. Es la parte que más condiciona el resultado y la que más se despacha deprisa en obras baratas, con el resultado previsible de un cuadro justo desde el primer día.",
+          "En casa unifamiliar la instalación se extiende más allá del edificio: riego, alumbrado de jardín, piscina, puerta de garaje, portero de valla y a menudo un cuadro secundario. Nuestra recomendación estándar aquí es separar todo el exterior en su propio diferencial, para que una humedad en una toma del jardín no deje la casa entera a oscuras. Es un cambio mínimo en el presupuesto que evita la mitad de las averías futuras.",
+          "En locales el criterio lo marca la actividad. Un comercio, una oficina y una cocina de restaurante necesitan protecciones y circuitos distintos, y en muchos casos alumbrado de emergencia y documentación específica para la licencia. Lo dejamos preparado para que el técnico que tramite el expediente no tenga que volver a pedirnos nada.",
+        ],
+      },
+      {
+        h2: "Ampliaciones: cuando no hace falta rehacerlo todo",
+        parrafos: [
+          "No toda instalación pide una renovación completa, y no la proponemos cuando no toca. Muchas veces el problema es concreto y la solución también: una línea nueva para la cocina de inducción, un circuito para el aire acondicionado, enchufes en una habitación que solo tiene uno, iluminación de un techo que se ha reformado o una toma de tierra que nunca existió.",
+          "El criterio que usamos para decidir entre ampliar y renovar es simple. Si el cuadro tiene capacidad y espacio, la derivación individual aguanta y el cableado existente está en buen estado, se amplía. Si el cuadro está lleno, el cableado tiene la sección justa o la instalación mezcla circuitos, ampliar es tirar dinero: cada añadido nuevo empeora el conjunto y el problema de fondo sigue ahí.",
+          "Te decimos en cuál de los dos casos estás en la primera visita, con el argumento técnico y sin adornos. Y si es el segundo, te damos el precio cerrado de las dos opciones para que decidas tú.",
+        ],
+        bullets: [
+          "Línea independiente para cocina de inducción, horno o lavavajillas",
+          "Circuito nuevo para aire acondicionado o bomba de calor",
+          "Enchufes y puntos de luz añadidos tras una reforma",
+          "Toma de tierra en viviendas que nunca la tuvieron",
+          "Preparación del cuadro para un futuro punto de carga",
+        ],
+      },
+      {
+        h2: "Sin boletín, la instalación no existe para tu comercializadora",
+        parrafos: [
+          "Cualquier instalación nueva o modificada de forma sustancial necesita un certificado de instalación eléctrica, el CIE, firmado por un instalador habilitado y registrado ante Indústria. Sin él no se da de alta un suministro nuevo ni se tramita una subida de potencia, y en una compraventa puede parar la operación.",
+          "En todos nuestros trabajos de instalación el boletín va incluido en el planteamiento desde el principio, no como un extra que aparece al final. Al terminar te entregamos el certificado, el esquema del cuadro con los circuitos etiquetados y las mediciones de las pruebas. Con eso puedes contratar la potencia que quieras, vender o alquilar sin sobresaltos y, sobre todo, saber qué tienes detrás de la pared.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        pregunta: "¿Cuánto se tarda en renovar la instalación de un piso?",
+        respuesta:
+          "En vivienda vacía, entre tres y cinco días para un piso medio. En vivienda habitada trabajamos por fases y se alarga algo, pero la casa se queda siempre con luz y con circuitos operativos al final de cada jornada.",
+      },
+      {
+        pregunta: "¿Hay que picar toda la casa?",
+        respuesta:
+          "No siempre. Aprovechamos las canalizaciones existentes cuando admiten el nuevo cableado y pasamos por falsos techos donde los hay. Las rozas quedan para los tramos imprescindibles. En fincas protegidas usamos canaleta técnica y no tocamos elementos originales.",
+      },
+      {
+        pregunta: "¿Puedo vivir en casa mientras hacéis la instalación?",
+        respuesta:
+          "Sí, es lo más habitual. Organizamos el trabajo por circuitos y por fases, avisamos de cada corte con antelación y dejamos la vivienda con suministro al terminar cada jornada.",
+      },
+      {
+        pregunta: "¿Me hace falta un proyecto de ingeniería?",
+        respuesta:
+          "En vivienda normalmente no: basta con el certificado del instalador habilitado. Sí lo requieren los locales de pública concurrencia, las instalaciones de cierta potencia y las industriales. Te decimos en la primera visita si tu caso lo necesita.",
+      },
+      {
+        pregunta: "¿Mejor ampliar lo que tengo o renovarlo entero?",
+        respuesta:
+          "Si el cuadro tiene espacio, la derivación individual aguanta y el cableado está en buen estado, se amplía. Si el cuadro está lleno, la sección es justa o los circuitos están mezclados, ampliar empeora el conjunto. Te damos precio cerrado de ambas opciones y decides tú.",
+      },
+      {
+        pregunta: "¿El boletín está incluido?",
+        respuesta:
+          "Sí, va en el planteamiento desde el principio en toda instalación nueva o modificada. Al acabar te entregamos el CIE firmado por instalador habilitado, tramitado ante Indústria, junto al esquema del cuadro y las mediciones de las pruebas.",
       },
     ],
   },
@@ -870,17 +980,349 @@ export const servicios: Servicio[] = [
       },
     ],
   },
-];
-
-/** Card de la home sin página propia en v1: instalaciones nuevas → presupuesto */
-export const cardsExtra: CardExtra[] = [
   {
-    titulo: "Instalaciones nuevas",
-    linea: "Obra nueva, reformas integrales y ampliaciones de instalación.",
-    icono: "instalacion",
-    href: "/presupuesto",
+    slug: "boletin-electrico-sabadell",
+    nombre: "Boletín eléctrico en Sabadell",
+    card: {
+      titulo: "Boletín eléctrico en Sabadell",
+      linea: "CIE firmado y tramitado en 24-48h, con base en la ciudad.",
+      icono: "boletin",
+    },
+    local: {
+      ciudad: "Sabadell",
+      ciudadSlug: "electricista-sabadell",
+      servicioPadre: "boletin-electrico",
+    },
+    h1: "Boletín eléctrico (CIE) en Sabadell en 24-48 horas",
+    heroSub:
+      "Tenemos la base en Sabadell, así que aquí la revisión suele ser el mismo día. Instalador habilitado, tramitación ante Indústria incluida y precio cerrado.",
+    heroImage: "/img/hero-boletin.jpg",
+    metaTitle: "Boletín eléctrico en Sabadell (CIE) en 24-48h",
+    metaDescription:
+      "Boletín eléctrico en Sabadell: revisión el mismo día, firma de instalador habilitado y tramitación ante Indústria incluida.",
+    ctaFrecuente: true,
+    queIncluye: [
+      {
+        titulo: "Revisión el mismo día",
+        texto:
+          "Estamos en la ciudad. En la mayoría de encargos de Sabadell podemos pasar a revisar la instalación en el día, sin esperas de agenda.",
+      },
+      {
+        titulo: "Firma de instalador habilitado",
+        texto:
+          "El certificado lo firma un instalador eléctrico habilitado con su número de registro. Puedes pedírnoslo antes de contratar.",
+      },
+      {
+        titulo: "Tramitación incluida",
+        texto:
+          "Presentamos el certificado ante Indústria y te entregamos el documento sellado listo para tu comercializadora.",
+      },
+      {
+        titulo: "Adaptaciones, si hacen falta",
+        texto:
+          "Si la instalación no pasa tal cual, te decimos qué hay que tocar con precio cerrado aparte. Nunca lo damos por hecho ni lo colamos en la factura.",
+      },
+    ],
+    secciones: [
+      {
+        h2: "Por qué en Sabadell el boletín sale más rápido",
+        parrafos: [
+          "Nuestra base está en Sabadell, en la calle Alcarria, y en el trámite del boletín eso se nota más que en cualquier otro servicio. El cuello de botella de un CIE casi nunca es la firma ni la tramitación, es cuadrar la visita de revisión: alguien tiene que ver la instalación con el piso abierto antes de que nadie certifique nada.",
+          "Como estamos en la ciudad, esa visita en Sabadell suele encajar el mismo día o el siguiente, y no dentro de tres. A partir de ahí, si la instalación pasa, el certificado se firma y se tramita en 24-48 horas. Si no pasa, sabes lo que hay que adaptar el mismo día que te pasamos a ver, que es justo lo que necesitas cuando tienes la mudanza con fecha.",
+          "Trabajamos en todos los barrios: Centre, Creu Alta, Can Rull, la Concòrdia, Gràcia, Can Feu, Torre-romeu y los polígonos. Y en Castellar, Sant Quirze, Barberà, Cerdanyola y Ripollet con los mismos plazos.",
+        ],
+      },
+      {
+        h2: "El parque de vivienda de Sabadell y lo que suele fallar en la revisión",
+        parrafos: [
+          "Después de años haciendo boletines en la ciudad, los motivos por los que una instalación de Sabadell no pasa a la primera se repiten con bastante fidelidad, y casi todos tienen que ver con la época en que se construyó el edificio.",
+          "En los bloques de los sesenta y setenta de Can Rull, la Concòrdia o Torre-romeu, el problema habitual es la ausencia de toma de tierra y un cuadro que sigue siendo de fusibles o tiene un solo diferencial para toda la vivienda. En las fincas antiguas del Centre y la Creu Alta aparece además cableado de sección corta y circuitos que mezclan alumbrado y enchufes. Y en las casas de cos, muy típicas de la ciudad, es frecuente encontrar la instalación en superficie y ampliada por tramos según hacía falta.",
+          "Ninguna de esas cosas convierte tu piso en un caso perdido. Casi siempre se resuelve con un cuadro nuevo, la toma de tierra y la separación de un par de circuitos, y se hace en una mañana. Lo importante es saberlo antes de que la comercializadora te pare el alta, no después.",
+        ],
+        bullets: [
+          "Vivienda sin toma de tierra: lo más frecuente en bloques anteriores a los ochenta",
+          "Cuadro de fusibles o con un único diferencial para toda la casa",
+          "Circuitos que mezclan alumbrado y enchufes, sin protección independiente",
+          "Cableado con sección insuficiente para la potencia que se quiere contratar",
+          "Derivación individual que no admite la subida de potencia solicitada",
+        ],
+      },
+      {
+        h2: "Cuándo te van a pedir el CIE en Sabadell",
+        parrafos: [
+          "Los casos son los mismos que en el resto de Cataluña, pero conviene tenerlos claros porque casi nadie piensa en el boletín hasta que se lo exigen con prisa.",
+          "El primero es dar de alta la luz en una vivienda o local cuyo suministro lleva tiempo cortado, algo muy habitual en pisos que se venden tras una herencia. El segundo es subir la potencia contratada, que en los bloques antiguos de la ciudad es casi una constante cuando alguien pone cocina de inducción. El tercero es después de una reforma que haya tocado la instalación. Y el cuarto es cuando el boletín que consta es tan antiguo que la comercializadora directamente no lo acepta.",
+          "En los tres primeros casos el certificado que necesitas es el blanco, el CIE propiamente dicho. En el cuarto, cuando la instalación no se ha modificado y solo hay que acreditar que sigue siendo apta, suele bastar el llamado boletín azul, que es un certificado de reconocimiento. Te decimos cuál necesitas en la primera llamada, y si hay dudas lo consultamos con tu comercializadora antes de emitir nada.",
+        ],
+      },
+      {
+        h2: "Locales, naves y polígonos de Sabadell",
+        parrafos: [
+          "Sabadell tiene un tejido industrial y comercial muy vivo, y una parte importante de los boletines que hacemos aquí no son de vivienda. Son locales que cambian de titular, talleres que amplían maquinaria y naves de Can Roqueta o Gràcia Sud que necesitan documentación al día para una licencia de actividad o para un aumento de potencia.",
+          "El planteamiento es el mismo, pero el alcance es mayor: hay que revisar el cuadro general y los secundarios, las protecciones acordes a la actividad, el alumbrado de emergencia y, en trifásica, el equilibrado de fases. Lo miramos en una visita técnica sin coste, te damos precio cerrado del conjunto y coordinamos con el técnico que lleve tu licencia si lo hay.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        pregunta: "¿Cuánto tarda el boletín eléctrico en Sabadell?",
+        respuesta:
+          "La revisión suele ser el mismo día o el siguiente, porque tenemos la base en la ciudad. Desde que la instalación está conforme, el certificado se firma y se tramita en 24-48 horas.",
+      },
+      {
+        pregunta: "¿Vais a los barrios y a los municipios de alrededor?",
+        respuesta:
+          "Sí: todos los barrios de Sabadell, y con los mismos plazos en Castellar del Vallès, Sant Quirze, Barberà, Cerdanyola y Ripollet.",
+      },
+      {
+        pregunta: "¿Y si mi instalación no pasa la revisión?",
+        respuesta:
+          "Te decimos exactamente qué hay que adaptar, con precio cerrado aparte y por escrito. Tú decides si lo hacemos nosotros. Nunca damos por hecha una adaptación ni la incluimos sin avisar.",
+      },
+      {
+        pregunta: "Necesito el boletín azul, no el blanco. ¿Lo hacéis?",
+        respuesta:
+          "Sí. El azul es un certificado de reconocimiento para instalaciones existentes que no se han modificado; el blanco, el CIE, es para instalación nueva o modificada. Si no sabes cuál te piden, lo consultamos con tu comercializadora antes de emitir nada.",
+      },
+      {
+        pregunta: "¿Quién firma el certificado?",
+        respuesta:
+          "Un instalador eléctrico habilitado e inscrito en el registro oficial, con su número. Nosotros coordinamos el servicio, damos el precio cerrado y tramitamos la documentación ante Indústria. Puedes pedirnos el número de registro de quien va a firmar el tuyo.",
+      },
+      {
+        pregunta: "¿Hacéis boletines de naves y locales en los polígonos?",
+        respuesta:
+          "Sí, en Can Roqueta, Gràcia Sud y el resto de polígonos de la ciudad. El alcance es mayor que en vivienda: cuadro general y secundarios, protecciones según actividad, emergencias y equilibrado de fases en trifásica. Empezamos con una visita técnica sin coste.",
+      },
+    ],
+  },
+  {
+    slug: "electricista-urgente-sabadell",
+    nombre: "Electricista urgente en Sabadell",
+    card: {
+      titulo: "Urgente en Sabadell",
+      linea: "Guardia 24h con base en la ciudad: media hora de media.",
+      icono: "rapido",
+    },
+    local: {
+      ciudad: "Sabadell",
+      ciudadSlug: "electricista-sabadell",
+      servicioPadre: "electricistas-urgentes-24-horas",
+    },
+    h1: "Electricista urgente en Sabadell, 24 horas",
+    heroSub:
+      "Somos de Sabadell y tenemos la base aquí. En urgencias solemos estar en tu puerta en menos de media hora, con precio cerrado por teléfono antes de salir.",
+    heroImage: "/img/hero-urgencias-24h.jpg",
+    metaTitle: "Electricista urgente en Sabadell 24 horas",
+    metaDescription:
+      "Electricista urgente en Sabadell 24 horas. Base en la ciudad y llegada en menos de 30 minutos. Precio cerrado por teléfono.",
+    urgencias: true,
+    queIncluye: [
+      {
+        titulo: "Media hora de media",
+        texto:
+          "Es la única ciudad donde tenemos la base. En la mayoría de avisos de Sabadell estamos en menos de 30 minutos.",
+      },
+      {
+        titulo: "24 horas, todos los días",
+        texto:
+          "Noches, fines de semana y festivos. Siempre hay un electricista de guardia disponible para la ciudad y su entorno.",
+      },
+      {
+        titulo: "Precio cerrado por teléfono",
+        texto:
+          "Te decimos el coste de la salida y el diagnóstico antes de movernos, y el de la reparación antes de tocar nada.",
+      },
+      {
+        titulo: "Reparación con garantía",
+        texto:
+          "Instalador habilitado, material homologado y garantía por escrito de lo que reparamos.",
+      },
+    ],
+    secciones: [
+      {
+        h2: "Qué hacer ahora mismo si te has quedado sin luz",
+        parrafos: [
+          "Antes de llamar a nadie, dos minutos de comprobación te ahorran una visita en la mitad de los casos, y son seguros de hacer.",
+          "Mira el cuadro y fíjate en qué ha bajado. Si es el interruptor ancho con un botón de prueba, es el diferencial y hay una fuga: baja todos los magnetotérmicos, sube el diferencial y ve subiendo los pequeños uno a uno hasta que vuelva a saltar. El último que subiste señala el circuito con el problema; déjalo bajado y tendrás luz en el resto de la casa mientras esperas. Si lo que ha bajado es uno de los estrechos, ese circuito va sobrecargado o tiene un cortocircuito: desenchufa lo que haya conectado ahí antes de volver a subirlo.",
+          "Si no ha saltado nada y la casa está a oscuras, asómate a la escalera o llama a un vecino. Cuando el corte es de toda la finca o de la calle, es de la distribuidora y ahí no entramos nosotros. Y si hay olor a quemado, chispas o el cuadro está caliente, no toques nada: baja el general si puedes hacerlo sin riesgo y llámanos.",
+        ],
+      },
+      {
+        h2: "Las urgencias que más atendemos en Sabadell",
+        parrafos: [
+          "El tipo de aviso cambia bastante según el barrio, y después de años de guardias en la ciudad el patrón está bastante claro.",
+          "En Can Rull, la Concòrdia y Torre-romeu, con bloques de los sesenta y setenta, lo habitual es el ICP que salta por potencia corta y el cuadro antiguo que ya no protege. En el Centre y la Creu Alta, con fincas más viejas y casas de cos, aparecen las derivaciones por humedad y el cableado envejecido, sobre todo después de días de lluvia. En Gràcia y Can Feu, vivienda más familiar, muchas averías vienen de circuitos añadidos en reformas antiguas.",
+          "Aparte están los avisos de comercio y hostelería del centro y de los polígonos: un local sin luz pierde dinero cada hora que pasa, y una cámara frigorífica parada, mercancía. A esos les damos prioridad de respuesta, igual que a las urgencias con riesgo (olor a quemado, chispas o agua en contacto con la instalación).",
+        ],
+      },
+      {
+        h2: "Reparamos hoy, y lo demás se presupuesta aparte",
+        parrafos: [
+          "En una urgencia estás en la peor posición posible para decidir sobre una reforma: sin luz, con prisa y con alguien delante. Por eso separamos siempre las dos cosas.",
+          "Lo que hacemos en la visita de urgencia es localizar la avería, dejarte el suministro restablecido con seguridad y explicarte qué ha pasado. Si al abrir el cuadro vemos que tu instalación tiene problemas de fondo (falta de tierra, fusibles, derivación individual justa), te lo decimos claro y te lo presupuestamos por escrito y aparte, para que lo decidas con calma otro día.",
+          "Nunca aprovechamos una urgencia para vender una renovación completa. Y si la reparación de hoy hace innecesaria una parte de lo que te habíamos presupuestado, te lo descontamos.",
+        ],
+      },
+      {
+        h2: "Cobertura: Sabadell y el Vallès cercano",
+        parrafos: [
+          "Desde la base cubrimos la ciudad entera y los municipios del entorno con tiempos muy contenidos. En Sabadell lo normal son menos de 30 minutos. En Castellar del Vallès, Sant Quirze, Barberà, Ripollet y Cerdanyola, entre 25 y 40 según la hora y el punto exacto. En Terrassa y Sant Cugat, algo más.",
+          "Si tu aviso es de una comunidad de vecinos o de un local, dilo al llamar: cambia el material que carga el electricista y, en el caso de la comunidad, nos permite determinar desde el principio si la avería está en zona común o privativa, que es lo que después decide quién paga la factura.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        pregunta: "¿Cuánto tardáis en llegar a Sabadell?",
+        respuesta:
+          "Lo habitual es menos de 30 minutos, porque tenemos la base en la ciudad. Al llamar te damos una franja concreta según dónde estés y la hora.",
+      },
+      {
+        pregunta: "¿Atendéis de madrugada y en festivos?",
+        respuesta:
+          "Sí, hay guardia las 24 horas todos los días del año. El precio de la salida en horario nocturno o festivo es distinto al de horario laboral, y te lo decimos por teléfono antes de salir.",
+      },
+      {
+        pregunta: "Se ha ido la luz de toda la finca. ¿Es cosa vuestra?",
+        respuesta:
+          "Si el corte afecta a toda la escalera o a la calle, casi siempre es de la distribuidora y hay que avisarles a ellos. Si afecta solo a las zonas comunes de la finca, sí es nuestro trabajo: revisamos el cuadro de servicios comunes y facturamos a la comunidad.",
+      },
+      {
+        pregunta: "Huele a quemado en el cuadro. ¿Qué hago?",
+        respuesta:
+          "No toques nada y no vuelvas a subir lo que haya saltado. Si puedes bajar el interruptor general sin riesgo, hazlo, ventila y llámanos. Es de los avisos a los que damos prioridad absoluta.",
+      },
+      {
+        pregunta: "¿Puedo saber el precio antes de que vengáis?",
+        respuesta:
+          "Sí, y es como trabajamos siempre. Te damos precio cerrado de la salida y el diagnóstico por teléfono, y el de la reparación en cuanto el electricista ve la avería, antes de tocar nada.",
+      },
+    ],
+  },
+  {
+    slug: "electricista-urgente-badalona",
+    nombre: "Electricista urgente en Badalona",
+    card: {
+      titulo: "Urgente en Badalona",
+      linea: "Guardia 24h en Badalona, Llefià, Centre y primera línea.",
+      icono: "rapido",
+    },
+    local: {
+      ciudad: "Badalona",
+      ciudadSlug: "electricista-badalona",
+      servicioPadre: "electricistas-urgentes-24-horas",
+    },
+    h1: "Electricista urgente en Badalona, 24 horas",
+    heroSub:
+      "Electricista de guardia en Badalona todos los días del año. Llegamos en 30-45 minutos con precio cerrado por teléfono antes de salir.",
+    heroImage: "/img/hero-urgencias-24h.jpg",
+    metaTitle: "Electricista urgente en Badalona 24 horas",
+    metaDescription:
+      "Electricista urgente en Badalona 24h: averías, cortocircuitos y cortes de luz. Llegada en 30-45 minutos y precio cerrado antes de salir.",
+    urgencias: true,
+    queIncluye: [
+      {
+        titulo: "Llegada en 30-45 minutos",
+        texto:
+          "Cobertura de toda la ciudad: Centre, Llefià, La Salut, Sant Roc, Gorg, Canyadó y la primera línea de mar.",
+      },
+      {
+        titulo: "24 horas, todos los días",
+        texto:
+          "Guardia real de noche, fines de semana y festivos, también en agosto.",
+      },
+      {
+        titulo: "Precio cerrado por teléfono",
+        texto:
+          "Coste de salida y diagnóstico antes de movernos. El de la reparación, antes de tocar nada.",
+      },
+      {
+        titulo: "Prioridad para comercios",
+        texto:
+          "Locales y hostelería del Centre y del puerto: cada hora sin luz cuesta dinero y lo tratamos como tal.",
+      },
+    ],
+    secciones: [
+      {
+        h2: "El salitre: por qué en Badalona saltan más los diferenciales",
+        parrafos: [
+          "Hay una causa de avería que en Badalona aparece muchísimo más que tierra adentro, y a mucha gente le sorprende: el ambiente marino. En la franja cercana al mar, de Canyadó al puerto pasando por el Centre, la humedad salina ataca los metales de la instalación mucho más rápido que en el resto del área metropolitana.",
+          "Se nota primero en lo que está fuera: enchufes de terraza y balcón, cajas de registro exteriores, apliques y farolas de patio, terminales de cuadros de local. El salitre oxida los contactos, el contacto pierde calidad, aparece resistencia y humedad donde no debería, y el diferencial empieza a saltar sin que nadie relacione una cosa con la otra. El patrón típico es un diferencial que salta los días de levante o después de un temporal y que luego parece que se arregla solo.",
+          "Diagnosticarlo bien exige medir el aislamiento circuito por circuito hasta dar con el punto, no ir cambiando piezas a ver si suena la flauta. Y repararlo bien exige material adecuado al ambiente: cajas y mecanismos estancos de verdad y terminales protegidos. Lo dejamos indicado en el presupuesto porque es la diferencia entre resolverlo y volver dentro de seis meses.",
+        ],
+      },
+      {
+        h2: "Los bloques de Llefià, La Salut y Sant Roc",
+        parrafos: [
+          "El otro gran frente de urgencias en Badalona son los barrios de bloques construidos entre los cincuenta y los setenta. Llefià, La Salut, Sant Roc, La Pau o Artigues comparten un mismo perfil: pisos pequeños, potencias contratadas al mínimo heredado y cuadros que en muchos casos siguen siendo los originales.",
+          "El aviso más frecuente aquí no es una avería, es una limitación: la casa se queda a oscuras al encender el horno con la vitro en marcha, y lo que ha bajado es el control de potencia. Eso no se repara, se resuelve subiendo potencia, y en estas fincas hay que comprobar antes si la derivación individual admite más. Lo segundo más frecuente es el cuadro sin diferencial o con uno solo para toda la vivienda, que convierte cualquier fuga pequeña en un apagón completo.",
+          "En estos casos restablecemos el suministro esa misma noche dejando aislado el circuito problemático, y te damos por escrito y aparte el presupuesto de lo que haría falta para que no se repita. Sin presión y sin mezclarlo con la factura de la urgencia.",
+        ],
+      },
+      {
+        h2: "Comercios, hostelería y comunidades",
+        parrafos: [
+          "Badalona tiene mucho comercio de calle en el Centre, el eje del Mercat y la zona del puerto, y para un negocio la urgencia eléctrica tiene un coste por hora que una vivienda no tiene. Por eso damos prioridad a locales con el suministro caído, y muy especialmente a hostelería con cámaras o cocina eléctrica parada.",
+          "En comunidades de vecinos lo primero que determinamos al llegar es de qué lado del contador está la avería, porque eso decide quién paga. Del contador hacia tu casa es privativo y lo asume el propietario. Del contador hacia atrás (montantes, centralización, cuadro de servicios comunes, alumbrado de escalera y párking, ascensor, bombas) es común y lo asume la comunidad. Lo dejamos claro en el parte de trabajo y, si es común, facturamos a la comunidad con CIF e IVA desglosado y con el detalle que necesita el administrador.",
+        ],
+      },
+      {
+        h2: "Cobertura y tiempos reales en Badalona",
+        parrafos: [
+          "Llegamos a Badalona en 30-45 minutos según la zona y la hora. La franja litoral y el Centre suelen estar en la parte baja de esa horquilla; los barrios de la parte alta, como Canyet o Pomar, en la parte alta, por acceso y pendiente.",
+          "Desde Badalona cubrimos con tiempos parecidos Sant Adrià de Besòs, Santa Coloma de Gramenet, Montgat y Tiana, y enlazamos con Barcelona por la Ronda Litoral. Al llamar te damos una franja concreta y te avisamos si vamos a salirnos de ella.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        pregunta: "¿Cuánto tarda un electricista urgente en llegar a Badalona?",
+        respuesta:
+          "Entre 30 y 45 minutos según la zona y la hora. En el Centre y la franja de mar, más cerca de 30; en la parte alta, como Canyet o Pomar, algo más.",
+      },
+      {
+        pregunta: "Vivo cerca del mar y el diferencial me salta cada poco. ¿Es normal?",
+        respuesta:
+          "Es muy habitual en Badalona: el salitre oxida terminales, enchufes exteriores y cajas, y eso provoca derivaciones. Se localiza midiendo el aislamiento circuito por circuito y se resuelve sustituyendo el punto afectado por material apto para ambiente marino.",
+      },
+      {
+        pregunta: "Se me va la luz al encender el horno con la vitro. ¿Es una avería?",
+        respuesta:
+          "No, es falta de potencia contratada: lo que baja es el control de potencia. Se resuelve subiendo potencia, y en los bloques antiguos de Llefià o Sant Roc hay que comprobar antes si la derivación individual admite más.",
+      },
+      {
+        pregunta: "La avería es de la comunidad. ¿Cómo se factura?",
+        respuesta:
+          "Si está del contador hacia atrás (montantes, cuadro de servicios comunes, alumbrado de escalera, ascensor) es instalación común y facturamos a la comunidad con CIF e IVA desglosado, con el detalle que necesita el administrador. Lo dejamos indicado en el parte de trabajo.",
+      },
+      {
+        pregunta: "Tengo un bar sin luz. ¿Me atendéis con prioridad?",
+        respuesta:
+          "Sí. Los locales con el suministro caído, y sobre todo la hostelería con cámaras o cocina parada, tienen prioridad de respuesta sobre el resto de avisos no peligrosos.",
+      },
+    ],
   },
 ];
+
+/** Cards de la home sin página propia. Vacío desde que instalaciones tiene landing. */
+export const cardsExtra: CardExtra[] = [];
+
+/** Servicios con entidad propia: nav, footer, grid de la home y ZonasSection. */
+export const serviciosGlobales = servicios.filter((s) => !s.local);
+
+/** Landings de servicio por ciudad. Fuera del nav y del grid, pero en el footer. */
+export const serviciosLocales = servicios.filter((s) => s.local);
+
+/** Landings de servicio por ciudad que cuelgan de una ciudad concreta. */
+export function serviciosDeCiudad(ciudadSlug: string): Servicio[] {
+  return servicios.filter((s) => s.local?.ciudadSlug === ciudadSlug);
+}
+
+/** Landings locales que cuelgan de un servicio padre. */
+export function hijosDeServicio(slug: string): Servicio[] {
+  return servicios.filter((s) => s.local?.servicioPadre === slug);
+}
 
 export function getServicio(slug: string): Servicio | undefined {
   return servicios.find((s) => s.slug === slug);

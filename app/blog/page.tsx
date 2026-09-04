@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { config } from "@/data/config";
-import { posts } from "@/data/posts";
+import { postsRecientes } from "@/data/posts";
 import { CTAFinal } from "@/components/CTAFinal";
 import { JsonLd } from "@/components/JsonLd";
 import { schemaBreadcrumb } from "@/lib/schema";
@@ -42,7 +42,7 @@ export default function Blog() {
       <section className="bg-paper">
         <div className="mx-auto max-w-6xl px-4 py-16">
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {posts.map((post) => (
+            {postsRecientes.map((post) => (
               <Reveal key={post.slug} className="h-full">
                 <Link
                   href={`/blog/${post.slug}`}

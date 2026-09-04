@@ -48,6 +48,7 @@ export default async function PostPage({ params }: Props) {
           headline: post.titulo,
           description: post.descripcion,
           datePublished: post.fecha,
+          dateModified: post.fecha,
           inLanguage: "es-ES",
           author: {
             "@type": "Organization",

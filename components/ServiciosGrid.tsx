@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { servicios, cardsExtra } from "@/data/servicios";
+import { serviciosGlobales, cardsExtra } from "@/data/servicios";
 import { Icono } from "./Iconos";
 import { Reveal } from "./Reveal";
 
@@ -14,7 +14,7 @@ export function ServiciosGrid({
   intro?: string;
 }) {
   const cards = [
-    ...servicios.map((s) => ({
+    ...serviciosGlobales.map((s) => ({
       titulo: s.card.titulo,
       linea: s.card.linea,
       icono: s.card.icono,

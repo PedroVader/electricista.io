@@ -848,6 +848,219 @@ export const distritos: Ciudad[] = [
       },
     ],
   },
+  {
+    slug: "electricista-ciutat-vella",
+    nombre: "Ciutat Vella",
+    comarca: "Barcelona",
+    padre,
+    h1: "Electricista en Ciutat Vella: urgencias e instaladores autorizados",
+    metaTitle: "Electricista en Ciutat Vella (Barcelona) | Urgencias 24h",
+    metaDescription:
+      "Electricistas en Ciutat Vella: Raval, Gòtic, Born y Barceloneta. Fincas antiguas, locales, boletines (CIE) y urgencias 24h.",
+    porQue: [
+      "Ciutat Vella tiene el parque de edificios más antiguo de Barcelona, y muchas de sus instalaciones eléctricas también. Fincas del siglo XVIII y XIX en el Gòtic y el Born, bloques de posguerra en el Raval y las casas estrechas de la Barceloneta comparten un mismo problema: cableado sin sección para lo que hoy se conecta, ninguna toma de tierra y humedad por todas partes, sea del subsuelo, del mar o de los patios interiores.",
+      "A eso se suma que aquí la vivienda convive con la mayor concentración de locales y restaurantes de la ciudad. Legalizamos instalaciones para licencias de actividad, resolvemos urgencias en cocinas y comercios con prioridad, y nos movemos a pie por las calles donde no entra el coche. Llegamos en 30-45 minutos a cualquier punto del distrito.",
+    ],
+    tambienServicio: {
+      intro:
+        "Desde Ciutat Vella subimos al Eixample y a Sant Antoni en minutos, y por el litoral llegamos a la Vila Olímpica y al Poblenou, en Sant Martí. Por el otro lado, al Poble-sec y a Sants.",
+      municipios: ["Eixample", "Sant Martí", "Sants", "Gràcia"],
+    },
+    zonas: {
+      h2: "Trabajos habituales por barrio de Ciutat Vella",
+      intro:
+        "Cuatro barrios muy distintos entre sí, con un patrón de averías propio en cada uno.",
+      items: [
+        {
+          nombre: "El Raval",
+          texto:
+            "La zona más densa y con más rotación de vivienda: cuadros con fusibles, contadores compartidos que hay que individualizar y boletines para altas de luz después de cada cambio de inquilino.",
+        },
+        {
+          nombre: "El Gòtic",
+          texto:
+            "Fincas medievales y del XIX rehabilitadas a medias: derivaciones por humedad de muro, instalación en superficie donde no se puede picar y legalizaciones de locales y pisos turísticos.",
+        },
+        {
+          nombre: "Sant Pere, Santa Caterina i la Ribera",
+          texto:
+            "El Born concentra restaurantes, talleres y lofts: ampliaciones de potencia para cocinas, cuadros de local y separación de circuitos en pisos reformados sobre estructura antigua.",
+        },
+        {
+          nombre: "La Barceloneta",
+          texto:
+            "Pisos pequeños a un paso del mar: salitre en enchufes y cuadros, terminales oxidados, subidas de potencia en viviendas con el mínimo contratado y averías en locales de la primera línea.",
+        },
+      ],
+    },
+    secciones: [
+      {
+        h2: "Instalaciones eléctricas en fincas de dos y tres siglos",
+        parrafos: [
+          "En el Gòtic y el Born trabajamos en edificios que ya estaban en pie cuando llegó la electricidad. La instalación se añadió a posteriori, en muchos casos en superficie y sobre muros de piedra o de mampostería de un metro de grosor, y desde entonces se ha ido ampliando a parches: un tramo de los años cincuenta, otro de una reforma de los noventa y un tercero de la última vez que alguien cambió la cocina.",
+          "Lo que nos encontramos con más frecuencia es cableado con la sección justa para un par de bombillas alimentando hoy un piso completo, sin toma de tierra y con un cuadro que a veces sigue siendo de fusibles cerámicos. Añade a eso muros que sudan humedad del subsuelo y patios interiores mínimos, y tienes la causa de buena parte de los diferenciales que saltan sin motivo aparente en el distrito.",
+          "Renovar la instalación en estas fincas casi nunca pasa por picar. Muchas están protegidas y en otras no compensa abrir muros de piedra. Trabajamos con canalización vista de calidad, tubo metálico o canaleta técnica según el acabado, aprovechando pasos existentes y falsos techos de baños y cocinas. El resultado cumple reglamento, permite firmar el boletín y respeta el edificio.",
+        ],
+      },
+      {
+        h2: "Locales, restaurantes y licencias de actividad",
+        parrafos: [
+          "Ciutat Vella es el distrito con más locales por metro cuadrado de la ciudad, y buena parte de nuestro trabajo aquí es para negocios. El caso típico es un traspaso: entra un nuevo titular, el ayuntamiento o el técnico que tramita la licencia pide la instalación eléctrica al día, y aparece que el local lleva veinte años funcionando con una instalación que nunca se legalizó.",
+          "Revisamos lo que hay, adaptamos lo imprescindible (cuadro con las protecciones que exige la actividad, circuitos separados para cocina, frío y alumbrado, alumbrado de emergencia) y dejamos la documentación lista para que el técnico la incorpore al expediente. En hostelería el punto crítico casi siempre es la potencia: una cocina eléctrica o una cámara nueva no caben en un suministro pensado para una tienda de barrio.",
+          "Para los locales en funcionamiento damos prioridad de respuesta en urgencias. Un restaurante del Born sin luz un viernes por la noche o una cámara parada en el Raval tienen un coste por hora que no admite esperar a mañana.",
+        ],
+      },
+      {
+        h2: "Calles peatonales, pisos turísticos y otras particularidades",
+        parrafos: [
+          "Trabajar en Ciutat Vella tiene una logística propia. Buena parte del distrito es peatonal o tiene acceso restringido a vehículos, y el electricista termina cargando el material a pie desde el punto más cercano donde se puede parar. Lo contamos porque afecta a cómo organizamos las visitas, no al precio: el acceso es problema nuestro y no lo repercutimos.",
+          "Otra particularidad son las viviendas de uso turístico y los pisos de alquiler con mucha rotación. Cada cambio de titular en el contrato de luz puede terminar en una petición de boletín por parte de la comercializadora, y en el Raval y el Gòtic es una de las gestiones que más hacemos. Si administras varios pisos, te conviene tener la instalación revisada antes de que la comercializadora te pare un alta con inquilino esperando.",
+          "En la Barceloneta el enemigo es el salitre. Enchufes exteriores, terminales de cuadro y cajas de registro se oxidan mucho antes que en el resto de la ciudad, y las derivaciones que provocan se confunden con averías de electrodomésticos. Aquí usamos material con protección adecuada al ambiente marino y lo dejamos indicado en el presupuesto.",
+        ],
+      },
+    ],
+    faqsLocales: [
+      {
+        pregunta: "¿Cuánto tarda un electricista en llegar a Ciutat Vella?",
+        respuesta:
+          "En urgencias, entre 30 y 45 minutos a cualquier barrio del distrito. En calles peatonales o con acceso restringido aparcamos donde se puede y subimos a pie con el material, sin coste añadido.",
+      },
+      {
+        pregunta: "Mi finca del Gòtic está protegida. ¿Se puede renovar la instalación?",
+        respuesta:
+          "Sí. Trabajamos con canalización vista de calidad, tubo metálico o canaleta técnica según el acabado, y aprovechamos los pasos existentes. Sin picar muros de piedra y con boletín al terminar.",
+      },
+      {
+        pregunta: "Voy a abrir un local en el Born. ¿Qué necesito para la licencia?",
+        respuesta:
+          "Una instalación eléctrica legalizada y acorde a la actividad: cuadro con las protecciones que exige, circuitos separados y alumbrado de emergencia. Revisamos el local, adaptamos lo necesario y dejamos la documentación lista para el técnico que tramita el expediente.",
+      },
+      {
+        pregunta: "En la Barceloneta me salta el diferencial cada pocos días. ¿Qué pasa?",
+        respuesta:
+          "Casi siempre es salitre: terminales, enchufes exteriores y cajas se oxidan y provocan derivaciones. Se localiza midiendo circuito por circuito y se resuelve sustituyendo el punto afectado por material apto para ambiente marino.",
+      },
+      {
+        pregunta: "Gestiono pisos de alquiler en el Raval. ¿Hacéis boletines para las altas?",
+        respuesta:
+          "Sí, es una de las gestiones más frecuentes del distrito. Revisamos la instalación, adaptamos lo imprescindible y gestionamos el CIE en 24-48 horas para que el alta no se quede parada.",
+      },
+      {
+        pregunta: "¿Trabajáis en pisos con contador compartido?",
+        respuesta:
+          "Sí. En fincas antiguas del Raval y el Gòtic todavía hay suministros compartidos entre viviendas. Estudiamos la individualización, preparamos la derivación y el cuadro de cada vivienda y gestionamos el boletín para que cada una tenga su contrato.",
+      },
+    ],
+  },
+  {
+    slug: "electricista-nou-barris",
+    nombre: "Nou Barris",
+    comarca: "Barcelona",
+    padre,
+    h1: "Electricista en Nou Barris: urgencias e instaladores autorizados",
+    metaTitle: "Electricista en Nou Barris (Barcelona) | Urgencias 24h",
+    metaDescription:
+      "Electricistas en Nou Barris: cambios de cuadro, subidas de potencia, boletines (CIE) y urgencias 24h. Precio cerrado antes de empezar.",
+    porQue: [
+      "Nou Barris se construyó en su mayor parte entre los años cincuenta y setenta, en polígonos de vivienda levantados deprisa para alojar a quienes llegaban a trabajar a Barcelona. Verdum, la Trinitat Nova, Canyelles, la Guineueta o Ciutat Meridiana comparten pisos pequeños, instalaciones pensadas para lo mínimo de aquella época y potencias contratadas que hoy saltan en cuanto coinciden la vitro y la lavadora.",
+      "Es el distrito donde más cuadros de fusibles sustituimos y donde más subidas de potencia gestionamos, muchas con revisión de la derivación individual porque la línea original no admite más. Trabajamos a diario en fincas que están rehabilitando la instalación común, en los comercios de la Via Júlia y Fabra i Puig y en las casas de la parte alta. En urgencias llegamos en 40-50 minutos según el barrio y la pendiente.",
+    ],
+    tambienServicio: {
+      intro:
+        "Desde Nou Barris bajamos a Horta-Guinardó y a Sant Andreu en pocos minutos, y por la Meridiana y la Ronda de Dalt saltamos a Santa Coloma de Gramenet y a Montcada. También cubrimos el resto de Barcelona.",
+      municipios: ["Horta-Guinardó", "Sant Andreu", "Santa Coloma de Gramenet", "Gràcia"],
+    },
+    zonas: {
+      h2: "Trabajos habituales por barrio de Nou Barris",
+      intro:
+        "Trece barrios con historias de construcción distintas, y por tanto con averías distintas.",
+      items: [
+        {
+          nombre: "Verdum, Prosperitat i la Guineueta",
+          texto:
+            "Bloques de los 50 y 60 con la instalación original: cuadros de fusibles, viviendas sin toma de tierra y subidas de potencia con revisión de la derivación individual.",
+        },
+        {
+          nombre: "Trinitat Nova i Canyelles",
+          texto:
+            "Polígonos en plena renovación: instalaciones comunes rehabilitadas, líneas nuevas para ascensores añadidos a posteriori y cuadros de servicios comunes.",
+        },
+        {
+          nombre: "Ciutat Meridiana, Torre Baró i Vallbona",
+          texto:
+            "La zona alta, sobre la ladera de Collserola: viviendas con derivaciones por humedad, cuadros por sustituir y accesos que alargan algo el tiempo de llegada.",
+        },
+        {
+          nombre: "Porta, Vilapicina i el Turó de la Peira",
+          texto:
+            "Fincas rehabilitadas tras décadas de obras estructurales: renovación completa de la instalación, boletines para compraventa y adecuaciones para el CIE.",
+        },
+        {
+          nombre: "Via Júlia i Fabra i Puig",
+          texto:
+            "Comercio de barrio y hostelería: separación de circuitos, cuadros de local, ampliaciones de potencia y legalizaciones para licencias de actividad.",
+        },
+      ],
+    },
+    secciones: [
+      {
+        h2: "Pisos de los polígonos: potencia corta y cuadro de fusibles",
+        parrafos: [
+          "La mayoría de los pisos de Nou Barris nacieron con una instalación calculada para una nevera, una radio y unas bombillas. Sesenta años después alimentan vitrocerámica, horno, lavadora, secadora, aire acondicionado y una casa entera de cargadores. El resultado es siempre el mismo: el ICP salta a las horas de más consumo y en el cuadro sigue habiendo fusibles o, como mucho, un único diferencial para toda la vivienda.",
+          "Subir la potencia parece la solución rápida, y a veces lo es. Pero en muchas fincas del distrito la derivación individual, que es el cable que va desde el contador hasta tu cuadro, no tiene sección para admitir más. La comercializadora te pedirá boletín para la subida y el instalador no puede firmarlo si la línea no aguanta. Por eso aquí revisamos siempre la derivación antes de decirte si basta con la subida o hay que renovar ese tramo.",
+          "Cuando toca renovar, lo hacemos en una mañana: derivación nueva si hace falta, cuadro con diferencial y magnetotérmicos por circuito, toma de tierra donde no existe y boletín para que la subida se tramite sin trabas. Es el trabajo que más hacemos en Verdum, Prosperitat y la Guineueta.",
+        ],
+      },
+      {
+        h2: "Fincas rehabilitadas y ascensores añadidos después",
+        parrafos: [
+          "Nou Barris ha vivido más rehabilitación que casi cualquier otro distrito de Barcelona. En el Turó de la Peira se reconstruyeron bloques enteros por problemas estructurales y en la Trinitat Nova, Canyelles o Ciutat Meridiana se han renovado fachadas, cubiertas y elementos comunes con ayudas públicas. Muchas de esas obras tocaron la instalación eléctrica común, pero no siempre la de cada vivienda.",
+          "El caso más frecuente es el ascensor. Cientos de fincas del distrito lo instalaron décadas después de construirse, y esa máquina necesita una línea propia desde la centralización de contadores, un cuadro de servicios comunes preparado y a menudo un aumento de potencia del suministro de la comunidad. Cuando se hizo deprisa, aparecen los problemas: diferencial de la comunidad que salta, alumbrado de escalera que comparte circuito con el ascensor o protecciones que no corresponden.",
+          "Para las comunidades del distrito revisamos la instalación común completa, dejamos por escrito qué está bien y qué hay que corregir, y presupuestamos con precio cerrado y factura con CIF e IVA desglosado. Si la finca está en mitad de una rehabilitación, coordinamos con la empresa de obra y con el administrador para que la parte eléctrica no retrase el resto.",
+        ],
+      },
+      {
+        h2: "La parte alta: humedad, pendiente y tiempos de llegada",
+        parrafos: [
+          "Ciutat Meridiana, Torre Baró y Vallbona cuelgan de la ladera de Collserola, y eso condiciona dos cosas. La primera es la humedad: muros en contacto con el terreno, patios que no ventilan y bajos donde la instalación sufre derivaciones que en el resto de la ciudad no aparecen. Cuando el diferencial de una vivienda de la zona alta salta sin motivo, lo primero que medimos es el aislamiento de los circuitos que pasan por muros de contención.",
+          "La segunda es el acceso. Las calles son estrechas y con mucha pendiente, y en urgencias el tiempo de llegada sube respecto al llano del distrito. Preferimos decirte 50 minutos y llegar en 45 que prometerte media hora y fallar. El aparcamiento, como en toda Barcelona, es problema nuestro.",
+          "En estas zonas trabajamos también en muchas casas unifamiliares y autoconstruidas de Torre Baró y Vallbona, con instalaciones que nunca pasaron por un instalador y que ahora, con la primera venta o herencia, necesitan un boletín. Revisamos, adaptamos lo imprescindible y gestionamos el CIE para que la operación no se quede parada.",
+        ],
+      },
+    ],
+    faqsLocales: [
+      {
+        pregunta: "¿Cuánto tarda un electricista en llegar a Nou Barris?",
+        respuesta:
+          "En urgencias, entre 40 y 50 minutos según el barrio. En la parte llana (Porta, Vilapicina, Prosperitat) algo menos; en Ciutat Meridiana, Torre Baró y Vallbona, algo más por la pendiente y el acceso.",
+      },
+      {
+        pregunta: "Me salta el ICP con la vitro y la lavadora. ¿Basta con subir la potencia?",
+        respuesta:
+          "Depende de la derivación individual. En muchas fincas de los 60 y 70 del distrito ese cable no admite más potencia y hay que renovarlo antes de que el instalador pueda firmar el boletín de la subida. Lo revisamos en la primera visita y te decimos cuál es tu caso.",
+      },
+      {
+        pregunta: "Mi cuadro todavía tiene fusibles. ¿Es urgente cambiarlo?",
+        respuesta:
+          "No es una urgencia de hoy, pero sí una prioridad: un cuadro de fusibles no protege a las personas frente a fugas de corriente. Lo sustituimos en una mañana por uno con diferencial y magnetotérmicos por circuito, y aprovechamos para resolver la toma de tierra.",
+      },
+      {
+        pregunta: "Somos una comunidad con ascensor añadido y salta el diferencial general. ¿Podéis mirarlo?",
+        respuesta:
+          "Sí, es un problema habitual en Nou Barris. Revisamos la línea del ascensor, el cuadro de servicios comunes y las protecciones, te dejamos un informe por escrito y presupuestamos con precio cerrado y factura para la comunidad.",
+      },
+      {
+        pregunta: "Tengo una casa en Torre Baró sin boletín y quiero venderla. ¿Qué hago?",
+        respuesta:
+          "Revisamos la instalación, adaptamos lo imprescindible para que cumpla reglamento y gestionamos el CIE en 24-48 horas desde que la instalación está lista. Conviene hacerlo antes de firmar arras para no bloquear la operación.",
+      },
+      {
+        pregunta: "¿Trabajáis en los comercios de la Via Júlia y Fabra i Puig?",
+        respuesta:
+          "Sí, a diario: cuadros de local, ampliaciones de potencia, separación de circuitos y legalizaciones para licencias de actividad. Para negocios en funcionamiento damos prioridad de respuesta en urgencias.",
+      },
+    ],
+  },
 ];
 
 export function getDistrito(slug: string): Ciudad | undefined {

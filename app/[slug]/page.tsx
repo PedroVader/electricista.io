@@ -6,7 +6,13 @@ import { config } from "@/data/config";
 import { home } from "@/data/paginas";
 import { ciudades, getCiudad } from "@/data/ciudades";
 import { distritos, getDistrito } from "@/data/distritos";
-import { servicios, getServicio } from "@/data/servicios";
+import {
+  servicios,
+  getServicio,
+  serviciosDeCiudad,
+  hijosDeServicio,
+} from "@/data/servicios";
+import { hrefDeZona } from "@/data/zonas";
 import { posts } from "@/data/posts";
 import { trabajosPorEtiqueta } from "@/data/trabajos";
 import { TrabajosReales } from "@/components/TrabajosReales";
@@ -94,6 +100,26 @@ function PaginaCiudad({ ciudad }: { ciudad: Ciudad }) {
                 <Icono nombre="rapido" className="h-6 w-6" />
               </span>
             </Link>
+          </div>
+        </div>
+      )}
+
+      {/* Landings de servicio propias de esta ciudad */}
+      {serviciosDeCiudad(ciudad.slug).length > 0 && (
+        <div className="bg-paper">
+          <div className="mx-auto grid max-w-6xl gap-3 px-4 pt-8 sm:grid-cols-2">
+            {serviciosDeCiudad(ciudad.slug).map((s) => (
+              <Link
+                key={s.slug}
+                href={`/${s.slug}`}
+                className="flex items-center justify-between gap-4 rounded-lg border-2 border-amber bg-paper-warm px-5 py-4 font-semibold text-ink hover:bg-amber/10"
+              >
+                {s.card.titulo}
+                <span className="shrink-0 text-amber-dark">
+                  <Icono nombre={s.card.icono} className="h-6 w-6" />
+                </span>
+              </Link>
+            ))}
           </div>
         </div>
       )}
@@ -188,17 +214,33 @@ function PaginaCiudad({ ciudad }: { ciudad: Ciudad }) {
             {ciudad.tambienServicio.intro}
           </p>
           <ul className="mt-6 flex flex-wrap gap-3">
-            {ciudad.tambienServicio.municipios.map((m) => (
-              <li
-                key={m}
-                className="flex items-center gap-2 rounded-md border border-slate/20 bg-paper-warm px-4 py-2 text-sm font-medium text-ink"
-              >
-                <span className="text-amber-dark">
-                  <Icono nombre="pin" className="h-4 w-4" />
-                </span>
-                {m}
-              </li>
-            ))}
+            {ciudad.tambienServicio.municipios.map((m) => {
+              const href = hrefDeZona(m);
+              const chip =
+                "flex items-center gap-2 rounded-md border border-slate/20 bg-paper-warm px-4 py-2 text-sm font-medium text-ink";
+              return (
+                <li key={m}>
+                  {href && href !== `/${ciudad.slug}` ? (
+                    <Link
+                      href={href}
+                      className={`${chip} underline decoration-amber decoration-2 underline-offset-4 hover:text-amber-dark`}
+                    >
+                      <span className="text-amber-dark">
+                        <Icono nombre="pin" className="h-4 w-4" />
+                      </span>
+                      {m}
+                    </Link>
+                  ) : (
+                    <span className={chip}>
+                      <span className="text-amber-dark">
+                        <Icono nombre="pin" className="h-4 w-4" />
+                      </span>
+                      {m}
+                    </span>
+                  )}
+                </li>
+              );
+            })}
           </ul>
         </div>
       </section>
@@ -239,7 +281,14 @@ const FOTOS_POR_SERVICIO: Record<string, string> = {
   "instalacion-punto-de-carga-coche-electrico": "carga",
   "subir-potencia-luz": "potencia",
   "electricistas-para-empresas-y-comunidades": "cuadro",
+  "instalaciones-electricas": "cuadro",
+  "boletin-electrico-sabadell": "boletin",
+  "electricista-urgente-sabadell": "urgencias",
+  "electricista-urgente-badalona": "urgencias",
 };
+
+/** Solo la inicial en minúscula: conserva mayúsculas de ciudades y siglas. */
+const minuscula = (s: string) => s.charAt(0).toLowerCase() + s.slice(1);
 
 function PaginaServicio({ servicio }: { servicio: Servicio }) {
   const ctaPrincipal = servicio.ctaLabel ?? "Pedir presupuesto gratis";
@@ -304,6 +353,27 @@ function PaginaServicio({ servicio }: { servicio: Servicio }) {
         </div>
       </section>
       {servicio.heroImage && <FranjaFirma />}
+
+      {/* Landing local: enlaces de vuelta al servicio padre y a la ciudad */}
+      {servicio.local && (
+        <div className="bg-paper">
+          <div className="mx-auto flex max-w-6xl flex-wrap gap-x-6 gap-y-2 px-4 pt-6 text-sm font-semibold text-slate">
+            <Link
+              href={`/${servicio.local.servicioPadre}`}
+              className="hover:text-amber-dark"
+            >
+              ‹ {getServicio(servicio.local.servicioPadre)?.nombre} en toda el
+              área de Barcelona
+            </Link>
+            <Link
+              href={`/${servicio.local.ciudadSlug}`}
+              className="hover:text-amber-dark"
+            >
+              ‹ Electricista en {servicio.local.ciudad}
+            </Link>
+          </div>
+        </div>
+      )}
 
       {/* Bloque de disponibilidad en páginas de urgencias */}
       {servicio.urgencias && (
@@ -391,11 +461,39 @@ function PaginaServicio({ servicio }: { servicio: Servicio }) {
 
       <FAQSection
         faqs={servicio.faqs}
-        titulo={`Preguntas sobre ${servicio.nombre.toLowerCase()}`}
+        titulo={`Preguntas sobre ${minuscula(servicio.nombre)}`}
       />
 
-      {/* Interlinking: zonas donde ofrecemos el servicio */}
-      <ZonasSection servicioNombre={servicio.nombre.toLowerCase()} />
+      {/* Landings locales que cuelgan de este servicio */}
+      {hijosDeServicio(servicio.slug).length > 0 && (
+        <section className="bg-paper">
+          <div className="mx-auto max-w-6xl px-4 py-14">
+            <h2 className="font-display text-3xl font-bold text-ink">
+              {servicio.nombre} en tu ciudad
+            </h2>
+            <ul className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {hijosDeServicio(servicio.slug).map((hijo) => (
+                <li key={hijo.slug}>
+                  <Link
+                    href={`/${hijo.slug}`}
+                    className="block h-full rounded-lg border border-slate/15 bg-paper-warm p-5 hover:border-amber"
+                  >
+                    <p className="font-display text-lg font-bold text-ink">
+                      {hijo.card.titulo}
+                    </p>
+                    <p className="mt-2 text-sm text-slate">{hijo.card.linea}</p>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
+
+      {/* Interlinking: zonas donde ofrecemos el servicio (no en landings locales) */}
+      {!servicio.local && (
+        <ZonasSection servicioNombre={minuscula(servicio.nombre)} />
+      )}
 
       {/* Fotos reales del propio servicio */}
       <TrabajosReales
@@ -476,6 +574,14 @@ export default async function Pagina({ params }: Props) {
                 {
                   nombre: `Electricista en ${ciudad.padre.nombre}`,
                   url: `/${ciudad.padre.slug}`,
+                },
+              ]
+            : []),
+          ...(servicio?.local
+            ? [
+                {
+                  nombre: getServicio(servicio.local.servicioPadre)!.nombre,
+                  url: `/${servicio.local.servicioPadre}`,
                 },
               ]
             : []),
