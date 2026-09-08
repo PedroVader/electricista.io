@@ -5,7 +5,7 @@ import { Reveal } from "./Reveal";
 export function ComoFunciona() {
   const { h2, pasos } = home.comoFunciona;
   return (
-    <section className="bg-paper">
+    <section className="process-section bg-paper">
       <div className="mx-auto max-w-6xl px-4 py-16">
         <h2 className="font-display text-3xl font-bold text-ink sm:text-4xl">
           {h2}
@@ -13,8 +13,8 @@ export function ComoFunciona() {
         <ol className="mt-10 grid gap-6 sm:grid-cols-3">
           {pasos.map((paso, i) => (
             <li key={paso.titulo} className="h-full">
-              <Reveal className="h-full rounded-lg border border-slate/15 bg-paper p-6 shadow-sm">
-                <span className="flex h-10 w-10 items-center justify-center rounded-full bg-amber font-display text-lg font-bold text-ink">
+              <Reveal className="process-step h-full">
+                <span className="step-number font-display text-ink">
                   {i + 1}
                 </span>
                 <h3 className="mt-4 font-display text-xl font-bold text-ink">

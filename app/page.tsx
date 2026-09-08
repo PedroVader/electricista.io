@@ -32,11 +32,11 @@ export default function Home() {
       />
 
       {/* Banda de disponibilidad 24h */}
-      <div className="bg-ink">
+      <div className="availability-band bg-ink">
         <div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-4 text-white sm:flex-row sm:items-center sm:justify-between">
           <div className="flex items-center gap-3">
             <span className="relative flex h-3 w-3 shrink-0">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-amber opacity-75" />
+              <span className="absolute inline-flex h-full w-full rounded-full bg-amber opacity-75" />
               <span className="relative inline-flex h-3 w-3 rounded-full bg-amber" />
             </span>
             <p>
@@ -68,7 +68,7 @@ export default function Home() {
       {/* Destacado: boletín eléctrico, el servicio más transaccional */}
       <section className="bg-paper">
         <div className="mx-auto max-w-6xl px-4 py-16">
-          <div className="overflow-hidden rounded-lg border border-slate/15 shadow-sm">
+          <div className="featured-service overflow-hidden">
             <div className="franja-firma-fina" aria-hidden="true" />
             <div className="grid gap-8 bg-paper-warm p-8 lg:grid-cols-2 lg:gap-12">
               <div>
@@ -139,7 +139,7 @@ export default function Home() {
               <Reveal key={post.slug} className="h-full">
                 <Link
                   href={`/blog/${post.slug}`}
-                  className="group flex h-full flex-col rounded-lg border border-slate/15 bg-paper p-6 shadow-sm transition-shadow hover:shadow-md"
+                  className="guide-link group flex h-full flex-col py-6"
                 >
                   <h3 className="font-display text-lg font-bold text-ink group-hover:text-amber-dark">
                     {post.titulo}

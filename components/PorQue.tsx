@@ -12,7 +12,7 @@ export function PorQue({
   bullets: string[];
 }) {
   return (
-    <section className="bg-paper-warm">
+    <section className="about-section bg-paper-warm">
       <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 lg:grid-cols-5">
         <div className="lg:col-span-3">
           <h2 className="font-display text-3xl font-bold text-ink sm:text-4xl">
@@ -34,7 +34,7 @@ export function PorQue({
             ))}
           </ul>
         </div>
-        <div className="relative aspect-[4/5] overflow-hidden rounded-lg lg:col-span-2">
+        <div className="relative aspect-[4/5] overflow-hidden lg:col-span-2">
           <Image
             src="/img/porque-cuadro.jpg"
             alt="Electricista de electricista.io trabajando en un cuadro eléctrico"

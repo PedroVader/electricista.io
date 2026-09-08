@@ -41,6 +41,11 @@ export function Footer() {
               {email}
             </a>
           </p>
+          <p className="mt-3 text-sm">
+            <a href={config.googleBusinessProfile} className="text-white/70 underline underline-offset-4 hover:text-amber">
+              Ver nuestro perfil en Google
+            </a>
+          </p>
         </div>
 
         <nav aria-label="Servicios">

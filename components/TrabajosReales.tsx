@@ -19,7 +19,7 @@ export function TrabajosReales({
   if (trabajos.length === 0) return null;
 
   return (
-    <section className="bg-paper">
+    <section className="work-section bg-paper">
       <div className="mx-auto max-w-6xl px-4 py-16">
         <h2 className="font-display text-3xl font-bold text-ink sm:text-4xl">
           {h2}
@@ -29,7 +29,7 @@ export function TrabajosReales({
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {trabajos.map((t) => (
             <Reveal key={t.src} className="h-full">
-              <figure className="flex h-full flex-col overflow-hidden rounded-lg border border-slate/15 bg-paper-warm">
+              <figure className="work-figure flex h-full flex-col overflow-hidden">
                 <div className="relative aspect-[4/3] w-full bg-ink/5">
                   <Image
                     src={t.src}
@@ -40,7 +40,7 @@ export function TrabajosReales({
                     className="object-cover"
                   />
                 </div>
-                <figcaption className="flex flex-1 flex-col p-5">
+                <figcaption className="flex flex-1 flex-col py-5">
                   <p className="font-display text-lg font-bold text-ink">
                     {t.titulo}
                   </p>

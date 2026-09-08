@@ -52,9 +52,7 @@ export function schemaNegocio() {
       opens: "00:00",
       closes: "23:59",
     },
-    // [PLACEHOLDER] Al publicar el Perfil de Empresa de Google, añadir aquí su
-    // URL (y las redes sociales) para consolidar la entidad:
-    // sameAs: ["https://www.google.com/maps/place/..."],
+    sameAs: [config.googleBusinessProfile],
   };
 }
 

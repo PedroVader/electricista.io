@@ -18,6 +18,7 @@ export const config = {
   },
 
   dominio: "https://electricista.io",
+  googleBusinessProfile: "https://share.google/2AzLuBtkoLrNQsAMd",
 
   empresa: {
     razonSocial: "Fast Horizons SL",

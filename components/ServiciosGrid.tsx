@@ -26,7 +26,7 @@ export function ServiciosGrid({
   ];
 
   return (
-    <section className="bg-paper">
+    <section className="services-section bg-paper">
       <div className="mx-auto max-w-6xl px-4 py-16">
         <h2 className="font-display text-3xl font-bold text-ink sm:text-4xl">
           {ciudad ? `Servicios en ${ciudad}` : titulo}
@@ -37,7 +37,7 @@ export function ServiciosGrid({
             <Reveal key={card.href + card.titulo} className="h-full">
               <Link
                 href={card.href}
-                className="group flex h-full flex-col overflow-hidden rounded-lg border border-slate/15 bg-paper shadow-sm transition-shadow hover:shadow-md"
+                className="service-card group flex h-full flex-col overflow-hidden"
               >
                 {card.destacada && (
                   <div

@@ -190,7 +190,7 @@ export const presupuesto = {
     {
       h2: "Cuándo pedir presupuesto y cuándo llamar directamente",
       parrafos: [
-        "Si el trabajo puede esperar, el formulario es la mejor opción: nos das el contexto con calma, adjuntas fotos y recibes el precio por escrito en menos de 2 horas en horario laboral. Es el camino de los boletines, los cambios de cuadro, las subidas de potencia, los puntos de carga y cualquier instalación programada.",
+        "Si el trabajo puede esperar, el formulario es la mejor opción: nos das el contexto con calma y recibes el precio por escrito en menos de 2 horas en horario laboral. Si tienes fotos, puedes enviárnoslas por WhatsApp. Es el camino de los boletines, los cambios de cuadro, las subidas de potencia, los puntos de carga y cualquier instalación programada.",
         "Si hay riesgo, llama y no esperes: olor a quemado, chispazos, un mecanismo caliente al tacto, cosquilleo al tocar un electrodoméstico, agua sobre la instalación o un local con género refrigerado sin suministro. En esos casos el precio de la salida te lo damos por teléfono en el momento y salimos.",
         "Y si dudas de en cuál de los dos grupos estás, llama igualmente. Preguntarlo no cuesta nada y te diremos con franqueza si tu caso puede esperar a mañana, aunque eso signifique facturar menos hoy.",
       ],
@@ -252,7 +252,7 @@ export const contacto = {
       h2: "Qué pasa después de que nos escribas",
       parrafos: [
         "Nada de esperas sin noticias ni de comerciales insistiendo. El proceso es siempre el mismo y lo puedes seguir sin llamarnos tú:",
-        "1. Recibimos tu mensaje y lo lee una persona, no un robot. Si nos has dejado fotos, mejor: con una o dos se valora la mayoría de trabajos sin necesidad de visita.",
+        "1. Recibimos tu mensaje y lo lee una persona, no un robot. Si nos has enviado fotos por WhatsApp, mejor: con una o dos se valora la mayoría de trabajos sin necesidad de visita.",
         "2. Te llamamos en menos de 2 horas en horario laboral para entender bien el caso. Suelen bastar dos o tres minutos.",
         "3. Te mandamos el precio cerrado por escrito, con lo que incluye y lo que no. Ese precio no cambia al acabar.",
         "4. Si te encaja, acordamos día y franja horaria. Y cumplimos la hora: si vamos con retraso, te avisamos antes de que sea tarde.",
@@ -277,7 +277,7 @@ export const contacto = {
         "Qué te pasa o qué necesitas, en lenguaje normal: no hace falta que uses términos técnicos",
         "En qué municipio y, si es urgente, en qué calle o barrio",
         "Si es vivienda, local, oficina o zona común de una comunidad",
-        "Una o dos fotos: del cuadro eléctrico abierto, del enchufe o del punto afectado",
+        "Una o dos fotos por WhatsApp: del cuadro eléctrico, del enchufe o del punto afectado, sin desmontar ni tocar la instalación",
         "Si hay ascensor y si el acceso tiene alguna particularidad",
         "Si tienes fecha límite, por una mudanza, un alta de luz o una apertura",
       ],

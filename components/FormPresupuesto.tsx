@@ -215,6 +215,20 @@ export function FormPresupuesto({
       >
         {estado === "enviando" ? "Enviando…" : "Pedir presupuesto gratis"}
       </button>
+      {config.whatsapp.enabled && config.whatsapp.number && (
+        <p className={`text-sm ${oscuro ? "text-white/80" : "text-slate"}`}>
+          ¿Tienes fotos?{" "}
+          <a
+            href={`https://wa.me/${config.whatsapp.number.replace(/\D/g, "")}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            data-event="whatsapp_fotos_form"
+            className="font-semibold underline underline-offset-4"
+          >
+            Envíalas por WhatsApp
+          </a>.
+        </p>
+      )}
       <p className={`text-xs ${oscuro ? "text-white/60" : "text-slate"}`}>
         Te llamamos en menos de 2 h en horario laboral. Sin compromiso.
       </p>

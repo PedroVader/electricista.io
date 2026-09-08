@@ -27,18 +27,18 @@ export function HeroOscuro({
   const { telefono, badges, email } = config;
   return (
     <>
-      <section className="relative bg-ink text-white">
+      <section className="hero-electricista relative bg-ink text-white">
         <Image
           src={imagen}
           alt={alt ?? `${config.marca.profesion} de ${config.marca.nombre} trabajando en una instalación eléctrica`}
           fill
           priority
           sizes="100vw"
-          className="object-cover object-[50%_30%] opacity-80"
+          className="hero-photo object-cover object-[50%_30%] opacity-80"
         />
         {/* Degradado: sólido sobre el texto, más abierto sobre la foto */}
         <div
-          className="absolute inset-0 bg-gradient-to-r from-ink via-ink/70 to-ink/25"
+          className="hero-overlay absolute inset-0"
           aria-hidden="true"
         />
         <div className="relative mx-auto max-w-6xl px-4 pb-12 pt-14 sm:pb-16 sm:pt-20">
@@ -83,7 +83,7 @@ export function HeroOscuro({
             </div>
 
             {/* Captación de leads en el hero */}
-            <div className="rounded-lg bg-paper p-6 text-ink shadow-xl">
+            <div className="hero-form rounded-lg bg-paper p-6 text-ink shadow-xl">
               <p className="font-display text-xl font-bold">
                 Pide presupuesto gratis
               </p>

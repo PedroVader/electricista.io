@@ -32,7 +32,7 @@ export function ZonasSection({
             <Reveal key={c.slug} className="h-full">
               <Link
                 href={`/${c.slug}`}
-                className="group flex h-full items-center gap-3 rounded-lg border border-slate/15 bg-paper p-4 shadow-sm transition-shadow hover:shadow-md"
+                className="zone-link group flex h-full items-center gap-3 py-4"
               >
                 <span className="text-amber-dark">
                   <Icono nombre="pin" className="h-6 w-6" />

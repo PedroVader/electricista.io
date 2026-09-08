@@ -91,7 +91,7 @@ export function Header() {
   }));
 
   return (
-    <header className="sticky top-0 z-50 bg-ink">
+    <header className="site-header sticky top-0 z-50 bg-ink">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-2 px-4">
         {/* Logo: wordmark + franja de obra (versión en código del logo oficial, /img/logo.png) */}
         <Link
