@@ -3,6 +3,7 @@ import { config } from "@/data/config";
 import { Icono } from "./Iconos";
 import { FranjaFirma } from "./FranjaFirma";
 import { FormPresupuesto } from "./FormPresupuesto";
+import { SelloGoogle } from "./SelloGoogle";
 
 /**
  * Hero de home y ciudades: fondo ink con foto técnica + overlay oscuro,
@@ -69,6 +70,9 @@ export function HeroOscuro({
                   Pedir presupuesto gratis
                 </a>
               </div>
+
+              {/* Prueba social: valoración real en Google */}
+              <SelloGoogle evento="google_sello_hero" className="mt-6" />
 
               <ul className="mt-10 hidden flex-wrap gap-x-6 gap-y-3 text-sm font-medium text-white/90 lg:flex">
                 {badges.map((badge) => (

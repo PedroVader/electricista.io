@@ -18,7 +18,18 @@ export const config = {
   },
 
   dominio: "https://electricista.io",
-  googleBusinessProfile: "https://share.google/2AzLuBtkoLrNQsAMd",
+  googleBusinessProfile: "https://share.google/mT5RExWEB0FEHxYce",
+
+  /**
+   * Sello de valoración en Google. SOLO cifras reales, copiadas del perfil.
+   * Actualizar a mano cuando cambien (comprobado el 13/09/2026: 5,0 con 5 reseñas).
+   */
+  googleResenas: {
+    enabled: true,
+    nota: 5,
+    notaDisplay: "5,0",
+    total: 5,
+  },
 
   empresa: {
     razonSocial: "Fast Horizons SL",

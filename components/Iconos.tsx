@@ -118,6 +118,14 @@ const paths: Record<string, React.ReactNode> = {
       <circle cx="12" cy="10" r="2.5" />
     </>
   ),
+  /* Estrella rellena para el sello de reseñas de Google */
+  estrella: (
+    <path
+      fill="currentColor"
+      stroke="none"
+      d="m12 2.6 2.85 5.9 6.45.9-4.7 4.5 1.15 6.45L12 17.3l-5.75 3.05 1.15-6.45-4.7-4.5 6.45-.9z"
+    />
+  ),
   flecha: <path d="M5 12h14m-6-6 6 6-6 6" />,
   chevron: <path d="m6 9 6 6 6-6" />,
 };

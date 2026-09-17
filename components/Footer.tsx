@@ -3,6 +3,7 @@ import { config } from "@/data/config";
 import { serviciosGlobales, serviciosLocales } from "@/data/servicios";
 import { ciudades } from "@/data/ciudades";
 import { distritos } from "@/data/distritos";
+import { SelloGoogle } from "./SelloGoogle";
 
 export function Footer() {
   const { marca, empresa, telefono, email, footer } = config;
@@ -41,11 +42,9 @@ export function Footer() {
               {email}
             </a>
           </p>
-          <p className="mt-3 text-sm">
-            <a href={config.googleBusinessProfile} className="text-white/70 underline underline-offset-4 hover:text-amber">
-              Ver nuestro perfil en Google
-            </a>
-          </p>
+          <div className="mt-4">
+            <SelloGoogle evento="google_sello_footer" />
+          </div>
         </div>
 
         <nav aria-label="Servicios">
