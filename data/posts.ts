@@ -704,6 +704,122 @@ export const posts: Post[] = [
     ],
     relacionados: ["electricistas-para-empresas-y-comunidades", "instalaciones-electricas"],
   },
+  {
+    slug: "revisar-instalacion-electrica-piso-antiguo-antes-de-comprar",
+    titulo: "Comprar un piso antiguo: cómo revisar la instalación eléctrica antes de firmar",
+    descripcion:
+      "Qué mirar en el cuadro, los enchufes y el contador de un piso de segunda mano, qué te va a pedir la compañía al cambiar el titular y cuándo la instalación se convierte en un argumento para negociar.",
+    fecha: "2026-09-17",
+    resumen:
+      "En una visita de veinte minutos puedes saber si la instalación eléctrica de un piso de segunda mano va a ser un trámite o un problema. Esta guía te dice dónde mirar, qué preguntar y qué papel te van a exigir después.",
+    secciones: [
+      {
+        h2: "Por qué la instalación eléctrica se revisa antes de firmar, no después",
+        parrafos: [
+          "En una compraventa se revisa la cédula, la ITE, la comunidad y las humedades. La electricidad casi nunca, porque no se ve y porque la luz funciona. Y sin embargo es la partida que más veces convierte un piso «para entrar a vivir» en un piso con obra, porque tocarla en serio implica abrir paredes.",
+          "Hay un segundo motivo, más concreto. Si la instalación tiene más de veinte años, la distribuidora puede exigir un boletín eléctrico nuevo en el momento en que pidas el cambio de titular o una subida de potencia. Y para firmar ese boletín, la instalación tiene que cumplir. Es decir: lo que hoy es un piso que funciona puede ser, la semana después de las escrituras, una instalación que hay que poner al día antes de tener la luz a tu nombre.",
+          "Lo que sigue es lo que miramos nosotros cuando un cliente nos pide acompañarle a una segunda visita. No sustituye a un electricista con instrumentos, pero acota mucho.",
+        ],
+      },
+      {
+        h2: "Primero: el cuadro eléctrico, en tres miradas",
+        parrafos: [
+          "Abre la tapa del cuadro y fíjate en tres cosas, por este orden.",
+          "La primera es si hay diferencial. Es el interruptor más ancho, con un botón de prueba marcado con una T. Si no lo hay, la instalación es anterior a mediados de los años setenta o alguien lo ha quitado, y en cualquiera de los dos casos no protege a las personas. Si lo hay, pulsa la T con el propietario delante: tiene que saltar de inmediato. Si no salta, está inutilizado.",
+          "La segunda es qué tipo de protecciones tiene. Fusibles de porcelana o cartucho, los «plomos», significan instalación original sin reformar. Interruptores automáticos estrechos, uno por circuito, significan que alguien la ha renovado en algún momento. Cuenta cuántos hay: una vivienda actual lleva como mínimo cinco circuitos independientes, y una con inducción, aire acondicionado o secadora, bastantes más. Dos o tres automáticos para todo el piso es una instalación que se quedó corta hace décadas.",
+          "La tercera es el estado general: marcas de calor, plástico amarillento o deformado, cables sueltos, empalmes con cinta. Cualquiera de esas señales indica que ha habido sobrecargas repetidas, y eso suele venir de una potencia insuficiente para lo que se ha ido enchufando a lo largo de los años.",
+        ],
+        bullets: [
+          "Sin diferencial, o con uno que no salta al pulsar la T: instalación que no protege",
+          "Fusibles de porcelana: instalación original, sin renovar",
+          "Menos de cinco automáticos: instalación corta para una vivienda actual",
+          "Marcas de calor o plástico deformado: sobrecargas repetidas",
+        ],
+      },
+      {
+        h2: "Segundo: enchufes, interruptores y toma de tierra",
+        parrafos: [
+          "Da una vuelta por el piso mirando los enchufes. Los modernos tienen dos contactos metálicos laterales, que son la toma de tierra. Si los enchufes son redondos y lisos, sin esas pestañas, la instalación no tiene tierra o no la tiene en todas las estancias, y eso es una de las cosas que un boletín no va a pasar.",
+          "Toca los enchufes de la cocina y del baño con la mano. No deberían estar tibios sin nada enchufado. Un enchufe que calienta tiene una conexión floja o un cable de sección insuficiente detrás.",
+          "Mira también qué hay enchufado a qué. Si la lavadora, el lavavajillas y el horno cuelgan de regletas o de alargadores, no es desorden del propietario: es que la cocina no tiene los circuitos propios que debería y alguien lo ha resuelto como ha podido.",
+          "Un truco que funciona bien: pregunta dónde está el termo eléctrico, si lo hay, y mira su enchufe. Es el aparato que más corriente pide de forma continuada y el que peor suele estar conectado en pisos antiguos.",
+        ],
+      },
+      {
+        h2: "Tercero: el cable que entra en el piso y el contador",
+        parrafos: [
+          "Lo que más limita una instalación antigua no es lo que hay dentro del piso, sino el cable que viene desde el contador, que se llama derivación individual. Si es fino, no vas a poder contratar más potencia por mucho que renueves el cuadro. En fincas de los años sesenta y setenta es habitual encontrar derivaciones que solo admiten potencias muy bajas para lo que se usa hoy.",
+          "Baja al cuarto de contadores con el propietario o con el administrador. Si los contadores están en una centralización moderna, con módulos normalizados y un cable por vivienda bien identificado, la parte comunitaria está resuelta. Si ves contadores sueltos en el rellano, cajas de madera o cables antiguos con aislamiento de tela o goma, la finca tiene pendiente una renovación de montantes que tarde o temprano os va a tocar pagar entre todos.",
+          "Pregunta también qué potencia tiene contratada el propietario. Aparece en cualquier factura. Si vive con una potencia baja y sin problemas, es porque sus hábitos caben en ella, no porque la instalación admita más. Los tuyos pueden ser distintos.",
+        ],
+      },
+      {
+        h2: "Cuarto: la pregunta que hay que hacer al vendedor",
+        parrafos: [
+          "Solo hay una pregunta importante: «¿Tienes el boletín eléctrico y de qué fecha es?». Si lo tiene y es reciente, la instalación cumplía en esa fecha y el cambio de titular va a ser un trámite. Si lo tiene pero es de hace más de veinte años, no te sirve para casi nada. Si no lo tiene o no sabe qué es, asume que no existe.",
+          "Pide también la última factura de luz. Con ella ves la potencia contratada, la distribuidora y, sobre todo, el CUPS, que es el identificador del punto de suministro. Con el CUPS, la distribuidora te dice si consta un boletín en su sistema y de qué fecha, aunque el vendedor haya perdido el papel.",
+          "Y mira si en la escritura o en la nota simple consta alguna reforma. Un piso «reformado» puede haberse reformado por fuera: alicatados, suelos y pintura, con la electricidad original detrás. Se distingue fácil: si los enchufes son nuevos pero el cuadro sigue teniendo fusibles, la reforma fue estética.",
+        ],
+      },
+      {
+        h2: "Qué te va a pedir la compañía después de firmar",
+        parrafos: [
+          "Cuando hagas el cambio de titular, la comercializadora lo tramita con la distribuidora, que es quien tiene el criterio sobre la instalación. Si el suministro está activo, la potencia no cambia y consta un boletín de menos de veinte años, el cambio es inmediato y no te piden nada.",
+          "Si el boletín tiene más de veinte años, o no consta ninguno, la distribuidora puede exigir uno nuevo antes de aceptar el cambio. Y casi siempre lo exige si además pides una subida de potencia, que es lo habitual: la mayoría de compradores quieren más potencia de la que tenía el anterior propietario.",
+          "Si el suministro está dado de baja, porque el piso llevaba tiempo vacío o era una herencia, el alta nueva pide boletín en todos los casos. No hay excepción.",
+          "En la práctica, esto es lo que separa a los compradores que tienen la luz a su nombre en tres días de los que tardan un mes: haber sabido antes de firmar si iban a necesitar boletín, y haberlo negociado.",
+        ],
+      },
+      {
+        h2: "Cómo usar todo esto para negociar",
+        parrafos: [
+          "Una instalación eléctrica que no cumple es un argumento de negociación objetivo, porque no depende del gusto. Se puede documentar en una visita y se puede presupuestar por escrito. Y a diferencia de una humedad, el vendedor no puede decir que «siempre ha estado así» porque la exigencia del boletín no es tuya, es de la distribuidora.",
+          "Lo que funciona: llevar a un electricista a la segunda visita, pedirle una valoración por escrito de lo que hace falta para que la instalación pase el boletín, y presentar ese documento. No es una reforma completa, muchas veces basta con renovar el cuadro, poner tierra donde falta y sacar un par de circuitos nuevos para cocina y baño. Con eso, o el vendedor lo asume antes de firmar, o se descuenta.",
+          "Lo que no funciona: intentar que el vendedor tramite el boletín por su cuenta a toda prisa. El boletín lo firma un instalador habilitado que responde con su número de registro, y si la instalación no cumple no lo va a firmar. Lo que conseguirás es retrasar la firma.",
+        ],
+      },
+      {
+        h2: "Qué hacemos nosotros en una segunda visita",
+        parrafos: [
+          "Cuando nos piden acompañar a una visita, medimos lo que no se ve a simple vista: la resistencia de la toma de tierra, el aislamiento de los circuitos, la sección real de la derivación individual y el tiempo de disparo del diferencial. Con eso, y con el CUPS, sabemos si la instalación pasaría un boletín tal como está, qué habría que hacer para que pasara y si la potencia que quieres contratar es viable con el cable que hay.",
+          "De ahí sale un informe corto que sirve para dos cosas: negociar el precio, y si compras, tener ya el presupuesto cerrado de lo que hay que hacer, de forma que la instalación se pone al día la semana de las llaves y no se descubre con el sofá ya dentro. Trabajamos con instaladores habilitados inscritos en el registro, así que el mismo equipo que hace la revisión es el que después ejecuta y tramita el boletín.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        pregunta: "¿Si la luz funciona, la instalación está bien?",
+        respuesta:
+          "No. Una instalación de los años setenta sin tierra ni diferencial da luz exactamente igual que una de hoy. Lo que no hace es protegerte, ni admitir la potencia que necesitas, ni pasar un boletín cuando la distribuidora lo pida.",
+      },
+      {
+        pregunta: "¿Es obligatorio que el vendedor entregue el boletín?",
+        respuesta:
+          "No hay una obligación legal de entregarlo en la compraventa, como sí ocurre con el certificado energético o la cédula. Por eso hay que pedirlo. Que el vendedor no lo tenga no impide firmar, pero te dice que muy probablemente vas a necesitar uno nuevo.",
+      },
+      {
+        pregunta: "¿Puedo cambiar la luz a mi nombre sin boletín?",
+        respuesta:
+          "Si el suministro está activo, no subes la potencia y consta un boletín de menos de veinte años, sí. En cualquier otro caso la distribuidora puede exigirlo, y si el suministro está dado de baja, lo exige siempre.",
+      },
+      {
+        pregunta: "¿Cuánto tiempo tengo para poner la instalación al día?",
+        respuesta:
+          "Nadie te obliga a renovarla si el suministro sigue activo a nombre del anterior titular y no cambias nada. El problema aparece en cuanto quieres el contrato a tu nombre o más potencia. Lo razonable es tenerlo resuelto antes de mudarte, porque después implica obra con la casa amueblada.",
+      },
+      {
+        pregunta: "¿Hace falta rehacer toda la instalación para pasar el boletín?",
+        respuesta:
+          "Casi nunca. En la mayoría de pisos antiguos que revisamos, pasa con un cuadro nuevo, toma de tierra en todas las tomas y circuitos independientes para cocina y baño. Rehacer la instalación entera solo tiene sentido si además vas a reformar el piso y las paredes van a estar abiertas de todos modos.",
+      },
+      {
+        pregunta: "¿La comunidad tiene que hacer algo?",
+        respuesta:
+          "Si la derivación individual o la centralización de contadores no cumplen, sí, y no lo puedes resolver tú solo desde dentro del piso. Por eso conviene mirar el cuarto de contadores antes de comprar: una finca con montantes antiguos es una derrama futura.",
+      },
+    ],
+    relacionados: ["boletin-electrico", "cambio-cuadro-electrico", "instalaciones-electricas"],
+  },
 ];
 
 /** Del más reciente al más antiguo: es el orden del listado del blog. */
