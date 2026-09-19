@@ -42,3 +42,6 @@ next-env.d.ts
 
 # Local Netlify folder
 .netlify
+
+# Entregables de linkbuilding: PDF/docx/txt regenerables desde el .md
+linkbuilding/entregables/
