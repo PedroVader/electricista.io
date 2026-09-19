@@ -4,6 +4,7 @@ import { serviciosGlobales, serviciosLocales } from "@/data/servicios";
 import { ciudades } from "@/data/ciudades";
 import { distritos } from "@/data/distritos";
 import { SelloGoogle } from "./SelloGoogle";
+import { Instagram } from "./Instagram";
 
 export function Footer() {
   const { marca, empresa, telefono, email, footer } = config;
@@ -41,6 +42,9 @@ export function Footer() {
             <a href={`mailto:${email}`} className="text-white/70 hover:text-amber">
               {email}
             </a>
+          </p>
+          <p className="mt-1 text-sm">
+            <Instagram variante="linea" evento="instagram_footer" />
           </p>
           <div className="mt-4">
             <SelloGoogle evento="google_sello_footer" />

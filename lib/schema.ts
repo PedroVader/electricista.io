@@ -52,7 +52,10 @@ export function schemaNegocio() {
       opens: "00:00",
       closes: "23:59",
     },
-    sameAs: [config.googleBusinessProfile],
+    sameAs: [
+      config.googleBusinessProfile,
+      ...(config.instagram.enabled ? [config.instagram.url] : []),
+    ],
   };
 }
 

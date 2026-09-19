@@ -1,6 +1,7 @@
 import Image from "next/image";
 import type { Trabajo } from "@/data/tipos";
 import { Reveal } from "./Reveal";
+import { Instagram } from "./Instagram";
 
 /**
  * Galería de fotos REALES de trabajos. Se separa deliberadamente de las
@@ -50,6 +51,9 @@ export function TrabajosReales({
             </Reveal>
           ))}
         </div>
+
+        {/* Continuación natural de la galería: el mismo material, a diario */}
+        <Instagram evento="instagram_trabajos" className="mt-10" />
       </div>
     </section>
   );

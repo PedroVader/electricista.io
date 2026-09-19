@@ -58,6 +58,18 @@ export const config = {
     number: "+34688323663",
   },
 
+  /**
+   * Instagram: mismo material que «Trabajos reales» (fotos de obra del
+   * equipo), por eso el CTA vive dentro de esa sección. URL limpia a
+   * propósito: el enlace del QR lleva token personal y utm_source, que no
+   * deben quedar publicados en la web ni en el JSON-LD.
+   */
+  instagram: {
+    enabled: true,
+    usuario: "electricista.io",
+    url: "https://www.instagram.com/electricista.io",
+  },
+
   /** GA4 desactivado hasta tener ID. Con ID vacío no se carga nada ni aparece banner de cookies. */
   analytics: {
     ga4Id: "",
