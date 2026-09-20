@@ -15,7 +15,7 @@ export function HeroOscuro({
   eyebrow,
   h1,
   sub,
-  imagen = "/img/hero-equipo.jpg",
+  imagen = "/img/hero-averias.jpg",
   alt,
 }: {
   eyebrow: string;
@@ -45,10 +45,10 @@ export function HeroOscuro({
         <div className="relative mx-auto max-w-6xl px-4 pb-12 pt-14 sm:pb-16 sm:pt-20">
           <div className="grid items-start gap-10 lg:grid-cols-[1fr_400px] lg:gap-14">
             <div>
-              <p className="text-sm font-bold uppercase tracking-wide text-amber">
+              <p className="text-sm font-semibold uppercase tracking-wide text-amber">
                 {eyebrow}
               </p>
-              <h1 className="mt-4 font-display text-[clamp(2.2rem,5vw,3.5rem)] font-extrabold leading-[1.1]">
+              <h1 className="mt-4 font-display text-[clamp(2.2rem,5vw,3.5rem)] font-semibold leading-[1.1]">
                 {h1}
               </h1>
               <p className="mt-5 max-w-2xl text-lg text-white/85">{sub}</p>
@@ -57,17 +57,17 @@ export function HeroOscuro({
                 <a
                   href={`tel:${telefono.numero}`}
                   data-event="llamada_hero"
-                  className="flex items-center justify-center gap-2.5 rounded-md bg-amber px-7 py-3.5 text-lg font-bold text-ink hover:bg-amber-dark"
+                  className="flex items-center justify-center gap-2.5 rounded-md bg-amber px-7 py-3.5 text-base font-semibold text-ink hover:bg-amber-dark"
                 >
                   <Icono nombre="telefono" className="h-5 w-5" />
-                  Llamar ahora
+                  Llamar al {telefono.display}
                 </a>
                 <a
                   href="#form-presupuesto"
                   data-event="form_hero"
-                  className="rounded-md border-2 border-white/60 px-7 py-3.5 text-center text-lg font-bold text-white hover:border-amber hover:text-amber sm:hidden"
+                  className="rounded-md border border-white/50 px-7 py-3.5 text-center text-base font-semibold text-white hover:border-amber hover:text-amber sm:hidden"
                 >
-                  Pedir presupuesto gratis
+                  Pedir presupuesto
                 </a>
               </div>
 
@@ -88,11 +88,11 @@ export function HeroOscuro({
 
             {/* Captación de leads en el hero */}
             <div className="hero-form rounded-lg bg-paper p-6 text-ink shadow-xl">
-              <p className="font-display text-xl font-bold">
-                Pide presupuesto gratis
+              <p className="font-display text-xl font-semibold">
+                Solicita tu presupuesto
               </p>
               <p className="mt-1 text-sm text-slate">
-                Precio cerrado por escrito antes de empezar.
+                Sin compromiso. Precio cerrado por escrito antes de empezar.
               </p>
               <div className="mt-4">
                 <FormPresupuesto compacto />

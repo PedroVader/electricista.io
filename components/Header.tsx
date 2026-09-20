@@ -99,7 +99,7 @@ export function Header() {
           className="inline-block"
           aria-label={`${marca.nombre}, inicio`}
         >
-          <span className="font-display text-xl font-extrabold leading-none tracking-tight text-white">
+          <span className="font-display text-xl font-bold leading-none tracking-tight text-white">
             {marca.wordmarkBase}
             <span className="text-amber">{marca.wordmarkTld}</span>
           </span>
@@ -135,7 +135,7 @@ export function Header() {
           <a
             href={`tel:${telefono.numero}`}
             data-event="llamada_header"
-            className="flex items-center gap-2 rounded-md bg-paper px-3 py-2 font-bold text-ink hover:bg-paper-warm"
+            className="flex items-center gap-2 rounded-md bg-paper px-3 py-2 font-semibold text-ink hover:bg-paper-warm"
           >
             <span className="text-amber-dark">
               <Icono nombre="telefono" className="h-5 w-5" />
@@ -148,7 +148,7 @@ export function Header() {
           <Link
             href="/contacto"
             data-event="cta_header"
-            className="hidden rounded-md bg-amber px-4 py-2 text-sm font-bold text-ink hover:bg-amber-dark md:block"
+            className="hidden rounded-md bg-amber px-4 py-2 text-sm font-semibold text-ink hover:bg-amber-dark md:block"
           >
             Pedir presupuesto
           </Link>

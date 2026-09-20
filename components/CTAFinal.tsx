@@ -22,7 +22,7 @@ export function CTAFinal({
           <a
             href={`tel:${telefono.numero}`}
             data-event="llamada_cta_final"
-            className="mt-6 inline-block font-display text-4xl font-bold text-amber hover:text-amber-dark sm:text-5xl"
+            className="mt-6 inline-block font-display text-3xl font-semibold text-amber hover:text-amber-dark sm:text-4xl"
           >
             {telefono.display}
           </a>

@@ -11,7 +11,7 @@ import { Instagram } from "./Instagram";
 export function TrabajosReales({
   trabajos,
   h2 = "Trabajos reales de nuestros electricistas",
-  intro = "Fotos hechas por el equipo durante el trabajo, sin retoques ni bancos de imágenes. Lo bueno y lo feo, tal cual nos lo encontramos.",
+  intro = "Fotografías tomadas por nuestro equipo durante las intervenciones, sin retoques ni bancos de imágenes.",
 }: {
   trabajos: Trabajo[];
   h2?: string;

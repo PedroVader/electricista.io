@@ -15,7 +15,7 @@ export function Footer() {
         {/* Marca + NAP consistente con GBP */}
         <div>
           <p className="inline-block">
-            <span className="font-display text-xl font-extrabold leading-none tracking-tight">
+            <span className="font-display text-xl font-bold leading-none tracking-tight">
               {marca.wordmarkBase}
               <span className="text-amber">{marca.wordmarkTld}</span>
             </span>

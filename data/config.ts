@@ -56,6 +56,16 @@ export const config = {
   whatsapp: {
     enabled: true,
     number: "+34688323663",
+    /** Texto prellenado al abrir WhatsApp (admite *negrita* y saltos de línea) */
+    mensaje: [
+      "Hola, os escribo desde electricista.io.",
+      "",
+      "*Necesito:* ",
+      "*Zona:* ",
+      "*Urgente:* sí / no",
+      "",
+      "Si tengo fotos, las adjunto a continuación.",
+    ].join("\n"),
   },
 
   /**

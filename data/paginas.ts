@@ -116,7 +116,7 @@ export const home = {
     },
   ] as FAQ[],
   ctaFinal: {
-    h2: "¿Hablamos?",
+    h2: "Pide presupuesto sin compromiso",
     texto:
       "Llámanos y te decimos precio cerrado, o déjanos tus datos y te llamamos nosotros en menos de 2 horas en horario laboral.",
   },

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { config } from "@/data/config";
+import { enlaceWhatsapp } from "@/lib/whatsapp";
 import { ciudades } from "@/data/ciudades";
 import { servicios, cardsExtra } from "@/data/servicios";
 import { FORM_ID } from "./BotonFlotante";
@@ -209,17 +210,17 @@ export function FormPresupuesto({
         type="submit"
         disabled={estado === "enviando"}
         data-event="form_envio"
-        className={`w-full rounded-md bg-amber px-6 py-3.5 font-bold text-ink hover:bg-amber-dark disabled:opacity-60 ${
+        className={`w-full rounded-md bg-amber px-6 py-3.5 font-semibold text-ink hover:bg-amber-dark disabled:opacity-60 ${
           compacto ? "" : "sm:w-auto"
         }`}
       >
-        {estado === "enviando" ? "Enviando…" : "Pedir presupuesto gratis"}
+        {estado === "enviando" ? "Enviando…" : "Solicitar presupuesto"}
       </button>
       {config.whatsapp.enabled && config.whatsapp.number && (
         <p className={`text-sm ${oscuro ? "text-white/80" : "text-slate"}`}>
           ¿Tienes fotos?{" "}
           <a
-            href={`https://wa.me/${config.whatsapp.number.replace(/\D/g, "")}`}
+            href={enlaceWhatsapp()}
             target="_blank"
             rel="noopener noreferrer"
             data-event="whatsapp_fotos_form"

@@ -2,8 +2,8 @@
 
 :root {
   --ink: #202020;
-  --amber: #e9b44b;
-  --amber-dark: #996b20;
+  --amber: #cf9a35;
+  --amber-dark: #8a6420;
   --paper: #fcfbf7;
   --paper-warm: #f0eee6;
   --slate: #646464;
@@ -34,8 +34,8 @@ body {
   background: var(--paper);
   color: var(--ink);
   font-family: var(--font-inter), system-ui, sans-serif;
-  font-size: 1.0625rem;
-  line-height: 1.6;
+  font-size: 1rem;
+  line-height: 1.65;
 }
 
 /* Tipografía display: Archivo, condensada e industrial */
@@ -96,7 +96,7 @@ details.faq-item[open] .faq-chevron {
   button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
   button, a { touch-action: manipulation; }
   select option { background: var(--paper); color: var(--ink); }
-  ::selection { background: #e9b44b66; }
+  ::selection { background: #cf9a3566; }
 }
 @layer utilities {
   .rounded-lg { border-radius: 3px; }
@@ -109,18 +109,23 @@ main .max-w-6xl, .site-header > .max-w-6xl { max-width: 1240px; padding-inline: 
 main .max-w-3xl { padding-inline: 1.5rem; }
 main h2.font-display { font-weight: 600; }
 a, button { transition: color 160ms ease, background-color 160ms ease, border-color 160ms ease; }
-a.bg-amber:hover, button.bg-amber:hover { background: #d6a33f; }
+a.bg-amber, button.bg-amber { font-weight: 600; letter-spacing: .01em; }
+a.bg-amber:hover, button.bg-amber:hover { background: #bb8a2c; }
+/* Escala tipográfica más contenida y uniforme para las secciones */
+main h2.font-display { font-size: clamp(1.75rem, 2.6vw, 2.25rem); letter-spacing: -0.02em; }
+main h3.font-display { font-weight: 600; }
+main p.text-slate:not(.text-sm):not(.text-xs) { font-size: 1rem; line-height: 1.75; }
 .site-header { background: #191919; border-bottom: 1px solid #ffffff20; }
 .site-header > div { height: 80px; }
 .site-header [data-event="llamada_header"] { background: transparent; color: var(--paper); padding-inline: 8px; font-size: 14px; }
 .site-header [data-event="llamada_header"]:hover { color: var(--amber); }
 .hero-electricista { isolation: isolate; }
-.hero-electricista .hero-photo { opacity: .48; object-position: 50% 38%; }
+.hero-electricista .hero-photo { opacity: .4; object-position: 62% 40%; filter: saturate(.85); }
 .hero-overlay { background: linear-gradient(90deg, #202020f2 0%, #202020bb 44%, #20202020 100%); }
 .hero-electricista > .relative { padding-block: clamp(3rem, 6vw, 5.5rem); }
-.hero-electricista h1 { font-size: clamp(2.5rem, 4.5vw, 4.1rem); font-weight: 600; line-height: 1.04; max-width: 14ch; }
+.hero-electricista h1 { font-size: clamp(2.1rem, 3.6vw, 3.25rem); font-weight: 600; line-height: 1.08; max-width: 18ch; }
 .hero-electricista h1 + p { font-size: 1.0625rem; line-height: 1.8; max-width: 48ch; }
-.hero-electricista p.uppercase { font-size: .7rem; letter-spacing: .16em; font-weight: 500; }
+.hero-electricista p.uppercase { font-size: .7rem; letter-spacing: .16em; font-weight: 500; color: #e2c07a; }
 .hero-form { border-top: 3px solid var(--amber); padding: 1.75rem; box-shadow: none; }
 .hero-form > .font-display { font-size: 1.5rem; font-weight: 600; }
 .hero-form input, .hero-form select { background: transparent; border-color: #cdcbc7; min-height: 46px; }
@@ -139,7 +144,7 @@ a.bg-amber:hover, button.bg-amber:hover { background: #d6a33f; }
 .featured-service { border-left: 3px solid var(--amber); }
 .featured-service > .franja-firma-fina { display: none; }
 .process-step { border-top: 1px solid #c6c3bd; padding-top: 1.5rem; padding-right: 1rem; }
-.step-number { font-size: 2.75rem; line-height: 1; font-weight: 500; color: var(--amber-dark); }
+.step-number { font-size: 2rem; line-height: 1; font-weight: 500; color: var(--amber-dark); }
 .work-section { border-top: 1px solid #dedbd5; }
 .work-figure img { transition: transform 350ms ease; }
 .work-figure:hover img { transform: scale(1.025); }
@@ -149,13 +154,13 @@ a.bg-amber:hover, button.bg-amber:hover { background: #d6a33f; }
 .zone-link svg { width: 18px; height: 18px; }
 .faq-item { padding-block: 1.4rem; }
 .faq-item > p { max-width: 65ch; font-size: .9375rem; line-height: 1.8; }
-.boton-urgencia { border-radius: 4px; box-shadow: 0 3px 18px #20202020; font-size: .8125rem; padding: .6rem 1rem .6rem .6rem; }
-.boton-urgencia > span { width: 30px; height: 30px; border-radius: 2px; }
+.boton-urgencia { border-radius: 4px; border: 1px solid #ffffff1f; box-shadow: 0 3px 18px #20202033; font-size: .875rem; padding: .5rem .9rem .5rem .5rem; }
+.boton-urgencia > span:first-child { width: 34px; height: 34px; border-radius: 3px; }
 @media (max-width: 639px) {
   .site-header > div { height: 64px; }
-  .hero-electricista h1 { max-width: 16ch; }
+  .hero-electricista h1 { max-width: 18ch; }
   .hero-form { padding: 1.25rem; }
-  .hero-electricista .hero-photo { object-position: 38% top; }
+  .hero-electricista .hero-photo { object-position: 70% top; }
   .hero-overlay { background: #202020c9; }
   .featured-service .p-8 { padding: 1.5rem; }
   .boton-urgencia { font-size: .75rem; }
