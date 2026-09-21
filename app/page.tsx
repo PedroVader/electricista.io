@@ -18,7 +18,15 @@ import { CTAFinal } from "@/components/CTAFinal";
 
 export const metadata: Metadata = {
   title: { absolute: home.metaTitle },
-  description: `${home.metaDescription} ☎ ${config.telefono.display}`,
+  description: [
+    home.metaDescription,
+    config.googleResenas.enabled && config.googleResenas.total > 0
+      ? `${config.googleResenas.notaDisplay} en Google.`
+      : "",
+    `☎ ${config.telefono.display}`,
+  ]
+    .filter(Boolean)
+    .join(" "),
   alternates: { canonical: "/" },
 };
 

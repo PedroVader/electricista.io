@@ -24,7 +24,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(config.dominio),
   title: {
-    default: `${config.marca.nombre}, electricistas en Barcelona`,
+    default: `${config.marca.nombre}, electricistas en Barcelona y Vallès`,
     template: `%s | ${config.marca.nombre}`,
   },
   manifest: "/site.webmanifest",

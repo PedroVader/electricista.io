@@ -114,7 +114,7 @@ export const config = {
 
   /** Eyebrow y claims principales del hero de la home */
   hero: {
-    eyebrow: "Instaladores autorizados en Barcelona y Vallès",
+    eyebrow: "Electricistas en Barcelona y todo el Vallès",
     h1: "Electricistas profesionales con boletín. Hoy mismo si es urgente.",
     sub: "Averías, urgencias 24h, boletines eléctricos, cuadros y cualquier instalación. Presupuesto claro antes de empezar.",
   },

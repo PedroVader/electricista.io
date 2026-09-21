@@ -3,9 +3,12 @@ import type { FAQ } from "./tipos";
 /** Copy de las páginas fijas (home, presupuesto, contacto). */
 
 export const home = {
-  metaTitle: "Electricistas en Barcelona | Urgencias 24h y Boletines",
+  /** Title de marca y área (la keyword "electricista en Barcelona" es de
+   *  /electricista-barcelona, no de la home). El gancho va delante en la
+   *  description; el sello de Google se añade en app/page.tsx desde config. */
+  metaTitle: "Electricistas en Barcelona y Vallès | 24h y precio cerrado",
   metaDescription:
-    "Electricistas autorizados en Barcelona, Sabadell, Badalona, Mataró y Granollers. Urgencias 24h, boletines (CIE) y averías. Precio cerrado.",
+    "Urgencias 24h, llegada en 45-60 min y precio cerrado antes de empezar. Electricistas en Barcelona, Sabadell, Terrassa y el Vallès.",
   serviciosIntro:
     "Del enchufe que chispea al cuadro completo de una nave. Elige lo que te pasa y te contamos cómo lo resolvemos, o llámanos directamente y nos lo cuentas tú.",
   bandaUrgencias: {
