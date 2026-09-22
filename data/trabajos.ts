@@ -34,7 +34,7 @@ export const trabajos: Trabajo[] = [
     src: "/img/trabajos/instalacion-placas-solares-castellar-del-valles.jpg",
     alt: "Placas solares fotovoltaicas montadas sobre una cubierta metálica en Castellar del Vallès",
     titulo: "Placas solares en Castellar del Vallès",
-    pie: "Instalación fotovoltaica sobre cubierta de chapa en Castellar del Vallès, con los módulos fijados a la estructura y el cableado recogido bajo los paneles. La parte eléctrica de un autoconsumo es la que decide si la instalación rinde y pasa la legalización sin sustos.",
+    pie: "Instalación fotovoltaica sobre cubierta de chapa en Castellar del Vallès, terminada en agosto de 2026: tres días de trabajo con cuatro operarios, módulos fijados a la estructura y cableado recogido bajo los paneles. La parte eléctrica de un autoconsumo es la que decide si la instalación rinde y pasa la legalización sin sustos.",
     etiquetas: ["carga", "potencia"],
   },
   {
