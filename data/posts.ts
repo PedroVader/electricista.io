@@ -711,17 +711,17 @@ export const posts: Post[] = [
       "Cómo se organiza una instalación fotovoltaica sobre una cubierta metálica, qué hace cada operario, por qué el viento obliga a parar y cómo se legaliza el autoconsumo. Un trabajo real de agosto de 2026.",
     fecha: "2026-09-22",
     resumen:
-      "En agosto montamos una instalación fotovoltaica sobre una cubierta de chapa en Castellar del Vallès. Estaba previsto para dos o tres días con cuatro operarios, y el viento y una tormenta se encargaron de que fueran tres. Te contamos cómo se hace un trabajo así y qué decide que salga bien.",
+      "En agosto montamos una instalación fotovoltaica de unos 24 módulos, cerca de 10 kWp, sobre la cubierta de chapa de las oficinas de una empresa de reciclaje en Castellar del Vallès. Estaba previsto para dos o tres días con cuatro operarios, y el viento y una tormenta se encargaron de que fueran tres. Te contamos cómo se hace un trabajo así y qué decide que salga bien.",
     imagen: {
       src: "/img/trabajos/instalacion-placas-solares-castellar-del-valles.jpg",
       alt: "Placas solares fotovoltaicas montadas sobre una cubierta metálica en Castellar del Vallès, con nubes de tormenta al fondo",
-      pie: "Los módulos ya fijados sobre la cubierta de chapa, en Castellar del Vallès. Al fondo, la tormenta que nos hizo parar esa tarde.",
+      pie: "Parte de los 24 módulos ya fijados sobre la cubierta de chapa de las oficinas, en Castellar del Vallès. Al fondo, la tormenta que nos hizo parar esa tarde.",
     },
     secciones: [
       {
         h2: "El encargo: autoconsumo sobre una cubierta metálica",
         parrafos: [
-          "La cubierta era de chapa grecada, con buena orientación y sin sombras cercanas, que es el mejor escenario posible para una fotovoltaica. Lo que la hace distinta de un tejado de teja es que no se puede pisar en cualquier sitio, no se puede perforar donde uno quiera y todo lo que se fija tiene que seguir siendo estanco cuando llueva.",
+          "El cliente es una empresa del sector del reciclaje que quería cubrir el consumo de sus oficinas. La cubierta era de chapa grecada, con buena orientación y sin sombras cercanas, que es el mejor escenario posible para una fotovoltaica. Se dimensionó en unos 24 módulos, cerca de 10 kWp, que es una potencia razonable para unas oficinas con consumo de lunes a viernes en horario de sol. Lo que la hace distinta de un tejado de teja es que no se puede pisar en cualquier sitio, no se puede perforar donde uno quiera y todo lo que se fija tiene que seguir siendo estanco cuando llueva.",
           "Se planteó con cuatro operarios y un plazo de dos o tres días. Ese margen no es indecisión: en una cubierta a la intemperie el tercer día existe para absorber lo que el tiempo no deje hacer los dos primeros. En este caso hizo falta.",
         ],
       },
@@ -793,7 +793,7 @@ export const posts: Post[] = [
       {
         pregunta: "¿Cuánto tarda una instalación fotovoltaica?",
         respuesta:
-          "Una instalación mediana sobre cubierta, con un equipo de cuatro personas, suele llevar entre dos y tres días de montaje. La legalización y la compensación de excedentes tardan bastante más, por eso se tramitan en paralelo.",
+          "Una instalación de unos 24 módulos sobre cubierta, con un equipo de cuatro personas, suele llevar entre dos y tres días de montaje. La legalización y la compensación de excedentes tardan bastante más, por eso se tramitan en paralelo.",
       },
       {
         pregunta: "¿Qué pasa si hace viento o llueve durante el montaje?",
