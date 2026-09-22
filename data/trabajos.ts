@@ -18,16 +18,16 @@ export const trabajos: Trabajo[] = [
   },
   {
     src: "/img/trabajos/cuadro-local-gracia-barcelona.jpg",
-    alt: "Cuadro eléctrico de un local en Gràcia, Barcelona, con cinco filas de diferenciales y magnetotérmicos e interruptor general Schneider",
+    alt: "Cuadro eléctrico de un local en Gràcia, Barcelona, con cinco filas de diferenciales y magnetotérmicos",
     titulo: "Cuadro de un local en Gràcia",
     pie: "Cuadro de un local en el barrio de Gràcia, Barcelona: interruptor general, un diferencial por grupo de circuitos y cada línea con su magnetotérmico. Cableado numerado y ordenado por filas para que cualquier ampliación futura no sea un rompecabezas.",
     etiquetas: ["cuadro", "potencia"],
   },
   {
     src: "/img/trabajos/centralizacion-contadores-badalona.jpg",
-    alt: "Centralización de contadores de una comunidad de vecinos en Badalona, con caja general de protección, embarrado y siete contadores digitales",
+    alt: "Centralización de contadores de una comunidad de vecinos en Badalona, con caja general de protección, embarrado y seis contadores digitales",
     titulo: "Centralización de contadores en Badalona",
-    pie: "Centralización de una finca de Badalona: caja general de protección con fusibles, embarrado de cobre y siete contadores digitales, con la derivación individual de cada vivienda identificada. Parte de una renovación de la instalación común del edificio.",
+    pie: "Centralización de una finca de Badalona: caja general de protección con fusibles, embarrado de cobre y seis contadores digitales, con la derivación individual de cada vivienda identificada. Parte de una renovación de la instalación común del edificio.",
     etiquetas: ["cuadro", "potencia", "boletin"],
   },
   {
