@@ -78,8 +78,9 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-4 py-16">
           <div className="featured-service overflow-hidden">
             <div className="franja-firma-fina" aria-hidden="true" />
-            <div className="grid gap-8 bg-paper-warm p-8 lg:grid-cols-2 lg:gap-12">
+            <div className="grid gap-8 bg-white p-8 lg:grid-cols-2 lg:gap-12">
               <div>
+                <p className="eyebrow">Boletín eléctrico</p>
                 <h2 className="font-display text-3xl font-bold text-ink">
                   {home.boletinDestacado.h2}
                 </h2>
@@ -138,6 +139,7 @@ export default function Home() {
       {/* Escaparate del blog */}
       <section className="bg-paper">
         <div className="mx-auto max-w-6xl px-4 py-16">
+          <p className="eyebrow">Consejos</p>
           <h2 className="font-display text-3xl font-bold text-ink sm:text-4xl">
             {home.consejos.h2}
           </h2>
@@ -147,7 +149,7 @@ export default function Home() {
               <Reveal key={post.slug} className="h-full">
                 <Link
                   href={`/blog/${post.slug}`}
-                  className="guide-link group flex h-full flex-col py-6"
+                  className="guide-link card group flex h-full flex-col p-6"
                 >
                   <h3 className="font-display text-lg font-bold text-ink group-hover:text-amber-dark">
                     {post.titulo}

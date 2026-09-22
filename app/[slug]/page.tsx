@@ -143,7 +143,7 @@ function PaginaCiudad({ ciudad }: { ciudad: Ciudad }) {
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {ciudad.zonas.items.map((zona) => (
               <Reveal key={zona.nombre} className="h-full">
-                <div className="h-full rounded-lg border border-slate/15 bg-paper-warm p-5">
+                <div className="card h-full p-5">
                   <h3 className="flex items-center gap-2 font-display text-lg font-bold text-ink">
                     <span className="text-amber-dark">
                       <Icono nombre="pin" className="h-5 w-5" />
@@ -400,17 +400,18 @@ function PaginaServicio({ servicio }: { servicio: Servicio }) {
       {/* Qué incluye */}
       <section className="bg-paper">
         <div className="mx-auto max-w-6xl px-4 py-16">
+          <p className="eyebrow">El servicio</p>
           <h2 className="font-display text-3xl font-bold text-ink sm:text-4xl">
             Qué incluye
           </h2>
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {servicio.queIncluye.map((item) => (
               <Reveal key={item.titulo} className="h-full">
-                <div className="h-full rounded-lg border border-slate/15 bg-paper p-5 shadow-sm">
-                  <span className="text-amber-dark">
-                    <Icono nombre="check" className="h-7 w-7" />
+                <div className="card h-full p-6">
+                  <span className="icon-box">
+                    <Icono nombre="check" className="h-6 w-6" />
                   </span>
-                  <h3 className="mt-3 font-display text-lg font-bold text-ink">
+                  <h3 className="mt-4 font-display text-lg font-bold text-ink">
                     {item.titulo}
                   </h3>
                   <p className="mt-1 text-sm text-slate">{item.texto}</p>
@@ -476,7 +477,7 @@ function PaginaServicio({ servicio }: { servicio: Servicio }) {
                 <li key={hijo.slug}>
                   <Link
                     href={`/${hijo.slug}`}
-                    className="block h-full rounded-lg border border-slate/15 bg-paper-warm p-5 hover:border-amber"
+                    className="card block h-full p-5 hover:border-amber-dark"
                   >
                     <p className="font-display text-lg font-bold text-ink">
                       {hijo.card.titulo}

@@ -15,6 +15,7 @@ export function PorQue({
     <section className="about-section bg-paper-warm">
       <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 lg:grid-cols-5">
         <div className="lg:col-span-3">
+          <p className="eyebrow">Por qué nosotros</p>
           <h2 className="font-display text-3xl font-bold text-ink sm:text-4xl">
             {h2}
           </h2>
@@ -34,7 +35,8 @@ export function PorQue({
             ))}
           </ul>
         </div>
-        <div className="relative aspect-[4/5] overflow-hidden lg:col-span-2">
+        <div className="about-frame lg:col-span-2">
+          <div className="relative aspect-[4/5] overflow-hidden">
           <Image
             src="/img/porque-cuadro.jpg"
             alt="Electricista de electricista.io trabajando en un cuadro eléctrico"
@@ -42,6 +44,7 @@ export function PorQue({
             sizes="(min-width: 1024px) 40vw, 100vw"
             className="object-cover"
           />
+          </div>
         </div>
       </div>
     </section>

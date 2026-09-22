@@ -22,6 +22,7 @@ export function TrabajosReales({
   return (
     <section className="work-section bg-paper">
       <div className="mx-auto max-w-6xl px-4 py-16">
+        <p className="eyebrow">Trabajos reales</p>
         <h2 className="font-display text-3xl font-bold text-ink sm:text-4xl">
           {h2}
         </h2>
@@ -30,7 +31,7 @@ export function TrabajosReales({
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {trabajos.map((t) => (
             <Reveal key={t.src} className="h-full">
-              <figure className="work-figure flex h-full flex-col overflow-hidden">
+              <figure className="work-figure card flex h-full flex-col overflow-hidden">
                 <div className="relative aspect-[4/3] w-full bg-ink/5">
                   <Image
                     src={t.src}

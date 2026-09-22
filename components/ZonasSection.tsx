@@ -21,6 +21,7 @@ export function ZonasSection({
   return (
     <section className="bg-paper-warm">
       <div className="mx-auto max-w-6xl px-4 py-16">
+        <p className="eyebrow">Zonas de servicio</p>
         <h2 className="font-display text-3xl font-bold text-ink sm:text-4xl">
           {servicioNombre
             ? `Zonas donde ofrecemos ${servicioNombre}`
@@ -32,7 +33,7 @@ export function ZonasSection({
             <Reveal key={c.slug} className="h-full">
               <Link
                 href={`/${c.slug}`}
-                className="zone-link group flex h-full items-center gap-3 py-4"
+                className="zone-link card group flex h-full items-center gap-3"
               >
                 <span className="text-amber-dark">
                   <Icono nombre="pin" className="h-6 w-6" />

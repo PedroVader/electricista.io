@@ -28,6 +28,7 @@ export function ServiciosGrid({
   return (
     <section className="services-section bg-paper">
       <div className="mx-auto max-w-6xl px-4 py-16">
+        <p className="eyebrow">Servicios</p>
         <h2 className="font-display text-3xl font-bold text-ink sm:text-4xl">
           {ciudad ? `Servicios en ${ciudad}` : titulo}
         </h2>
@@ -37,7 +38,7 @@ export function ServiciosGrid({
             <Reveal key={card.href + card.titulo} className="h-full">
               <Link
                 href={card.href}
-                className="service-card group flex h-full flex-col overflow-hidden"
+                className="service-card card group flex h-full flex-col overflow-hidden"
               >
                 {card.destacada && (
                   <div
@@ -47,11 +48,11 @@ export function ServiciosGrid({
                     aria-hidden="true"
                   />
                 )}
-                <div className="flex flex-1 flex-col p-5">
-                  <span className="text-amber-dark">
-                    <Icono nombre={card.icono} className="h-8 w-8" />
+                <div className="flex flex-1 flex-col p-6">
+                  <span className="icon-box">
+                    <Icono nombre={card.icono} className="h-6 w-6" />
                   </span>
-                  <h3 className="mt-3 font-display text-lg font-bold text-ink">
+                  <h3 className="mt-4 font-display text-lg font-bold text-ink">
                     {card.titulo}
                   </h3>
                   <p className="mt-1 flex-1 text-sm text-slate">{card.linea}</p>

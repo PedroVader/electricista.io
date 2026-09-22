@@ -10,7 +10,7 @@ export function Footer() {
   const { marca, empresa, telefono, email, footer } = config;
 
   return (
-    <footer className="bg-ink text-white">
+    <footer className="site-footer bg-ink text-white">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:grid-cols-2 lg:grid-cols-4">
         {/* Marca + NAP consistente con GBP */}
         <div>

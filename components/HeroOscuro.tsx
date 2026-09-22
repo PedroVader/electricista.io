@@ -73,21 +73,10 @@ export function HeroOscuro({
 
               {/* Prueba social: valoración real en Google */}
               <SelloGoogle evento="google_sello_hero" className="mt-6" />
-
-              <ul className="mt-10 hidden flex-wrap gap-x-6 gap-y-3 text-sm font-medium text-white/90 lg:flex">
-                {badges.map((badge) => (
-                  <li key={badge.texto} className="flex items-center gap-2">
-                    <span className="text-amber">
-                      <Icono nombre={badge.icono} className="h-5 w-5" />
-                    </span>
-                    {badge.texto}
-                  </li>
-                ))}
-              </ul>
             </div>
 
             {/* Captación de leads en el hero */}
-            <div className="hero-form rounded-lg bg-paper p-6 text-ink shadow-xl">
+            <div className="hero-form rounded-lg p-6 text-ink">
               <p className="font-display text-xl font-semibold">
                 Solicita tu presupuesto
               </p>
@@ -118,11 +107,14 @@ export function HeroOscuro({
             </div>
           </div>
 
-          {/* Trust badges en móvil/tablet, bajo el formulario */}
-          <ul className="mt-8 flex flex-wrap gap-x-6 gap-y-3 text-sm font-medium text-white/90 lg:hidden">
+          {/* Franja de credenciales: los claims de confianza en una rejilla */}
+          <ul className="hero-credenciales mt-10 grid grid-cols-1 gap-px border border-white/15 bg-white/15 sm:grid-cols-3 lg:grid-cols-5">
             {badges.map((badge) => (
-              <li key={badge.texto} className="flex items-center gap-2">
-                <span className="text-amber">
+              <li
+                key={badge.texto}
+                className="flex items-center gap-3 bg-[#202020] px-4 py-3.5 font-medium text-white/90"
+              >
+                <span className="icon-box icon-box-dark">
                   <Icono nombre={badge.icono} className="h-5 w-5" />
                 </span>
                 {badge.texto}

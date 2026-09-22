@@ -16,10 +16,11 @@ export function FAQSection({
   return (
     <section className={fondoAlterno ? "bg-paper-warm" : "bg-paper"}>
       <div className="mx-auto max-w-3xl px-4 py-16">
+        <p className="eyebrow">Dudas habituales</p>
         <h2 className="font-display text-3xl font-bold text-ink">{titulo}</h2>
-        <div className="mt-8 divide-y divide-slate/20 border-y border-slate/20">
+        <div className="mt-8 space-y-3">
           {faqs.map((faq) => (
-            <details key={faq.pregunta} className="faq-item py-4" open>
+            <details key={faq.pregunta} className="faq-item card" open>
               <summary className="flex items-center justify-between gap-4 font-semibold text-ink">
                 {faq.pregunta}
                 <span className="faq-chevron shrink-0 text-amber-dark">
