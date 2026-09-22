@@ -75,6 +75,8 @@ export type Post = {
   /** Fecha ISO de publicación */
   fecha: string;
   resumen: string;
+  /** Foto real del trabajo, si el post cuenta un caso concreto */
+  imagen?: { src: string; alt: string; pie: string };
   secciones: Seccion[];
   faqs?: FAQ[];
   /** Slugs de servicios relacionados para el interlinking */

@@ -705,6 +705,115 @@ export const posts: Post[] = [
     relacionados: ["electricistas-para-empresas-y-comunidades", "instalaciones-electricas"],
   },
   {
+    slug: "instalacion-placas-solares-cubierta-chapa-castellar-valles",
+    titulo: "Placas solares sobre cubierta de chapa en Castellar del Vallès: tres días, cuatro operarios y viento",
+    descripcion:
+      "Cómo se organiza una instalación fotovoltaica sobre una cubierta metálica, qué hace cada operario, por qué el viento obliga a parar y cómo se legaliza el autoconsumo. Un trabajo real de agosto de 2026.",
+    fecha: "2026-09-22",
+    resumen:
+      "En agosto montamos una instalación fotovoltaica sobre una cubierta de chapa en Castellar del Vallès. Estaba previsto para dos o tres días con cuatro operarios, y el viento y una tormenta se encargaron de que fueran tres. Te contamos cómo se hace un trabajo así y qué decide que salga bien.",
+    imagen: {
+      src: "/img/trabajos/instalacion-placas-solares-castellar-del-valles.jpg",
+      alt: "Placas solares fotovoltaicas montadas sobre una cubierta metálica en Castellar del Vallès, con nubes de tormenta al fondo",
+      pie: "Los módulos ya fijados sobre la cubierta de chapa, en Castellar del Vallès. Al fondo, la tormenta que nos hizo parar esa tarde.",
+    },
+    secciones: [
+      {
+        h2: "El encargo: autoconsumo sobre una cubierta metálica",
+        parrafos: [
+          "La cubierta era de chapa grecada, con buena orientación y sin sombras cercanas, que es el mejor escenario posible para una fotovoltaica. Lo que la hace distinta de un tejado de teja es que no se puede pisar en cualquier sitio, no se puede perforar donde uno quiera y todo lo que se fija tiene que seguir siendo estanco cuando llueva.",
+          "Se planteó con cuatro operarios y un plazo de dos o tres días. Ese margen no es indecisión: en una cubierta a la intemperie el tercer día existe para absorber lo que el tiempo no deje hacer los dos primeros. En este caso hizo falta.",
+        ],
+      },
+      {
+        h2: "Por qué la chapa cambia el planteamiento",
+        parrafos: [
+          "En una cubierta de chapa la estructura de los módulos se fija a la greca, es decir, a la cresta de la onda, y nunca al valle por donde corre el agua. Cada fijación lleva su junta estanca y se aprieta a par, ni suelta ni pasada, porque una chapa deformada es una gotera dentro de un año.",
+          "El segundo punto es el reparto de cargas. Los módulos pesan, y la estructura reparte ese peso sobre las correas que hay debajo de la chapa, no sobre la chapa en sí. Antes de subir nada se comprueba por dónde van esas correas y se replantea la posición de las filas para que las fijaciones caigan sobre ellas.",
+          "Y el tercero es dónde se pisa. Un operario sobre chapa camina por las líneas de fijación, con calzado adecuado y con línea de vida anclada. No es un detalle de seguridad para la foto: es lo que permite trabajar rápido sin abollar la cubierta ni jugársela.",
+        ],
+        bullets: [
+          "Fijación a la greca, nunca al valle, con junta estanca y apriete controlado",
+          "Estructura alineada con las correas para repartir el peso",
+          "Líneas de vida y recorridos marcados antes de subir el primer módulo",
+        ],
+      },
+      {
+        h2: "Cuatro operarios y qué hace cada uno",
+        parrafos: [
+          "Con cuatro personas el trabajo se organiza en dos parejas. La primera va por delante montando la estructura: replanteo, perfiles, fijaciones y comprobación de alineación fila a fila. La segunda va detrás subiendo módulos, fijándolos con las grapas y conectando los conectores entre paneles para formar los strings, que son los grupos de módulos en serie que alimentan el inversor.",
+          "En paralelo, uno de los cuatro baja en cuanto la estructura avanza y empieza con la parte eléctrica fija: bandeja o tubo para bajar el cableado de continua, ubicación del inversor, protecciones de continua y de alterna, y la puesta a tierra de la estructura, que es obligatoria y que se olvida más de lo que parece.",
+          "El primer día se replanteó y montó la estructura completa y se empezó a subir módulos. El segundo era el día de módulos y strings. El tercero, conexión al inversor, cuadro de protecciones, pruebas y puesta en marcha.",
+        ],
+      },
+      {
+        h2: "El viento: cuándo se para y por qué",
+        parrafos: [
+          "Un módulo fotovoltaico es una plancha de casi dos metros cuadrados. Con viento se comporta como una vela, y a la altura de una cubierta el viento sopla más de lo que se nota en la calle. Hay dos momentos críticos: cuando el módulo se sube y se mueve por la cubierta, y cuando ya está apoyado pero aún no lleva las cuatro grapas apretadas.",
+          "Por eso la regla es sencilla. Con rachas, no se sube ningún módulo y los que están apoyados se fijan del todo antes de dejar nada. Si el viento sigue, se baja y se aprovecha para la parte eléctrica de abajo, que no depende del tiempo. En Castellar tuvimos una tarde así, con rachas y una tormenta entrando por el Vallès, y se paró la cubierta. La parte del inversor y las protecciones avanzó mientras tanto.",
+          "Lo que no se hace nunca es intentar ganar tiempo con viento para cumplir el plazo. Un módulo que sale volando es un panel roto en el mejor caso, y un accidente grave en el peor. El tercer día del plazo estaba ahí exactamente para esto.",
+        ],
+      },
+      {
+        h2: "La parte eléctrica, que es la que decide si rinde",
+        parrafos: [
+          "Una fotovoltaica se mira por los paneles, pero rinde o no rinde por lo que hay detrás. Los strings tienen que estar equilibrados y con la misma orientación y sombra, porque un módulo peor colocado arrastra a todos los de su serie. El cableado de continua va con conductor solar, resistente a la radiación y al calor, y con la polaridad marcada en cada extremo.",
+          "Antes del inversor van las protecciones de continua: seccionador y protector contra sobretensiones, porque una cubierta es lo más expuesto que hay a un rayo cercano. Después del inversor, la parte de alterna se conecta a la instalación existente con su propio interruptor automático y su diferencial, y se comprueba que el cuadro general y la derivación admiten la potencia que va a entrar.",
+          "La puesta a tierra une la estructura, los marcos de los módulos y el inversor a la tierra del edificio. Y antes de dar tensión se mide todo: tensión de circuito abierto de cada string, aislamiento, continuidad de tierra y disparo del diferencial. Con esas mediciones se cierra el trabajo y se entregan al cliente.",
+        ],
+        bullets: [
+          "Strings equilibrados, misma orientación y sin sombras parciales",
+          "Seccionador y protector de sobretensiones en continua, antes del inversor",
+          "Interruptor automático y diferencial propios en la conexión de alterna",
+          "Estructura, marcos e inversor unidos a la tierra del edificio",
+          "Mediciones de cada string y de la instalación antes de la puesta en marcha",
+        ],
+      },
+      {
+        h2: "La legalización y la compensación de excedentes",
+        parrafos: [
+          "Una instalación de autoconsumo se legaliza como cualquier otra instalación eléctrica: la firma un instalador habilitado inscrito en el registro, con la documentación técnica y las mediciones, y se tramita ante Indústria. Con eso se solicita a la distribuidora la modificación del contrato para que la energía que sobra se compense en la factura.",
+          "Trabajamos con instaladores habilitados que firman la instalación con su número de registro, y nosotros gestionamos el trámite completo con Indústria y con la distribuidora. Es la parte menos visible del trabajo y la que más tarda, así que conviene arrancarla mientras aún se está montando, no cuando ya está todo puesto.",
+        ],
+      },
+      {
+        h2: "Qué te llevas si estás pensando en una instalación así",
+        parrafos: [
+          "Pide un plazo con margen y desconfía del que te promete dos días cerrados en una cubierta a la intemperie en cualquier época del año. Pregunta cómo se fija la estructura a tu cubierta concreta, y si es de chapa, que te expliquen lo de la greca y las correas. Y pide que la oferta incluya las protecciones de continua, la puesta a tierra de la estructura y la legalización con compensación de excedentes, porque son las tres cosas que más veces se quedan fuera para abaratar el precio.",
+          "Si quieres saber si tu cubierta y tu instalación actual admiten un autoconsumo, lo vemos en una visita. Miramos cubierta, cuadro, derivación y potencia contratada, y te decimos qué hace falta antes de hablar de paneles.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        pregunta: "¿Se pueden instalar placas solares sobre una cubierta de chapa?",
+        respuesta:
+          "Sí, y es una de las cubiertas más cómodas para hacerlo, siempre que la estructura se fije a la greca con juntas estancas y alineada con las correas que hay debajo. Lo que no se hace es perforar el valle de la chapa ni cargar el peso sobre la chapa sola.",
+      },
+      {
+        pregunta: "¿Cuánto tarda una instalación fotovoltaica?",
+        respuesta:
+          "Una instalación mediana sobre cubierta, con un equipo de cuatro personas, suele llevar entre dos y tres días de montaje. La legalización y la compensación de excedentes tardan bastante más, por eso se tramitan en paralelo.",
+      },
+      {
+        pregunta: "¿Qué pasa si hace viento o llueve durante el montaje?",
+        respuesta:
+          "Se para la cubierta. Con rachas no se suben módulos y los apoyados se fijan del todo. Mientras, se avanza en la parte eléctrica de abajo, que no depende del tiempo. Por eso el plazo se da con un día de margen.",
+      },
+      {
+        pregunta: "¿Quién legaliza la instalación de autoconsumo?",
+        respuesta:
+          "La firma un instalador habilitado inscrito en el registro, con la documentación técnica y las mediciones. Nosotros trabajamos con instaladores habilitados y gestionamos el trámite con Indústria y con la distribuidora para la compensación de excedentes.",
+      },
+      {
+        pregunta: "¿Hace falta cambiar el cuadro eléctrico para poner placas?",
+        respuesta:
+          "No siempre, pero hay que revisarlo. La conexión de alterna necesita su propio automático y su diferencial, y el cuadro general y la derivación tienen que admitir la potencia que entra. Si el cuadro es antiguo, muchas veces se aprovecha para renovarlo en la misma intervención.",
+      },
+    ],
+    relacionados: ["instalaciones-electricas", "cambio-cuadro-electrico", "instalacion-punto-de-carga-coche-electrico"],
+  },
+  {
     slug: "revisar-instalacion-electrica-piso-antiguo-antes-de-comprar",
     titulo: "Comprar un piso antiguo: cómo revisar la instalación eléctrica antes de firmar",
     descripcion:

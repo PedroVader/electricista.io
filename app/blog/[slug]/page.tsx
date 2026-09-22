@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { config } from "@/data/config";
@@ -60,6 +61,7 @@ export default async function PostPage({ params }: Props) {
             name: config.marca.nombre,
           },
           mainEntityOfPage: `${config.dominio}/blog/${post.slug}`,
+          ...(post.imagen && { image: `${config.dominio}${post.imagen.src}` }),
         }}
       />
       <JsonLd
@@ -87,6 +89,23 @@ export default async function PostPage({ params }: Props) {
 
       <article className="bg-paper">
         <div className="mx-auto max-w-3xl px-4 py-12">
+          {post.imagen && (
+            <figure className="mb-10">
+              <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg bg-ink/5">
+                <Image
+                  src={post.imagen.src}
+                  alt={post.imagen.alt}
+                  fill
+                  priority
+                  sizes="(min-width: 768px) 768px, 100vw"
+                  className="object-cover"
+                />
+              </div>
+              <figcaption className="mt-3 text-sm text-slate">
+                {post.imagen.pie}
+              </figcaption>
+            </figure>
+          )}
           {post.secciones.map((seccion) => (
             <section key={seccion.h2} className="mt-10 first:mt-0">
               <h2 className="font-display text-2xl font-bold text-ink sm:text-3xl">
