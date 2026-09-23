@@ -52,6 +52,9 @@ export function schemaNegocio() {
       opens: "00:00",
       closes: "23:59",
     },
+    // Atención en castellano, catalán e inglés (versiones /ca y /en de la web)
+    knowsLanguage: ["es", "ca", "en"],
+    hasMap: config.googleBusinessProfile,
     sameAs: [
       config.googleBusinessProfile,
       ...(config.instagram.enabled ? [config.instagram.url] : []),

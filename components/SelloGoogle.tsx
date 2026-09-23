@@ -1,4 +1,5 @@
 import { config } from "@/data/config";
+import { ui, type Locale } from "@/lib/i18n";
 import { Icono } from "./Iconos";
 
 /**
@@ -10,14 +11,17 @@ export function SelloGoogle({
   tono = "oscuro",
   evento = "google_sello",
   className = "",
+  locale = "es",
 }: {
   /** "oscuro" sobre fondo ink (hero, footer); "claro" sobre fondo paper */
   tono?: "oscuro" | "claro";
   evento?: string;
   className?: string;
+  locale?: Locale;
 }) {
   const { googleResenas, googleBusinessProfile } = config;
   if (!googleResenas.enabled || googleResenas.total === 0) return null;
+  const t = ui(locale).secciones;
 
   const texto =
     tono === "oscuro" ? "text-white" : "text-ink";
@@ -36,7 +40,7 @@ export function SelloGoogle({
       target="_blank"
       rel="noopener noreferrer"
       data-event={evento}
-      aria-label={`Valoración ${googleResenas.notaDisplay} de 5 en Google con ${googleResenas.total} reseñas. Ver perfil`}
+      aria-label={t.selloAria(googleResenas.notaDisplay, googleResenas.total)}
       className={`inline-flex items-center gap-3 rounded-md border px-3.5 py-2 text-sm ${texto} ${borde} ${className}`}
     >
       <span className="flex items-center gap-0.5 text-amber" aria-hidden="true">
@@ -50,11 +54,11 @@ export function SelloGoogle({
       </span>
       <span className="leading-tight">
         <span className="font-bold">{googleResenas.notaDisplay}</span>
-        <span className={`font-medium ${suave}`}> en Google</span>
+        <span className={`font-medium ${suave}`}> {t.enGoogle}</span>
         <span className={`block text-xs ${suave}`}>
-          {googleResenas.total} {googleResenas.total === 1 ? "reseña" : "reseñas"}
+          {googleResenas.total} {googleResenas.total === 1 ? t.resena : t.resenas}
           {" · "}
-          <span className="underline underline-offset-2">Ver perfil</span>
+          <span className="underline underline-offset-2">{t.verPerfil}</span>
         </span>
       </span>
     </a>

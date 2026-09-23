@@ -11,6 +11,8 @@ export type Seccion = {
 
 export type Servicio = {
   slug: string;
+  /** Solo en las versiones traducidas: slug de la página equivalente en castellano (hreflang) */
+  slugEs?: string;
   /** Nombre corto para nav, footer e interlinking */
   nombre: string;
   card: {
@@ -86,6 +88,8 @@ export type Post = {
 export type Ciudad = {
   /** Slug completo de la URL, p.ej. "electricista-barcelona" */
   slug: string;
+  /** Solo en las versiones traducidas: slug de la página equivalente en castellano (hreflang) */
+  slugEs?: string;
   nombre: string;
   comarca: string;
   metaTitle: string;

@@ -3,9 +3,7 @@
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { config } from "@/data/config";
-import { enlaceWhatsapp } from "@/lib/whatsapp";
-import { ciudades } from "@/data/ciudades";
-import { servicios, cardsExtra } from "@/data/servicios";
+import { ui, type Locale } from "@/lib/i18n";
 import { FORM_ID } from "./BotonFlotante";
 import { Icono } from "./Iconos";
 
@@ -16,12 +14,28 @@ import { Icono } from "./Iconos";
  *
  * Variante compacta (hero): nombre + teléfono/WhatsApp + servicio.
  * Variante completa (contacto, CTA final): añade ciudad y mensaje.
+ *
+ * Es un componente de cliente: recibe las listas y textos por props para
+ * no cargar los datos de todos los idiomas en el bundle.
  */
+export type FormProps = {
+  locale: Locale;
+  opcionesServicio: string[];
+  ciudades: string[];
+  mensajeExito: string;
+  whatsappHref?: string;
+};
+
 export function FormPresupuesto({
   oscuro = false,
   compacto = false,
   id = FORM_ID,
-}: {
+  locale,
+  opcionesServicio,
+  ciudades,
+  mensajeExito,
+  whatsappHref,
+}: FormProps & {
   oscuro?: boolean;
   compacto?: boolean;
   id?: string;
@@ -30,12 +44,9 @@ export function FormPresupuesto({
     "idle",
   );
   const pathname = usePathname();
+  const t = ui(locale).form;
 
-  const opcionesServicio = [
-    ...servicios.map((s) => s.card.titulo),
-    ...cardsExtra.map((c) => c.titulo),
-    "Otro",
-  ];
+  const opciones = [...opcionesServicio, t.otro];
 
   async function enviar(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -77,7 +88,7 @@ export function FormPresupuesto({
         <span className="mb-2 inline-flex text-amber-dark">
           <Icono nombre="check" className="h-8 w-8" />
         </span>
-        <p>{config.formulario.mensajeExito}</p>
+        <p>{mensajeExito}</p>
       </div>
     );
   }
@@ -94,19 +105,19 @@ export function FormPresupuesto({
       className="scroll-mt-24 space-y-4"
     >
       <input type="hidden" name="form-name" value={config.formulario.nombre} />
-      {/* Atribución: página desde la que llegó el lead */}
+      {/* Atribución: página desde la que llegó el lead (incluye el idioma) */}
       <input type="hidden" name="pagina" value={pathname} />
       {/* Honeypot antispam */}
       <p className="hidden">
         <label>
-          No rellenes esto: <input name="bot-field" />
+          {t.honeypot} <input name="bot-field" />
         </label>
       </p>
 
       <div className={compacto ? "space-y-4" : "grid gap-4 sm:grid-cols-2"}>
         <div>
           <label htmlFor={`f-nombre${sufijo}`} className={labelClase}>
-            Nombre
+            {t.nombre}
           </label>
           <input
             id={`f-nombre${sufijo}`}
@@ -114,13 +125,13 @@ export function FormPresupuesto({
             type="text"
             required
             autoComplete="name"
-            placeholder="Tu nombre"
+            placeholder={t.tuNombre}
             className={campoClase}
           />
         </div>
         <div>
           <label htmlFor={`f-telefono${sufijo}`} className={labelClase}>
-            Teléfono o WhatsApp
+            {t.telefono}
           </label>
           <input
             id={`f-telefono${sufijo}`}
@@ -136,7 +147,7 @@ export function FormPresupuesto({
 
       <div>
         <label htmlFor={`f-servicio${sufijo}`} className={labelClase}>
-          ¿Qué necesitas?
+          {t.queNecesitas}
         </label>
         <select
           id={`f-servicio${sufijo}`}
@@ -146,9 +157,9 @@ export function FormPresupuesto({
           className={campoClase}
         >
           <option value="" disabled>
-            Elige el servicio
+            {t.eligeServicio}
           </option>
-          {opcionesServicio.map((s) => (
+          {opciones.map((s) => (
             <option key={s} value={s}>
               {s}
             </option>
@@ -160,7 +171,7 @@ export function FormPresupuesto({
         <>
           <div>
             <label htmlFor="f-ciudad" className={labelClase}>
-              Ciudad
+              {t.ciudad}
             </label>
             <select
               id="f-ciudad"
@@ -170,26 +181,26 @@ export function FormPresupuesto({
               className={campoClase}
             >
               <option value="" disabled>
-                Elige tu zona
+                {t.eligeZona}
               </option>
               {ciudades.map((c) => (
-                <option key={c.slug} value={c.nombre}>
-                  {c.nombre} y alrededores
+                <option key={c} value={c}>
+                  {t.alrededores(c)}
                 </option>
               ))}
-              <option value="Otra">Otra (área de Barcelona)</option>
+              <option value="Otra">{t.otraZona}</option>
             </select>
           </div>
 
           <div>
             <label htmlFor="f-mensaje" className={labelClase}>
-              Cuéntanos más (opcional)
+              {t.mensaje}
             </label>
             <textarea
               id="f-mensaje"
               name="mensaje"
               rows={3}
-              placeholder="Ej.: se me va la luz al encender el horno / necesito un boletín para dar de alta la luz"
+              placeholder={t.placeholderMensaje}
               className={campoClase}
             />
           </div>
@@ -198,7 +209,7 @@ export function FormPresupuesto({
 
       {estado === "error" && (
         <p role="alert" className="text-sm font-medium text-red-500">
-          No se ha podido enviar. Inténtalo de nuevo o llámanos al{" "}
+          {t.error}{" "}
           <a href={`tel:${config.telefono.numero}`} className="underline">
             {config.telefono.display}
           </a>
@@ -214,24 +225,24 @@ export function FormPresupuesto({
           compacto ? "" : "sm:w-auto"
         }`}
       >
-        {estado === "enviando" ? "Enviando…" : "Solicitar presupuesto"}
+        {estado === "enviando" ? t.enviando : t.enviar}
       </button>
-      {config.whatsapp.enabled && config.whatsapp.number && (
+      {whatsappHref && (
         <p className={`text-sm ${oscuro ? "text-white/80" : "text-slate"}`}>
-          ¿Tienes fotos?{" "}
+          {t.tienesFotos}{" "}
           <a
-            href={enlaceWhatsapp()}
+            href={whatsappHref}
             target="_blank"
             rel="noopener noreferrer"
             data-event="whatsapp_fotos_form"
             className="font-semibold underline underline-offset-4"
           >
-            Envíalas por WhatsApp
+            {t.enviaWhatsapp}
           </a>.
         </p>
       )}
       <p className={`text-xs ${oscuro ? "text-white/60" : "text-slate"}`}>
-        Te llamamos en menos de 2 h en horario laboral. Sin compromiso.
+        {t.teLlamamos}
       </p>
     </form>
   );

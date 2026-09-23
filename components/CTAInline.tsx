@@ -1,19 +1,23 @@
 import { config } from "@/data/config";
+import { ui, type Locale } from "@/lib/i18n";
 import { Icono } from "./Iconos";
 
 /** CTA doble (llamada + formulario) para intercalar entre secciones. */
 export function CTAInline({
-  texto = "Precio cerrado por escrito antes de empezar. Pídelo gratis:",
+  texto,
   evento = "llamada_cta_inline",
+  locale = "es",
 }: {
   texto?: string;
   evento?: string;
+  locale?: Locale;
 }) {
   const { telefono } = config;
+  const t = ui(locale).cta;
   return (
     <div className="mx-auto max-w-3xl px-4">
       <div className="flex flex-col items-center gap-4 rounded-lg bg-ink px-6 py-6 text-center sm:flex-row sm:justify-between sm:text-left">
-        <p className="font-semibold text-white">{texto}</p>
+        <p className="font-semibold text-white">{texto ?? t.inline}</p>
         <div className="flex shrink-0 flex-col gap-2 sm:flex-row">
           <a
             href={`tel:${telefono.numero}`}
@@ -28,7 +32,7 @@ export function CTAInline({
             data-event="form_cta_inline"
             className="rounded-md border-2 border-amber px-5 py-2.5 text-center font-bold text-white hover:bg-white/5"
           >
-            Pedir presupuesto
+            {t.pedirPresupuesto}
           </a>
         </div>
       </div>

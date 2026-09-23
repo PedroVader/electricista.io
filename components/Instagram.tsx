@@ -1,4 +1,5 @@
 import { config } from "@/data/config";
+import { ui, type Locale } from "@/lib/i18n";
 import { Icono } from "./Iconos";
 
 /**
@@ -13,13 +14,16 @@ export function Instagram({
   variante = "bloque",
   evento = "instagram",
   className = "",
+  locale = "es",
 }: {
   variante?: "bloque" | "linea";
   evento?: string;
   className?: string;
+  locale?: Locale;
 }) {
   const { instagram } = config;
   if (!instagram.enabled) return null;
+  const t = ui(locale).secciones;
 
   const arroba = `@${instagram.usuario}`;
   const comun = {
@@ -33,7 +37,7 @@ export function Instagram({
     return (
       <a
         {...comun}
-        aria-label={`Instagram ${arroba}, se abre en una pestaña nueva`}
+        aria-label={t.igAriaLinea(arroba)}
         className={`inline-flex items-center gap-2 text-sm text-white/70 hover:text-amber ${className}`}
       >
         <Icono nombre="instagram" className="h-5 w-5" />
@@ -45,7 +49,7 @@ export function Instagram({
   return (
     <a
       {...comun}
-      aria-label={`Ver nuestros trabajos en Instagram, ${arroba}. Se abre en una pestaña nueva`}
+      aria-label={t.igAria(arroba)}
       className={`group flex flex-col gap-5 rounded-lg border border-ink/15 bg-paper-warm p-6 transition-colors hover:border-amber-dark sm:flex-row sm:items-center sm:justify-between ${className}`}
     >
       <span className="flex items-center gap-4">
@@ -54,15 +58,15 @@ export function Instagram({
         </span>
         <span>
           <span className="block font-display text-lg font-bold text-ink">
-            Subimos cada trabajo a Instagram
+            {t.igTitulo}
           </span>
           <span className="mt-1 block text-sm text-slate">
-            Cuadros, averías y obras terminadas, día a día en {arroba}
+            {t.igTexto(arroba)}
           </span>
         </span>
       </span>
       <span className="inline-flex shrink-0 items-center gap-2 font-semibold text-ink group-hover:text-amber-dark">
-        Seguirnos
+        {t.igSeguir}
         <Icono nombre="flecha" className="h-4 w-4" />
       </span>
     </a>

@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { ciudades } from "@/data/ciudades";
-import { home } from "@/data/paginas";
+import { datos } from "@/lib/datos";
+import { ui, rutaLanding, type Locale } from "@/lib/i18n";
 import { Icono } from "./Iconos";
 import { Reveal } from "./Reveal";
 
@@ -8,31 +8,34 @@ import { Reveal } from "./Reveal";
 export function ZonasSection({
   servicioNombre,
   excluirSlug,
+  locale = "es",
 }: {
   /** Si se pasa, el H2 es "Zonas donde ofrecemos {servicio}" (interlinking §4) */
   servicioNombre?: string;
   excluirSlug?: string;
+  locale?: Locale;
 }) {
-  const lista = ciudades.filter((c) => c.slug !== excluirSlug);
+  const t = ui(locale).secciones;
+  const idiomaDatos = locale === "en" ? "es" : locale;
+  const d = datos(idiomaDatos);
+  const lista = d.ciudades.filter((c) => c.slug !== excluirSlug);
   const municipios = [
-    ...new Set(ciudades.flatMap((c) => c.tambienServicio.municipios)),
-  ].filter((m) => !ciudades.some((c) => c.nombre === m));
+    ...new Set(d.ciudades.flatMap((c) => c.tambienServicio.municipios)),
+  ].filter((m) => !d.ciudades.some((c) => c.nombre === m));
 
   return (
     <section className="bg-paper-warm">
       <div className="mx-auto max-w-6xl px-4 py-16">
-        <p className="eyebrow">Zonas de servicio</p>
+        <p className="eyebrow">{t.zonasServicio}</p>
         <h2 className="font-display text-3xl font-bold text-ink sm:text-4xl">
-          {servicioNombre
-            ? `Zonas donde ofrecemos ${servicioNombre}`
-            : home.zonas.h2}
+          {servicioNombre ? t.zonasDonde(servicioNombre) : d.home.zonas.h2}
         </h2>
-        <p className="mt-3 max-w-2xl text-slate">{home.zonas.intro}</p>
+        <p className="mt-3 max-w-2xl text-slate">{d.home.zonas.intro}</p>
         <div className="mt-8 grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-5">
           {lista.map((c) => (
             <Reveal key={c.slug} className="h-full">
               <Link
-                href={`/${c.slug}`}
+                href={rutaLanding(idiomaDatos, c.slug)}
                 className="zone-link card group flex h-full items-center gap-3"
               >
                 <span className="text-amber-dark">
@@ -46,7 +49,7 @@ export function ZonasSection({
           ))}
         </div>
         <p className="mt-6 text-sm text-slate">
-          También en: {municipios.join(", ")}.
+          {t.tambienEn} {municipios.join(", ")}.
         </p>
       </div>
     </section>

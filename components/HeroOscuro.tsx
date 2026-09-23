@@ -1,8 +1,10 @@
 import Image from "next/image";
 import { config } from "@/data/config";
+import { datos } from "@/lib/datos";
+import { ui, type Locale } from "@/lib/i18n";
 import { Icono } from "./Iconos";
 import { FranjaFirma } from "./FranjaFirma";
-import { FormPresupuesto } from "./FormPresupuesto";
+import { Formulario } from "./Formulario";
 import { SelloGoogle } from "./SelloGoogle";
 
 /**
@@ -17,6 +19,8 @@ export function HeroOscuro({
   sub,
   imagen = "/img/hero-averias.jpg",
   alt,
+  locale = "es",
+  badges,
 }: {
   eyebrow: string;
   h1: string;
@@ -24,14 +28,20 @@ export function HeroOscuro({
   imagen?: string;
   /** Alt de la foto de hero: es la imagen LCP y la principal de la página */
   alt?: string;
+  locale?: Locale;
+  /** Claims de confianza; por defecto los del idioma */
+  badges?: { icono: string; texto: string }[];
 }) {
-  const { telefono, badges, email } = config;
+  const { telefono, email } = config;
+  const t = ui(locale);
+  const listaBadges =
+    badges ?? datos(locale === "en" ? "es" : locale).badges;
   return (
     <>
       <section className="hero-electricista relative bg-ink text-white">
         <Image
           src={imagen}
-          alt={alt ?? `${config.marca.profesion} de ${config.marca.nombre} trabajando en una instalación eléctrica`}
+          alt={alt ?? t.hero.altDefecto(config.marca.nombre)}
           fill
           priority
           sizes="100vw"
@@ -60,34 +70,32 @@ export function HeroOscuro({
                   className="flex items-center justify-center gap-2.5 rounded-md bg-amber px-7 py-3.5 text-base font-semibold text-ink hover:bg-amber-dark"
                 >
                   <Icono nombre="telefono" className="h-5 w-5" />
-                  Llamar al {telefono.display}
+                  {t.hero.llamarAl} {telefono.display}
                 </a>
                 <a
                   href="#form-presupuesto"
                   data-event="form_hero"
                   className="rounded-md border border-white/50 px-7 py-3.5 text-center text-base font-semibold text-white hover:border-amber hover:text-amber sm:hidden"
                 >
-                  Pedir presupuesto
+                  {t.hero.pedirPresupuesto}
                 </a>
               </div>
 
               {/* Prueba social: valoración real en Google */}
-              <SelloGoogle evento="google_sello_hero" className="mt-6" />
+              <SelloGoogle evento="google_sello_hero" className="mt-6" locale={locale} />
             </div>
 
             {/* Captación de leads en el hero */}
             <div className="hero-form rounded-lg p-6 text-ink">
               <p className="font-display text-xl font-semibold">
-                Solicita tu presupuesto
+                {t.hero.solicita}
               </p>
-              <p className="mt-1 text-sm text-slate">
-                Sin compromiso. Precio cerrado por escrito antes de empezar.
-              </p>
+              <p className="mt-1 text-sm text-slate">{t.hero.sinCompromiso}</p>
               <div className="mt-4">
-                <FormPresupuesto compacto />
+                <Formulario compacto locale={locale} />
               </div>
               <div className="mt-4 border-t border-slate/20 pt-4 text-sm text-slate">
-                ¿Es urgente? Llama al{" "}
+                {t.hero.esUrgente}{" "}
                 <a
                   href={`tel:${telefono.numero}`}
                   data-event="llamada_hero_form"
@@ -95,7 +103,7 @@ export function HeroOscuro({
                 >
                   {telefono.display}
                 </a>{" "}
-                o escríbenos a{" "}
+                {t.hero.oEscribenos}{" "}
                 <a
                   href={`mailto:${email}`}
                   data-event="email_hero"
@@ -109,7 +117,7 @@ export function HeroOscuro({
 
           {/* Franja de credenciales: los claims de confianza en una rejilla */}
           <ul className="hero-credenciales mt-10 grid grid-cols-1 gap-px border border-white/15 bg-white/15 sm:grid-cols-3 lg:grid-cols-5">
-            {badges.map((badge) => (
+            {listaBadges.map((badge) => (
               <li
                 key={badge.texto}
                 className="flex items-center gap-3 bg-[#202020] px-4 py-3.5 font-medium text-white/90"

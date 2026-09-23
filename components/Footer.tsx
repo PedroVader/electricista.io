@@ -1,13 +1,17 @@
 import Link from "next/link";
 import { config } from "@/data/config";
-import { serviciosGlobales, serviciosLocales } from "@/data/servicios";
-import { ciudades } from "@/data/ciudades";
-import { distritos } from "@/data/distritos";
+import { datos } from "@/lib/datos";
+import { ui, rutaLanding, RUTAS, type Locale } from "@/lib/i18n";
 import { SelloGoogle } from "./SelloGoogle";
 import { Instagram } from "./Instagram";
 
-export function Footer() {
-  const { marca, empresa, telefono, email, footer } = config;
+export function Footer({ locale = "es" }: { locale?: Locale }) {
+  const { marca, empresa, telefono, email } = config;
+  const t = ui(locale);
+  const rutas = RUTAS[locale];
+  // El inglés no tiene landings propias: enlaza a las versiones en castellano
+  const d = datos(locale === "en" ? "es" : locale);
+  const landing = (slug: string) => rutaLanding(locale === "en" ? "es" : locale, slug);
 
   return (
     <footer className="site-footer bg-ink text-white">
@@ -44,40 +48,40 @@ export function Footer() {
             </a>
           </p>
           <p className="mt-1 text-sm">
-            <Instagram variante="linea" evento="instagram_footer" />
+            <Instagram variante="linea" evento="instagram_footer" locale={locale} />
           </p>
           <div className="mt-4">
-            <SelloGoogle evento="google_sello_footer" />
+            <SelloGoogle evento="google_sello_footer" locale={locale} />
           </div>
         </div>
 
-        <nav aria-label="Servicios">
+        <nav aria-label={t.footer.servicios}>
           <p className="text-sm font-semibold uppercase tracking-wide text-white/50">
-            Servicios
+            {t.footer.servicios}
           </p>
           <ul className="mt-4 space-y-2 text-sm">
-            {serviciosGlobales.map((s) => (
+            {d.serviciosGlobales.map((s) => (
               <li key={s.slug}>
-                <Link href={`/${s.slug}`} className="text-white/80 hover:text-amber">
+                <Link href={landing(s.slug)} className="text-white/80 hover:text-amber">
                   {s.nombre}
                 </Link>
               </li>
             ))}
             <li>
-              <Link href="/presupuesto" className="text-white/80 hover:text-amber">
-                Pedir presupuesto
+              <Link href={rutas.presupuesto} className="text-white/80 hover:text-amber">
+                {t.footer.pedirPresupuesto}
               </Link>
             </li>
           </ul>
 
           {/* Servicio por ciudad: sin esto solo recibían dos enlaces internos */}
           <p className="mt-6 text-sm font-semibold uppercase tracking-wide text-white/50">
-            Servicios por ciudad
+            {t.footer.serviciosPorCiudad}
           </p>
           <ul className="mt-4 space-y-2 text-sm">
-            {serviciosLocales.map((s) => (
+            {d.serviciosLocales.map((s) => (
               <li key={s.slug}>
-                <Link href={`/${s.slug}`} className="text-white/80 hover:text-amber">
+                <Link href={landing(s.slug)} className="text-white/80 hover:text-amber">
                   {s.nombre}
                 </Link>
               </li>
@@ -85,15 +89,15 @@ export function Footer() {
           </ul>
         </nav>
 
-        <nav aria-label="Zonas">
+        <nav aria-label={t.footer.zonas}>
           <p className="text-sm font-semibold uppercase tracking-wide text-white/50">
-            Zonas
+            {t.footer.zonas}
           </p>
           <ul className="mt-4 space-y-2 text-sm">
-            {ciudades.map((c) => (
+            {d.ciudades.map((c) => (
               <li key={c.slug}>
-                <Link href={`/${c.slug}`} className="text-white/80 hover:text-amber">
-                  Electricista en {c.nombre}
+                <Link href={landing(c.slug)} className="text-white/80 hover:text-amber">
+                  {t.footer.electricistaEn(c.nombre)}
                 </Link>
               </li>
             ))}
@@ -101,47 +105,47 @@ export function Footer() {
 
           {/* Distritos: sin esto solo recibían un enlace interno en toda la web */}
           <p className="mt-6 text-sm font-semibold uppercase tracking-wide text-white/50">
-            Barrios de Barcelona
+            {t.footer.barrios}
           </p>
           <ul className="mt-4 space-y-2 text-sm">
-            {distritos.map((d) => (
-              <li key={d.slug}>
-                <Link href={`/${d.slug}`} className="text-white/80 hover:text-amber">
-                  Electricista en {d.nombre}
+            {d.distritos.map((dist) => (
+              <li key={dist.slug}>
+                <Link href={landing(dist.slug)} className="text-white/80 hover:text-amber">
+                  {t.footer.electricistaEn(dist.nombre)}
                 </Link>
               </li>
             ))}
           </ul>
         </nav>
 
-        <nav aria-label="Legal">
+        <nav aria-label={t.footer.legal}>
           <p className="text-sm font-semibold uppercase tracking-wide text-white/50">
-            Legal
+            {t.footer.legal}
           </p>
           <ul className="mt-4 space-y-2 text-sm">
             <li>
               <Link href="/aviso-legal" className="text-white/80 hover:text-amber">
-                Aviso legal
+                {t.footer.avisoLegal}
               </Link>
             </li>
             <li>
               <Link href="/privacidad" className="text-white/80 hover:text-amber">
-                Política de privacidad
+                {t.footer.privacidad}
               </Link>
             </li>
             <li>
               <Link href="/cookies" className="text-white/80 hover:text-amber">
-                Política de cookies
+                {t.footer.cookies}
               </Link>
             </li>
             <li>
-              <Link href="/blog" className="text-white/80 hover:text-amber">
-                Consejos
+              <Link href={rutas.blog} className="text-white/80 hover:text-amber">
+                {t.footer.consejos}
               </Link>
             </li>
             <li>
-              <Link href="/contacto" className="text-white/80 hover:text-amber">
-                Contacto
+              <Link href={rutas.contacto} className="text-white/80 hover:text-amber">
+                {t.footer.contacto}
               </Link>
             </li>
           </ul>
@@ -150,8 +154,8 @@ export function Footer() {
 
       <div className="border-t border-white/10">
         <div className="mx-auto max-w-6xl px-4 py-6 text-center text-sm text-white/70">
-          <p>{footer.lineaFinal}</p>
-          <p className="mt-2 text-xs text-white/50">{footer.disclaimerImagenes}</p>
+          <p>{d.footer.lineaFinal}</p>
+          <p className="mt-2 text-xs text-white/50">{d.footer.disclaimerImagenes}</p>
         </div>
       </div>
     </footer>

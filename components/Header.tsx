@@ -2,14 +2,14 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import { config } from "@/data/config";
-import { serviciosGlobales } from "@/data/servicios";
-import { ciudades } from "@/data/ciudades";
+import { ui, rutaEquivalente, RUTAS, type Locale } from "@/lib/i18n";
 import { Icono } from "./Iconos";
 
-type Item = { href: string; texto: string; icono: string };
+export type ItemNav = { href: string; texto: string; icono: string };
 
-function Dropdown({ etiqueta, items }: { etiqueta: string; items: Item[] }) {
+function Dropdown({ etiqueta, items }: { etiqueta: string; items: ItemNav[] }) {
   return (
     <div className="group relative">
       <button
@@ -44,7 +44,7 @@ function AcordeonMovil({
   onNavega,
 }: {
   etiqueta: string;
-  items: Item[];
+  items: ItemNav[];
   onNavega: () => void;
 }) {
   return (
@@ -74,30 +74,65 @@ function AcordeonMovil({
   );
 }
 
-export function Header() {
+const IDIOMAS: { locale: Locale; etiqueta: string; nombre: string }[] = [
+  { locale: "es", etiqueta: "ES", nombre: "Castellano" },
+  { locale: "ca", etiqueta: "CA", nombre: "Català" },
+  { locale: "en", etiqueta: "EN", nombre: "English" },
+];
+
+/** Selector de idioma: enlaza a la página equivalente (o a la portada del idioma). */
+function SelectorIdioma({ locale, className = "" }: { locale: Locale; className?: string }) {
+  const pathname = usePathname();
+  const t = ui(locale);
+  return (
+    <nav aria-label={t.nav.idioma} className={`flex items-center gap-1 text-xs font-semibold ${className}`}>
+      {IDIOMAS.map((idioma, i) => (
+        <span key={idioma.locale} className="flex items-center">
+          {i > 0 && <span className="px-1 text-white/30" aria-hidden="true">·</span>}
+          {idioma.locale === locale ? (
+            <span className="text-amber" aria-current="true" lang={idioma.locale}>
+              {idioma.etiqueta}
+            </span>
+          ) : (
+            <a
+              href={rutaEquivalente(pathname, idioma.locale)}
+              hrefLang={idioma.locale}
+              lang={idioma.locale}
+              title={idioma.nombre}
+              className="text-white/70 hover:text-amber"
+            >
+              {idioma.etiqueta}
+            </a>
+          )}
+        </span>
+      ))}
+    </nav>
+  );
+}
+
+export function Header({
+  locale = "es",
+  itemsServicios,
+  itemsZonas,
+}: {
+  locale?: Locale;
+  itemsServicios: ItemNav[];
+  itemsZonas: ItemNav[];
+}) {
   const [abierto, setAbierto] = useState(false);
   const { telefono, marca } = config;
+  const t = ui(locale);
+  const rutas = RUTAS[locale];
   const cerrar = () => setAbierto(false);
-
-  const itemsServicios: Item[] = serviciosGlobales.map((s) => ({
-    href: `/${s.slug}`,
-    texto: s.nombre,
-    icono: s.card.icono,
-  }));
-  const itemsZonas: Item[] = ciudades.map((c) => ({
-    href: `/${c.slug}`,
-    texto: c.nombre,
-    icono: "pin",
-  }));
 
   return (
     <header className="site-header sticky top-0 z-50 bg-ink">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-2 px-4">
-        {/* Logo: wordmark + franja de obra (versión en código del logo oficial, /img/logo.png) */}
+        {/* Logo: wordmark + franja de obra (versión en código del logo oficial) */}
         <Link
-          href="/"
+          href={rutas.home}
           className="inline-block"
-          aria-label={`${marca.nombre}, inicio`}
+          aria-label={`${marca.nombre}, ${t.nav.inicio}`}
         >
           <span className="font-display text-xl font-bold leading-none tracking-tight text-white">
             {marca.wordmarkBase}
@@ -107,27 +142,34 @@ export function Header() {
         </Link>
 
         {/* Nav escritorio */}
-        <nav className="hidden items-center lg:flex" aria-label="Principal">
-          <Dropdown etiqueta="Servicios" items={itemsServicios} />
-          <Dropdown etiqueta="Zonas" items={itemsZonas} />
+        <nav className="hidden items-center lg:flex" aria-label={t.nav.principal}>
+          {itemsServicios.length > 0 && (
+            <Dropdown etiqueta={t.nav.servicios} items={itemsServicios} />
+          )}
+          {itemsZonas.length > 0 && (
+            <Dropdown etiqueta={t.nav.zonas} items={itemsZonas} />
+          )}
           <Link
-            href="/presupuesto"
+            href={rutas.presupuesto}
             className="px-3 py-2 text-sm font-medium text-white hover:text-amber"
           >
-            Presupuesto
+            {t.nav.presupuesto}
           </Link>
+          {locale !== "en" && (
+            <Link
+              href={rutas.blog}
+              className="px-3 py-2 text-sm font-medium text-white hover:text-amber"
+            >
+              {t.nav.consejos}
+            </Link>
+          )}
           <Link
-            href="/blog"
+            href={rutas.contacto}
             className="px-3 py-2 text-sm font-medium text-white hover:text-amber"
           >
-            Consejos
+            {t.nav.contacto}
           </Link>
-          <Link
-            href="/contacto"
-            className="px-3 py-2 text-sm font-medium text-white hover:text-amber"
-          >
-            Contacto
-          </Link>
+          <SelectorIdioma locale={locale} className="ml-3 border-l border-white/15 pl-3" />
         </nav>
 
         <div className="flex items-center gap-2">
@@ -142,15 +184,15 @@ export function Header() {
             </span>
             <span className="hidden sm:inline">{telefono.display}</span>
             <span className="sr-only sm:hidden">
-              Llamar al {telefono.display}
+              {t.nav.llamarAl} {telefono.display}
             </span>
           </a>
           <Link
-            href="/contacto"
+            href={rutas.contacto}
             data-event="cta_header"
             className="hidden rounded-md bg-amber px-4 py-2 text-sm font-semibold text-ink hover:bg-amber-dark md:block"
           >
-            Pedir presupuesto
+            {t.nav.pedirPresupuesto}
           </Link>
           {/* Hamburguesa móvil */}
           <button
@@ -158,7 +200,7 @@ export function Header() {
             onClick={() => setAbierto(!abierto)}
             className="rounded-md p-2 text-white lg:hidden"
             aria-expanded={abierto}
-            aria-label={abierto ? "Cerrar menú" : "Abrir menú"}
+            aria-label={abierto ? t.nav.cerrarMenu : t.nav.abrirMenu}
           >
             <svg
               viewBox="0 0 24 24"
@@ -183,7 +225,7 @@ export function Header() {
       {abierto && (
         <nav
           className="max-h-[calc(100dvh-4rem)] overflow-y-auto border-t border-white/10 bg-ink px-4 pb-8 pt-4 lg:hidden"
-          aria-label="Menú móvil"
+          aria-label={t.nav.menuMovil}
         >
           <div className="grid grid-cols-2 gap-2">
             <a
@@ -192,59 +234,66 @@ export function Header() {
               className="flex items-center justify-center gap-2 rounded-md bg-amber py-3 font-bold text-ink"
             >
               <Icono nombre="telefono" className="h-5 w-5" />
-              Llamar
+              {t.nav.llamar}
             </a>
             <Link
-              href="/contacto"
+              href={rutas.contacto}
               data-event="cta_menu_movil"
               onClick={cerrar}
               className="flex items-center justify-center gap-2 rounded-md border-2 border-amber py-3 font-bold text-white"
             >
-              Presupuesto
+              {t.nav.presupuesto}
             </Link>
           </div>
 
           <div className="mt-4">
-            <AcordeonMovil
-              etiqueta="Servicios"
-              items={itemsServicios}
-              onNavega={cerrar}
-            />
-            <AcordeonMovil
-              etiqueta="Zonas"
-              items={itemsZonas}
-              onNavega={cerrar}
-            />
+            {itemsServicios.length > 0 && (
+              <AcordeonMovil
+                etiqueta={t.nav.servicios}
+                items={itemsServicios}
+                onNavega={cerrar}
+              />
+            )}
+            {itemsZonas.length > 0 && (
+              <AcordeonMovil
+                etiqueta={t.nav.zonas}
+                items={itemsZonas}
+                onNavega={cerrar}
+              />
+            )}
             <Link
-              href="/presupuesto"
+              href={rutas.presupuesto}
               onClick={cerrar}
               className="flex items-center justify-between border-b border-white/10 py-3 font-semibold text-white hover:text-amber"
             >
-              Presupuesto
+              {t.nav.presupuesto}
               <span className="text-amber">
                 <Icono nombre="flecha" className="h-5 w-5" />
               </span>
             </Link>
+            {locale !== "en" && (
+              <Link
+                href={rutas.blog}
+                onClick={cerrar}
+                className="flex items-center justify-between border-b border-white/10 py-3 font-semibold text-white hover:text-amber"
+              >
+                {t.nav.consejos}
+                <span className="text-amber">
+                  <Icono nombre="flecha" className="h-5 w-5" />
+                </span>
+              </Link>
+            )}
             <Link
-              href="/blog"
+              href={rutas.contacto}
               onClick={cerrar}
               className="flex items-center justify-between border-b border-white/10 py-3 font-semibold text-white hover:text-amber"
             >
-              Consejos
+              {t.nav.contacto}
               <span className="text-amber">
                 <Icono nombre="flecha" className="h-5 w-5" />
               </span>
             </Link>
-            <Link
-              href="/contacto"
-              onClick={cerrar}
-              className="flex items-center justify-between py-3 font-semibold text-white hover:text-amber"
-            >
-              Contacto
-              <span className="text-amber">
-                <Icono nombre="flecha" className="h-5 w-5" />
-              </span>
-            </Link>
+            <SelectorIdioma locale={locale} className="py-4 text-sm" />
           </div>
         </nav>
       )}

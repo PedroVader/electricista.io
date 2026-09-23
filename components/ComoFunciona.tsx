@@ -1,13 +1,15 @@
-import { home } from "@/data/paginas";
+import { datos } from "@/lib/datos";
+import { ui, type Locale } from "@/lib/i18n";
 import { Reveal } from "./Reveal";
 
 /** 3 pasos numerados (la numeración es secuencia real). */
-export function ComoFunciona() {
-  const { h2, pasos } = home.comoFunciona;
+export function ComoFunciona({ locale = "es" }: { locale?: Locale }) {
+  const { h2, pasos } = datos(locale === "en" ? "es" : locale).home.comoFunciona;
+  const t = ui(locale).secciones;
   return (
     <section className="process-section bg-paper">
       <div className="mx-auto max-w-6xl px-4 py-16">
-        <p className="eyebrow">Cómo trabajamos</p>
+        <p className="eyebrow">{t.comoTrabajamos}</p>
         <h2 className="font-display text-3xl font-bold text-ink sm:text-4xl">
           {h2}
         </h2>
