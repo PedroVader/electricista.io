@@ -93,6 +93,20 @@ export const trabajos: Trabajo[] = [
     pie: "Caja estanca montada en el muro de un jardín, con canalización enterrada. En exterior el material tiene que ser estanco de verdad, no un enchufe de interior con tapa.",
     etiquetas: ["averias", "carga"],
   },
+  {
+    src: "/img/trabajos/enchufe-estanco-exterior-tubo-corrugado.jpg",
+    alt: "Base de enchufe doble estanca con tapa instalada en una fachada exterior, alimentada con tubo corrugado negro fijado con abrazadera metálica",
+    titulo: "Toma de corriente en exterior, bien hecha",
+    pie: "Base doble estanca con tapa e interruptor por toma, montada en fachada. La línea llega por tubo corrugado de exterior, sujeto con abrazadera y rematado con prensaestopas en la entrada a la caja para que no entre agua.",
+    etiquetas: ["averias", "carga"],
+  },
+  {
+    src: "/img/trabajos/enchufe-estanco-exterior-doble-detalle.jpg",
+    alt: "Detalle de una base de enchufe doble estanca en exterior, con dos tomas schuko, interruptores individuales y tapa transparente abatible",
+    titulo: "Detalle de la base estanca",
+    pie: "Cada toma con su interruptor y piloto, tapa abatible y entrada de cable por prensaestopas. Es la diferencia entre un enchufe de exterior que aguanta años de lluvia y uno que acaba haciendo saltar el diferencial.",
+    etiquetas: ["averias", "carga"],
+  },
 ];
 
 export function trabajosPorEtiqueta(etiqueta: string): Trabajo[] {
