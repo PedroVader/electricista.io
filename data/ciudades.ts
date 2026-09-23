@@ -13,10 +13,10 @@ export const ciudades: Ciudad[] = [
     slug: "electricista-barcelona",
     nombre: "Barcelona",
     comarca: "Barcelonès",
-    h1: "Electricista en Barcelona: urgencias 24h en los diez distritos",
-    metaTitle: "Electricista en Barcelona | Urgencias 24h en los 10 distritos",
+    h1: "Electricista en Barcelona: instaladores habilitados en los diez distritos",
+    metaTitle: "Electricista en Barcelona | Averías, boletines y cuadros",
     metaDescription:
-      "Electricista en Barcelona, distrito a distrito. Urgencias 24h con llegada en 45-60 min, boletines, averías y cuadros. Precio cerrado antes de empezar.",
+      "Electricista en Barcelona, distrito a distrito: averías, boletines (CIE), cuadros y ampliaciones. Instaladores habilitados y precio cerrado.",
     porQue: [
       "Barcelona tiene uno de los parques de vivienda más antiguos de España. Más de la mitad de los pisos se construyeron antes de 1980. En fincas del Eixample, Gràcia o Ciutat Vella seguimos encontrando cableado de hace cincuenta años, cuadros sin diferencial y boletines que ninguna comercializadora acepta ya. Es justo el trabajo que hacemos a diario. Poner instalaciones viejas al día, gestionar el boletín y dejarlo todo registrado.",
       "Nos movemos por los diez distritos con tiempos de llegada de 45-60 minutos en urgencias, también en zonas de difícil aparcamiento como Ciutat Vella o Gràcia. El aparcamiento corre de nuestra cuenta, no de la tuya. Y si tienes un local o administras fincas en la ciudad, tenemos línea preferente para que un corte de luz no te pare el negocio.",

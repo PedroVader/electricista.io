@@ -16,13 +16,13 @@ export const servicios: Servicio[] = [
       destacada: true,
       animada: true,
     },
-    h1: "Electricistas urgentes 24 horas en Barcelona",
+    h1: "Electricistas urgentes 24 horas en Barcelona y el Vallès",
     heroSub:
       "Te has quedado sin luz, huele a quemado o el diferencial no para de saltar. Llámanos: te decimos precio cerrado por teléfono y salimos ya.",
     heroImage: "/img/hero-urgencias-24h.jpg",
-    metaTitle: "Electricistas urgentes 24 horas en Barcelona",
+    metaTitle: "Electricistas urgentes 24 horas en Barcelona y Vallès",
     metaDescription:
-      "Electricistas 24 horas en Barcelona y área metropolitana. Urgencias eléctricas atendidas hoy, precio cerrado antes de empezar.",
+      "Electricistas 24 horas en Barcelona, Sabadell, Terrassa y todo el Vallès. Urgencias eléctricas atendidas hoy, precio cerrado antes de empezar.",
     urgencias: true,
     queIncluye: [
       {
