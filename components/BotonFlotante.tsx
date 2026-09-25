@@ -37,7 +37,7 @@ export function BotonFlotante({
       <a
         href={`tel:${telefono.numero}`}
         data-event="llamada_flotante"
-        className="boton-urgencia flex items-center gap-3 bg-ink py-2.5 pl-2.5 pr-5 font-semibold text-white shadow-lg hover:bg-[#2c2c2c]"
+        className="boton-urgencia flex items-center lg:hidden gap-3 bg-ink py-2.5 pl-2.5 pr-5 font-semibold text-white shadow-lg hover:bg-[#2c2c2c]"
         aria-label={t.urgenciasLlamar(telefono.display)}
       >
         <span className="flex h-10 w-10 items-center justify-center bg-amber text-ink">

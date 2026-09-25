@@ -53,15 +53,12 @@ export function PaginaHome({ locale }: { locale: LocaleHome }) {
       <div className="availability-band bg-ink">
         <div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-4 text-white sm:flex-row sm:items-center sm:justify-between">
           <div className="flex items-center gap-3">
-            <span className="relative flex h-3 w-3 shrink-0">
-              <span className="absolute inline-flex h-full w-full rounded-full bg-amber opacity-75" />
-              <span className="relative inline-flex h-3 w-3 rounded-full bg-amber" />
-            </span>
+            <span className="band-tag">{t.cta.urgencias24h}</span>
             <p>
               <span className="font-semibold">
                 {home.bandaUrgencias.texto}
               </span>{" "}
-              <span className="hidden text-white/70 md:inline">
+              <span className="hidden text-white/70 2xl:inline">
                 {home.bandaUrgencias.subtexto}
               </span>
             </p>
@@ -137,6 +134,7 @@ export function PaginaHome({ locale }: { locale: LocaleHome }) {
       {/* Bloque largo de contenido SEO de la home */}
       <section className="bg-paper">
         <div className="mx-auto max-w-3xl px-4 py-16">
+          <p className="eyebrow">{t.home.sobreNosotros}</p>
           <h2 className="font-display text-3xl font-bold text-ink sm:text-4xl">
             {home.textoSeo.h2}
           </h2>

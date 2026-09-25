@@ -18,9 +18,10 @@ export function CTAFinal({
   const { telefono } = config;
   const t = ui(locale).cta;
   return (
-    <section className="bg-ink text-white">
+    <section className="cta-final bg-ink text-white">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-16 lg:grid-cols-2 lg:gap-16">
         <div>
+          <p className="eyebrow">{t.etiqueta}</p>
           <h2 className="font-display text-4xl font-bold">{h2 ?? t.hablamos}</h2>
           <p className="mt-4 text-white/80">{texto ?? t.texto}</p>
           <a

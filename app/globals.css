@@ -112,7 +112,7 @@ details.faq-item[open] .faq-chevron {
 .font-display { letter-spacing: -0.02em; }
 main > section > .py-16 { padding-block: clamp(3.5rem, 6.5vw, 6rem); }
 main .max-w-6xl, .site-header > .max-w-6xl { max-width: 1240px; padding-inline: clamp(1.25rem, 4vw, 3rem); }
-main .max-w-3xl { padding-inline: 1.5rem; }
+main div.max-w-3xl { padding-inline: 1.5rem; }
 main h2.font-display { font-size: clamp(1.75rem, 2.6vw, 2.25rem); font-weight: 700; letter-spacing: -0.02em; }
 main h3.font-display { font-weight: 600; }
 main p.text-slate:not(.text-sm):not(.text-xs) { font-size: 1rem; line-height: 1.75; }
@@ -165,11 +165,16 @@ a.bg-amber:hover, button.bg-amber:hover { background: #bb8a2c; }
 
 .availability-band { border-bottom: 1px solid #ffffff20; }
 .availability-band p { font-size: .875rem; }
+/* Etiqueta fija en lugar de un punto luminoso: más sobria */
+.band-tag {
+  flex: none; padding: .2rem .55rem; border: 1px solid #cf9a3580; border-radius: 2px;
+  font-size: .6875rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--amber);
+}
 
 /* Servicios: tarjetas con caja de icono */
 .service-card h3 { font-size: 1.2rem; font-weight: 600; }
 .service-card:hover h3 { color: var(--amber-dark); }
-.services-section .grid { gap: 1.25rem; }
+.services-section > div > .grid { gap: 1.25rem; }
 
 .about-section li { font-size: .9375rem; }
 .about-section img { object-position: center; }
@@ -196,6 +201,9 @@ a.bg-amber:hover, button.bg-amber:hover { background: #bb8a2c; }
 
 .faq-item { padding: 1.1rem 1.25rem; }
 .faq-item > p { max-width: 65ch; font-size: .9375rem; line-height: 1.8; }
+
+/* Sobre grafito la etiqueta pasa a latón claro para mantener contraste AA */
+.cta-final .eyebrow { color: #e2c07a; }
 
 .site-footer { border-top: 3px solid var(--amber); }
 
